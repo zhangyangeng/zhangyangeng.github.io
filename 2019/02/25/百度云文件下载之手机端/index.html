@@ -107,14 +107,14 @@
 <meta property="og:site_name" content="Wrysmile">
 <meta property="og:description" content="介绍 该篇介绍了某些通过第三方软件来进行下载百度云文件的方法 该篇所述内容并不一定适用于所有人、所有情况，望知悉 如果有钱的话，当然还是建议入正百度云会员的，毕竟充钱可以解决任何事">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://zhangyangeng.gitee.io/my_hexo/2019/02/25/百度云文件下载之手机端/baidu_shurufa.jpg">
-<meta property="og:image" content="http://zhangyangeng.gitee.io/my_hexo/2019/02/25/百度云文件下载之手机端/动图抓取工具.jpg">
-<meta property="og:image" content="http://zhangyangeng.gitee.io/my_hexo/2019/02/25/百度云文件下载之手机端/下载.jpg">
-<meta property="og:updated_time" content="2019-02-25T07:13:39.904Z">
+<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9b21f58ea8.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9b28f00939.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9b2aeb856a.jpg">
+<meta property="og:updated_time" content="2019-04-07T08:20:25.489Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="百度云文件下载之手机端">
 <meta name="twitter:description" content="介绍 该篇介绍了某些通过第三方软件来进行下载百度云文件的方法 该篇所述内容并不一定适用于所有人、所有情况，望知悉 如果有钱的话，当然还是建议入正百度云会员的，毕竟充钱可以解决任何事">
-<meta name="twitter:image" content="http://zhangyangeng.gitee.io/my_hexo/2019/02/25/百度云文件下载之手机端/baidu_shurufa.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2019/04/07/5ca9b21f58ea8.jpg">
 
 
 
@@ -482,11 +482,11 @@
 <li>配置下载线程，官方默认100，可以设置50~500，这里设置为300（理论上线程越大下载速度越快）<br>执行命令为：<code>config set --max_parallel 300</code></li>
 <li>配置并行下载数量，可以设置1~5，这里设置为3<br>执行命令为：<code>config set --max_download_load 3</code></li>
 <li>配置完成后，将termux强行关闭，即清理掉后台。<br>打开浏览器，进入百度云<a href="http://pan.baidu.com" target="_blank" rel="noopener">官网</a>并登陆账号。<br>复制下面网址，在登陆过账号的浏览器中粘贴并访问。<br><code>http://pcs.baidu.com/rest/2.0/pcs/file?app_id=265486&amp;method=list&amp;path=%2F</code></li>
-<li>访问完后，不管页面显示什么，打开手机版百度云<br>在 <code>/我的应用数据</code> 文件夹下会多出一个名为 <code>baidu_shurufa</code> 的文件夹，如果没有，请自建。<br><img src="/my_hexo/2019/02/25/百度云文件下载之手机端/baidu_shurufa.jpg" width="360" height="640"></li>
-<li>将需要下载的文件复制或移动到 <code>/我的应用数据/baidu_shurufa/</code> 目录下，比如我这里要下载 <code>动图抓取工具.rar</code> 文件<br><img src="/my_hexo/2019/02/25/百度云文件下载之手机端/动图抓取工具.jpg" width="360" height="640"></li>
+<li>访问完后，不管页面显示什么，打开手机版百度云<br>在 <code>/我的应用数据</code> 文件夹下会多出一个名为 <code>baidu_shurufa</code> 的文件夹，如果没有，请自建。<br><img src="https://i.loli.net/2019/04/07/5ca9b21f58ea8.jpg" width="360" height="640"></li>
+<li>将需要下载的文件复制或移动到 <code>/我的应用数据/baidu_shurufa/</code> 目录下，比如我这里要下载 <code>动图抓取工具.rar</code> 文件<br><img src="https://i.loli.net/2019/04/07/5ca9b28f00939.jpg" width="360" height="640"></li>
 <li>打开termux，进入BaiduPCS-Go<br>执行命令为：<code>BaiduPCS-Go</code></li>
 <li>进入 <code>baidu_shurufa</code> 文件夹（若下载多级文件夹下的文件，按此方法递归进入最后一个文件夹即可）<br>执行命令为：<code>cd /apps/baidu_shurufa</code></li>
-<li>下载所需文件即可<br>执行命令为：<code>d &#39;动图抓取工具.rar&#39;</code><br><img src="/my_hexo/2019/02/25/百度云文件下载之手机端/下载.jpg" width="360" height="640"></li>
+<li>下载所需文件即可<br>执行命令为：<code>d &#39;动图抓取工具.rar&#39;</code><br><img src="https://i.loli.net/2019/04/07/5ca9b2aeb856a.jpg" width="360" height="640"></li>
 <li>注意，这里下载速度会有浮动，但平均下来也就4M多左右，还是可以接受的。以后下载文件，从第15点开始即可</li>
 <li>如果有什么问题，可以参考作者的文档。直通车：<a href="https://shimo.im/docs/DkiAbUs9etAFqR3T/read" target="_blank" rel="noopener">查看链接</a></li>
 </ol>
