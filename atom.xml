@@ -6,7 +6,7 @@
   <link href="/my_hexo/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.gitee.io/my_hexo/"/>
-  <updated>2019-04-24T09:13:56.700Z</updated>
+  <updated>2019-07-11T14:24:27.474Z</updated>
   <id>http://zhangyangeng.gitee.io/my_hexo/</id>
   
   <author>
@@ -15,6 +15,73 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>各大浏览器的兼容模式修改</title>
+    <link href="http://zhangyangeng.gitee.io/my_hexo/2019/07/11/%E5%90%84%E5%A4%A7%E6%B5%8F%E8%A7%88%E5%99%A8%E7%9A%84%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F%E4%BF%AE%E6%94%B9/"/>
+    <id>http://zhangyangeng.gitee.io/my_hexo/2019/07/11/各大浏览器的兼容模式修改/</id>
+    <published>2019-07-11T08:21:31.000Z</published>
+    <updated>2019-07-11T14:24:27.474Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;由于兼容性原因，可能会导致进入某些网站时显示内容不全或者无法进行点击，这时就需要进行浏览器的兼容模式的修改了。&lt;/li&gt;
+&lt;li&gt;本篇主要介绍了主流浏览器的修改方法，其余浏览器大同小异，如有需要，请进行百度。&lt;/li&gt;
+&lt;li&gt;这里就以学校教务处网站为例，进行修改了。&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="实用技巧" scheme="http://zhangyangeng.gitee.io/my_hexo/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="技巧" scheme="http://zhangyangeng.gitee.io/my_hexo/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>谷歌浏览器截取全部页面内容</title>
+    <link href="http://zhangyangeng.gitee.io/my_hexo/2019/05/19/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%88%AA%E5%8F%96%E5%85%A8%E9%83%A8%E9%A1%B5%E9%9D%A2%E5%86%85%E5%AE%B9/"/>
+    <id>http://zhangyangeng.gitee.io/my_hexo/2019/05/19/谷歌浏览器截取全部页面内容/</id>
+    <published>2019-05-19T02:45:10.000Z</published>
+    <updated>2019-07-11T08:29:51.997Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;该文介绍了一种对谷歌网页进行全部截屏的方法&lt;/li&gt;
+&lt;li&gt;注意：该方法有些网站截取并不完整，望知悉&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="实用技巧" scheme="http://zhangyangeng.gitee.io/my_hexo/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="干货收藏" scheme="http://zhangyangeng.gitee.io/my_hexo/tags/%E5%B9%B2%E8%B4%A7%E6%94%B6%E8%97%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>华为ICT之人工智能</title>
+    <link href="http://zhangyangeng.gitee.io/my_hexo/2019/04/24/%E5%8D%8E%E4%B8%BAICT%E4%B9%8B%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    <id>http://zhangyangeng.gitee.io/my_hexo/2019/04/24/华为ICT之人工智能/</id>
+    <published>2019-04-24T14:34:10.000Z</published>
+    <updated>2019-04-24T15:42:40.725Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;该篇记录了关于人工智能方向的某些重要知识点&lt;/li&gt;
+&lt;li&gt;如有任何问题，欢迎指出&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhangyangeng.gitee.io/my_hexo/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="ICT，学习" scheme="http://zhangyangeng.gitee.io/my_hexo/tags/ICT%EF%BC%8C%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>华为ICT之存储</title>
