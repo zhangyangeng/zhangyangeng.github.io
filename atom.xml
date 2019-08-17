@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-08-17T09:31:40.910Z</updated>
+  <updated>2019-07-11T14:24:27.474Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://zhangyangeng.github.io/2019/08/17/hello-world/"/>
-    <id>http://zhangyangeng.github.io/2019/08/17/hello-world/</id>
-    <published>2019-08-17T09:31:40.910Z</published>
-    <updated>2019-08-17T09:31:40.910Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>各大浏览器的兼容模式修改</title>
@@ -416,7 +394,7 @@
     <link href="http://zhangyangeng.github.io/2019/01/26/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/"/>
     <id>http://zhangyangeng.github.io/2019/01/26/个人博客搭建入门教程/</id>
     <published>2019-01-26T15:31:51.000Z</published>
-    <updated>2019-04-01T13:34:07.696Z</updated>
+    <updated>2019-08-17T10:47:27.660Z</updated>
     
     <summary type="html">
     
