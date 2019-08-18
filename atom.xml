@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-07-11T14:24:27.474Z</updated>
+  <updated>2019-08-18T14:03:48.206Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML与CSS的学习（尚硅谷）</title>
+    <link href="http://zhangyangeng.github.io/2019/08/18/HTML%E4%B8%8ECSS%E7%9A%84%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%B0%9A%E7%A1%85%E8%B0%B7%EF%BC%89/"/>
+    <id>http://zhangyangeng.github.io/2019/08/18/HTML与CSS的学习（尚硅谷）/</id>
+    <published>2019-08-18T07:29:45.000Z</published>
+    <updated>2019-08-18T14:03:48.206Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本文主要记录在学习尚硅谷的HTML课程时的一些笔记&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端" scheme="http://zhangyangeng.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>各大浏览器的兼容模式修改</title>
@@ -101,9 +124,9 @@
       <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="ICT" scheme="http://zhangyangeng.github.io/tags/ICT/"/>
-    
       <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="ICT" scheme="http://zhangyangeng.github.io/tags/ICT/"/>
     
   </entry>
   
@@ -125,9 +148,9 @@
       <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="ICT" scheme="http://zhangyangeng.github.io/tags/ICT/"/>
-    
       <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="ICT" scheme="http://zhangyangeng.github.io/tags/ICT/"/>
     
   </entry>
   
@@ -174,9 +197,9 @@
       <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="ICT" scheme="http://zhangyangeng.github.io/tags/ICT/"/>
-    
       <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="ICT" scheme="http://zhangyangeng.github.io/tags/ICT/"/>
     
   </entry>
   
@@ -394,12 +417,12 @@
     <link href="http://zhangyangeng.github.io/2019/01/26/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/"/>
     <id>http://zhangyangeng.github.io/2019/01/26/个人博客搭建入门教程/</id>
     <published>2019-01-26T15:31:51.000Z</published>
-    <updated>2019-08-17T10:47:27.660Z</updated>
+    <updated>2019-08-18T06:43:20.300Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;本教程是采用&lt;font color=&quot;#FF0000&quot;&gt;&lt;strong&gt;Gitee&lt;/strong&gt;&lt;/font&gt;和&lt;font color=&quot;#FF0000&quot;&gt;&lt;strong&gt;Hexo&lt;/strong&gt;&lt;/font&gt;框架来搭建个人博客的。&lt;/li&gt;
+&lt;li&gt;本教程是采用&lt;font color=&quot;#FF0000&quot;&gt;&lt;strong&gt;Gitee或Github&lt;/strong&gt;&lt;/font&gt;和&lt;font color=&quot;#FF0000&quot;&gt;&lt;strong&gt;Hexo&lt;/strong&gt;&lt;/font&gt;框架来搭建个人博客的。&lt;/li&gt;
 &lt;li&gt;本教程中的所有链接均指向为官方链接，望知悉。&lt;/li&gt;
 &lt;li&gt;本教程中的部分内容是借鉴&lt;a href=&quot;https://www.coolapk.com/feed/9577774?shareKey=ZTM4NWRlNzk4OTY1NWM0ODQ3YTI~&amp;amp;shareUid=1519576&amp;amp;shareFrom=com.coolapk.market_9.0&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;酷安教程&lt;/a&gt;所写，如需转载请注明。&lt;/li&gt;
 &lt;li&gt;本教程中的所有软件的安装与调试都不赘述，望您多动手百度。&lt;/li&gt;&lt;/ul&gt;
