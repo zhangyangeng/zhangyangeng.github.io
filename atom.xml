@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-08-19T17:42:43.379Z</updated>
+  <updated>2019-08-21T12:36:49.694Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -17,17 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>压缩照片大小的方法</title>
-    <link href="http://zhangyangeng.github.io/2019/08/19/%E5%8E%8B%E7%BC%A9%E7%85%A7%E7%89%87%E5%A4%A7%E5%B0%8F%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>http://zhangyangeng.github.io/2019/08/19/压缩照片大小的方法/</id>
-    <published>2019-08-19T12:15:15.000Z</published>
-    <updated>2019-08-19T17:42:43.379Z</updated>
+    <title>新生常见问题解答</title>
+    <link href="http://zhangyangeng.github.io/2019/08/21/%E6%96%B0%E7%94%9F%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/"/>
+    <id>http://zhangyangeng.github.io/2019/08/21/新生常见问题解答/</id>
+    <published>2019-08-21T05:07:23.000Z</published>
+    <updated>2019-08-21T12:36:49.694Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;网上报到时需要上传学籍照片（即一寸蓝底白衣照片）、身份证照片、通知书照片&lt;/li&gt;
-&lt;li&gt;这些照片都限制文件大小不超过1.5M，接下来就列举几个方法来教大家压缩照片&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;总结一些2019级新生的一些问题&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="新生攻略" scheme="http://zhangyangeng.github.io/categories/%E6%96%B0%E7%94%9F%E6%94%BB%E7%95%A5/"/>
+    
+    
+      <category term="新生" scheme="http://zhangyangeng.github.io/tags/%E6%96%B0%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>压缩照片大小的方法</title>
+    <link href="http://zhangyangeng.github.io/2019/08/19/%E5%8E%8B%E7%BC%A9%E7%85%A7%E7%89%87%E5%A4%A7%E5%B0%8F%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>http://zhangyangeng.github.io/2019/08/19/压缩照片大小的方法/</id>
+    <published>2019-08-19T12:15:15.000Z</published>
+    <updated>2019-08-21T12:41:15.272Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;网上报到时需要上传学籍照片（即一寸蓝底白衣照片）&lt;/li&gt;
+&lt;li&gt;系统都限制文件大小不超过1.5M，接下来就列举几个方法来教大家压缩照片&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
