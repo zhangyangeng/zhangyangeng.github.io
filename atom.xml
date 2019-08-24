@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-08-21T13:29:58.033Z</updated>
+  <updated>2019-08-22T14:04:52.522Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -17,23 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>新生常见问题解答</title>
-    <link href="http://zhangyangeng.github.io/2019/08/21/%E6%96%B0%E7%94%9F%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%A7%A3%E7%AD%94/"/>
-    <id>http://zhangyangeng.github.io/2019/08/21/新生常见问题解答/</id>
-    <published>2019-08-21T05:07:23.000Z</published>
-    <updated>2019-08-21T13:29:58.033Z</updated>
+    <title>CSS学习笔记（尚硅谷）</title>
+    <link href="http://zhangyangeng.github.io/2019/08/22/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%B0%9A%E7%A1%85%E8%B0%B7%EF%BC%89/"/>
+    <id>http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</id>
+    <published>2019-08-22T12:21:16.000Z</published>
+    <updated>2019-08-22T14:04:52.522Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;总结一些2019级新生的一些问题&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
-      <category term="新生攻略" scheme="http://zhangyangeng.github.io/categories/%E6%96%B0%E7%94%9F%E6%94%BB%E7%95%A5/"/>
+      <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="新生" scheme="http://zhangyangeng.github.io/tags/%E6%96%B0%E7%94%9F/"/>
+      <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端" scheme="http://zhangyangeng.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -370,7 +372,7 @@
     <link href="http://zhangyangeng.github.io/2019/02/02/%E6%9C%80%E5%85%A8%E5%8A%9F%E8%83%BD%E7%BD%91%E7%AB%99%E9%9B%86%E5%90%88/"/>
     <id>http://zhangyangeng.github.io/2019/02/02/最全功能网站集合/</id>
     <published>2019-02-02T11:08:29.000Z</published>
-    <updated>2019-08-17T05:56:21.324Z</updated>
+    <updated>2019-08-23T07:45:04.126Z</updated>
     
     <summary type="html">
     
