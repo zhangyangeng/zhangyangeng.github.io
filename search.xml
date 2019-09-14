@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java学习笔记（尚学堂）]]></title>
+    <url>%2F2019%2F09%2F02%2FJava%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%B0%9A%E5%AD%A6%E5%A0%82%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[介绍 本文主要记录在学习尚学堂的Java课程时的一些笔记 该课程中尚学堂的笔记链接官方已给出，点击 这里 查看 一、安装问题总结1.在命令行输入java命令时出错 出错内容如下： 1234Error: Registry key &apos;Software\JavaSoft\Java Runtime Environment&apos;\CurrentVersion&apos;has value &apos;1.7&apos;, but &apos;1.8&apos; is required.Error: could not find java.dllError: Could not find Java SE Runtime Environment. 原因分析：这是电脑中以前装过jdk8版本且没有卸载完整，而且在环境变量的顶部出现了以下内容： 1C:\Program Files (x86)\Common Files\Oracle\Java\javapath; 解决方法如下： 先完整卸载所有的jdk和jre软件 进入环境变量的path中，把顶部的这条删掉： 1C:\Program Files (x86)\Common Files\Oracle\Java\javapath; 找到以上路径的Java文件夹，直接将其删除 重新安装jdk7版本，并且进行相应的环境变量设置，即可正常运行]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[数据库学习笔记]]></title>
     <url>%2F2019%2F09%2F01%2F%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[介绍 本文主要记录在学习数据库课程时的一些笔记 一、基本概念1.数据 数据是数据库中存储的基本对象 描述事物的符号记录称为数据 2.数据的解释 是指对数据含义的说明，数据的含义称为数据的语义，数据与其语义是不可分的 3.记录 将所需要描述的信息组织在一起，构成一个记录 记录是计算机中表示和存储数据的一种格式或方法 4.数据库 数据库是长期储存在计算机内、有组织的、可共享的大量数据的集合。数据库中的数据按一定的数据模型组织、描述和储存，具有较小的冗余度、较高的数据独立性和易扩展性，并可为各种用户共享 数据库数据具有永久存储、有组织和可共享三个基本特点 5.数据库管理系统 位于用户与操作系统之间的一层数据管理软件，是计算机的基础软件，也是一个大型复杂的软件系统 主要功能：数据定义功能；数据组织、存储和管理；数据操纵功能；数据库的事务管理和运行管理；数据库的建立和维护功能；数据库管理系统与网络中其他软件系统的通信功能；一个数据库管理系统与另一个数据库管理系统或文件系统的数据转换功能；异构数据库之间的互访和互操作功能 6.数据库系统 是由数据库、数据库管理系统（及其应用开发工具）、应用程序和数据库管理员组成的存储、管理、处理和维护数据的系统 数据库系统简称为数据库 7.数据库系统的特点 数据结构化：实现整体数据的的结构化（主要特征），是数据库系统与文件系统的本质区别 数据的共享性高、冗余度低且易扩充：数据共享可以大大减少数据冗余，节省存储空间，避免数据之间的不相容性与不一致性 数据的独立性高：包括数据的物理独立性和逻辑独立性，是由数据库管理系统提供的二级映像功能来保证的 数据由数据库管理系统统一管理和控制 8.数据模型 是对现实世界数据特征的抽象，是数据库系统的核心和基础 根据模型应用的不同目的，分为两类：一类是概念模型，一类是逻辑模型和物理模型 逻辑模型主要包括层次模型、网状模型、关系模型、面向对象数据模型和对象关系数据模型、半结构化数据模型]]></content>
@@ -25,7 +37,7 @@
   <entry>
     <title><![CDATA[CSS学习笔记（尚硅谷）]]></title>
     <url>%2F2019%2F08%2F22%2FCSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%B0%9A%E7%A1%85%E8%B0%B7%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记 基础知识1.CSS 即层叠样式表，网页可以看成一层一层的结构，而CSS可以分别为网页的各个层次是指样式 2.CSS样式编写位置 可以编写到元素（即标签）内的style属性中，称为“内联样式”，只对当前的元素中的内容起作用，不方便复用，属于结构和表现耦合，不方便后期维护，不推荐使用123&lt;body&gt; &lt;p style=&quot;color: red;font-size:40px;&quot;&gt;这里修改了颜色和字体&lt;/p&gt;&lt;/body&gt; color:red 前者为样式值，后者为样式名，中间用冒号分割开，且每一个样式都要以分号结尾。 可以编写到head中的style标签里，将样式表编写的style标签中（称为”内部样式”)，然后通过css选择器选中指定元素，然后可以同时为这些元素一起设置样式，可以使样式进一步的复用123456&lt;style type=&quot;text/css&quot;&gt; p&#123; //使含有p标签的语句一起设置样式 color:red; font-size:40px; &#125;&lt;/style&gt; 可以使表现和结构进一步分离，比较推荐的使用方式 想要达到其他文件也可以显示同样的样式表，需要将样式表编写到外部的css（内容形同于上面一点），然后通过link标签来将外部的css文件引入到当前页面中12&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;//link前两个属性固定，后面填写相对路径即可，且为自结束标签 将css样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用。同时通过link标签引入可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用。 3.CSS语法]]></content>
+    <content type="text"><![CDATA[介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记 基础知识1.CSS 即层叠样式表，网页可以看成一层一层的结构，而CSS可以分别为网页的各个层次是指样式 2.CSS样式编写位置 可以编写到元素（即标签）内的style属性中，称为“内联样式”，只对当前的元素中的内容起作用，不方便复用，属于结构和表现耦合，不方便后期维护，不推荐使用 1234&lt;body&gt; &lt;p style=&quot;color: red;font-size:40px;&quot;&gt;这里修改了颜色和字体&lt;/p&gt; //color:red 前者为样式值，后者为样式名，中间用冒号分割开，且每一个样式都要以分号结尾。&lt;/body&gt; 可以编写到head中的style标签里，将样式表编写的style标签中（称为”内部样式”)，然后通过css选择器选中指定元素，然后可以同时为这些元素一起设置样式，可以使样式进一步的复用 1234567&lt;style type=&quot;text/css&quot;&gt; p&#123; //使含有p标签的语句一起设置样式 color:red; font-size:40px; &#125; &lt;/style&gt;//可以使表现和结构进一步分离，比较推荐的使用方式 想要达到其他文件也可以显示同样的样式表，需要将样式表编写到外部的css，即写入.css文件中（内容形同于上面一点） 然后通过link标签来将外部的css文件引入到当前页面中。(注意：link标签需要写到style标签中)123&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;//link前两个属性固定，后面填写相对路径即可，且为自结束标签//将css样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用。同时通过link标签引入可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用。 3.CSS语法 注释写法：需要在style标签或css文件中填写，用 /* */来编写 选择器：通过选择器可以选中页面中指定元素，并将声明块中的样式应用到选择器对应的元素上 声明块：使用一对{}括起来，其中内容实际上是一组一组的名值对结构——称为声明。多个声明之间用分号隔开。 4.IDE集成开发工具 DreamWeaver（收费） WebStome（收费） Hbuilder（收费）]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>

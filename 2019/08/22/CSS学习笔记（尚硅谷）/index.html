@@ -107,7 +107,7 @@
 <meta property="og:site_name" content="Wrysmile">
 <meta property="og:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-31T15:48:32.443Z">
+<meta property="og:updated_time" content="2019-09-14T16:25:24.243Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（尚硅谷）">
 <meta name="twitter:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  532 字
+                  672 字
                 </span>
               
 
@@ -455,27 +455,28 @@
 <li>即层叠样式表，网页可以看成一层一层的结构，而CSS可以分别为网页的各个层次是指样式</li>
 </ul>
 <h2 id="2-CSS样式编写位置"><a href="#2-CSS样式编写位置" class="headerlink" title="2.CSS样式编写位置"></a>2.CSS样式编写位置</h2><ul>
-<li>可以编写到元素（即标签）内的style属性中，称为“内联样式”，只对当前的元素中的内容起作用，不方便复用，属于结构和表现耦合，不方便后期维护，不推荐使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">		&lt;p style=&quot;color: red;font-size:40px;&quot;&gt;这里修改了颜色和字体&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<li><p>可以编写到元素（即标签）内的style属性中，称为“内联样式”，只对当前的元素中的内容起作用，不方便复用，属于结构和表现耦合，不方便后期维护，不推荐使用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">		&lt;p style=&quot;color: red;font-size:40px;&quot;&gt;这里修改了颜色和字体&lt;/p&gt;</span><br><span class="line">		//color:red 前者为样式值，后者为样式名，中间用冒号分割开，且每一个样式都要以分号结尾。</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以编写到head中的style标签里，将样式表编写的style标签中（称为”内部样式”)，然后通过css选择器选中指定元素，然后可以同时为这些元素一起设置样式，可以使样式进一步的复用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			p&#123;							//使含有p标签的语句一起设置样式</span><br><span class="line">				color:red;</span><br><span class="line">				font-size:40px;</span><br><span class="line">			&#125;		</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">//可以使表现和结构进一步分离，比较推荐的使用方式</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>想要达到其他文件也可以显示同样的样式表，需要将样式表编写到外部的css，即写入.css文件中（内容形同于上面一点）</p>
+</li>
+<li>然后通过link标签来将外部的css文件引入到当前页面中。(注意：link标签需要写到style标签中)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</span><br><span class="line">//link前两个属性固定，后面填写相对路径即可，且为自结束标签</span><br><span class="line">//将css样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用。同时通过link标签引入可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用。</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<blockquote>
-<p>color:red 前者为样式值，后者为样式名，中间用冒号分割开，且每一个样式都要以分号结尾。</p>
-</blockquote>
-<ul>
-<li>可以编写到head中的style标签里，将样式表编写的style标签中（称为”内部样式”)，然后通过css选择器选中指定元素，然后可以同时为这些元素一起设置样式，可以使样式进一步的复用<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			p&#123;							//使含有p标签的语句一起设置样式</span><br><span class="line">				color:red;</span><br><span class="line">				font-size:40px;</span><br><span class="line">			&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-</li>
+<h2 id="3-CSS语法"><a href="#3-CSS语法" class="headerlink" title="3.CSS语法"></a>3.CSS语法</h2><ol>
+<li>注释写法：需要在style标签或css文件中填写，用 <code>/* */</code>来编写</li>
+<li>选择器：通过选择器可以选中页面中指定元素，并将声明块中的样式应用到选择器对应的元素上</li>
+<li>声明块：使用一对{}括起来，其中内容实际上是一组一组的名值对结构——称为声明。多个声明之间用分号隔开。</li>
+</ol>
+<h2 id="4-IDE集成开发工具"><a href="#4-IDE集成开发工具" class="headerlink" title="4.IDE集成开发工具"></a>4.IDE集成开发工具</h2><ul>
+<li>DreamWeaver（收费）</li>
+<li>WebStome（收费）</li>
+<li>Hbuilder（收费）</li>
 </ul>
-<blockquote>
-<p>可以使表现和结构进一步分离，比较推荐的使用方式</p>
-</blockquote>
-<ul>
-<li>想要达到其他文件也可以显示同样的样式表，需要将样式表编写到外部的css（内容形同于上面一点），然后通过link标签来将外部的css文件引入到当前页面中<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</span><br><span class="line">//link前两个属性固定，后面填写相对路径即可，且为自结束标签</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<blockquote>
-<p>将css样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用。同时通过link标签引入可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用。</p>
-</blockquote>
-<h2 id="3-CSS语法"><a href="#3-CSS语法" class="headerlink" title="3.CSS语法"></a>3.CSS语法</h2>
+
       
     </div>
     
@@ -495,7 +496,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/">CSS学习笔记（尚硅谷）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 20:08</p>
-  <p><span>最后更新:</span>2019年08月31日 - 23:08</p>
+  <p><span>最后更新:</span>2019年09月15日 - 00:09</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/" title="CSS学习笔记（尚硅谷）">http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</a>
@@ -684,7 +685,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">22</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -706,7 +707,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -779,7 +780,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-text">基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-text">基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li></ol></li></ol></div>
             
 
           </div>
