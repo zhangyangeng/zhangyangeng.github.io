@@ -107,10 +107,12 @@
 <meta property="og:site_name" content="Wrysmile">
 <meta property="og:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-14T16:25:24.243Z">
+<meta property="og:image" content="https://i.loli.net/2019/09/15/mLZYDI56fNukgGv.png">
+<meta property="og:updated_time" content="2019-09-15T15:44:38.813Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（尚硅谷）">
 <meta name="twitter:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
+<meta name="twitter:image" content="https://i.loli.net/2019/09/15/mLZYDI56fNukgGv.png">
 
 
 
@@ -410,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  672 字
+                  915 字
                 </span>
               
 
@@ -426,7 +428,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2 分钟
+                  3 分钟
                 </span>
               
             </div>
@@ -452,7 +454,7 @@
 </li>
 </ul>
 <h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><h2 id="1-CSS"><a href="#1-CSS" class="headerlink" title="1.CSS"></a>1.CSS</h2><ul>
-<li>即层叠样式表，网页可以看成一层一层的结构，而CSS可以分别为网页的各个层次是指样式</li>
+<li>即层叠样式表，网页可以看成一层一层的结构，而CSS可以分别为网页的各个层次设置样式</li>
 </ul>
 <h2 id="2-CSS样式编写位置"><a href="#2-CSS样式编写位置" class="headerlink" title="2.CSS样式编写位置"></a>2.CSS样式编写位置</h2><ul>
 <li><p>可以编写到元素（即标签）内的style属性中，称为“内联样式”，只对当前的元素中的内容起作用，不方便复用，属于结构和表现耦合，不方便后期维护，不推荐使用</p>
@@ -476,7 +478,20 @@
 <li>WebStome（收费）</li>
 <li>Hbuilder（收费）</li>
 </ul>
-
+<h2 id="5-块元素"><a href="#5-块元素" class="headerlink" title="5.块元素"></a>5.块元素</h2><ul>
+<li>div标签就是一个块元素，没有任何语义，不会为它里边的元素设置任何的默认样式。且自己会独占一行，<font color="#FF0000">主要用来对页面进行布局的</font>。</li>
+<li>若在其中修改style属性，整行都会变色，效果如下：<br><img src="https://i.loli.net/2019/09/15/mLZYDI56fNukgGv.png" alt="div标签.png"></li>
+<li>p/h1/h2….都是块元素（注意：p元素不可以包含其他的块元素）</li>
+<li><font color="#FF0000">一般情况下只使用块元素包含内联元素</font>，即：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;span&gt;</span><br><span class="line">	内容</span><br><span class="line">	&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="6-内联元素"><a href="#6-内联元素" class="headerlink" title="6.内联元素"></a>6.内联元素</h2><ul>
+<li>span是一个内联元素（行内元素，即只占自身大小），没有任何语义，专门用来选中文字用来设置样式</li>
+<li>常见内联元素：a/img/iframe（注意：a元素可以包含任意元素，除他本身）</li>
+<li><font color="#FF0000">一般情况下只使用块元素包含内联元素</font>,即：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;span&gt;</span><br><span class="line">	内容</span><br><span class="line">	&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="7-常用选择器"><a href="#7-常用选择器" class="headerlink" title="7.常用选择器"></a>7.常用选择器</h2>
       
     </div>
     
@@ -496,7 +511,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/">CSS学习笔记（尚硅谷）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 20:08</p>
-  <p><span>最后更新:</span>2019年09月15日 - 00:09</p>
+  <p><span>最后更新:</span>2019年09月15日 - 23:09</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/" title="CSS学习笔记（尚硅谷）">http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</a>
@@ -780,7 +795,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-text">基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-text">基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-块元素"><span class="nav-text">5.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素"><span class="nav-text">6.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-常用选择器"><span class="nav-text">7.常用选择器</span></a></li></ol></li></ol></div>
             
 
           </div>
