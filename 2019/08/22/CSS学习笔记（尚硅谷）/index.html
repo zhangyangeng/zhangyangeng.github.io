@@ -112,7 +112,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/16/MyxujtBDlqdQYZ8.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/LUSutm3KnXMHcjA.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/Emayov943ZAFcxb.jpg">
-<meta property="og:updated_time" content="2019-09-17T16:27:58.797Z">
+<meta property="og:updated_time" content="2019-09-18T15:57:55.691Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（尚硅谷）">
 <meta name="twitter:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.6k 字
+                  1.9k 字
                 </span>
               
 
@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5 分钟
+                  7 分钟
                 </span>
               
             </div>
@@ -568,7 +568,43 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p::selection&#123;</span><br><span class="line">	background-color: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-
+<h3 id="10-伪元素选择器"><a href="#10-伪元素选择器" class="headerlink" title="(10).伪元素选择器"></a>(10).伪元素选择器</h3><ul>
+<li>作用：用来表示元素中的一些特殊位置</li>
+</ul>
+<ol>
+<li>首字母选择器：<code>:first-letter</code></li>
+</ol>
+<ul>
+<li>作用：为p中的第一个字符设置一个特殊的样式<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p:first-letter&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="2">
+<li>首行选择器：<code>:first-line</code></li>
+</ol>
+<ul>
+<li>作用：为p中的第一行设置一个背景颜色<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p:first-line&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ol start="3">
+<li>before选择器：<code>:before</code></li>
+</ol>
+<ul>
+<li>作用：表示元素最前边的部分</li>
+<li><p>注意：p标签前面默认什么都没有，需要结合content样式一起使用<font color="#FF0000">（content可以向before或after的位置添加一些内容）</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:before&#123;</span><br><span class="line">	content:&quot;我会出现在整个段落的最前端&quot;;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意：这部分内容是由css添加的，故在浏览器中无法被选中</p>
+</li>
+</ul>
+<ol start="4">
+<li>after选择器：<code>:after</code></li>
+</ol>
+<ul>
+<li>作用：表示元素最后边的部分</li>
+<li>注意：p标签后面默认什么都没有，需要结合content样式一起使用<font color="#FF0000">（content可以向before或after的位置添加一些内容）</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:after&#123;</span><br><span class="line">	content:&quot;我会出现在整个段落的最后端&quot;;</span><br><span class="line">	color: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="11-属性选择器"><a href="#11-属性选择器" class="headerlink" title="(11).属性选择器"></a>(11).属性选择器</h3>
       
     </div>
     
@@ -588,7 +624,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/">CSS学习笔记（尚硅谷）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 20:08</p>
-  <p><span>最后更新:</span>2019年09月18日 - 00:09</p>
+  <p><span>最后更新:</span>2019年09月18日 - 23:09</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/" title="CSS学习笔记（尚硅谷）">http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</a>
@@ -872,7 +908,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-text">基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-块元素"><span class="nav-text">5.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素"><span class="nav-text">6.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-常用选择器"><span class="nav-text">7.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id选择器"><span class="nav-text">(2).id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-选择器分组（并集选择器）"><span class="nav-text">(4).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-通配选择器"><span class="nav-text">(5).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-伪类选择器"><span class="nav-text">(9).伪类选择器</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-text">基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-块元素"><span class="nav-text">5.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素"><span class="nav-text">6.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-常用选择器"><span class="nav-text">7.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id选择器"><span class="nav-text">(2).id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-选择器分组（并集选择器）"><span class="nav-text">(4).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-通配选择器"><span class="nav-text">(5).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-伪类选择器"><span class="nav-text">(9).伪类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-伪元素选择器"><span class="nav-text">(10).伪元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-属性选择器"><span class="nav-text">(11).属性选择器</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
