@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Java学习笔记（尚学堂）]]></title>
-    <url>%2F2019%2F09%2F02%2FJava%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%B0%9A%E5%AD%A6%E5%A0%82%EF%BC%89%2F</url>
-    <content type="text"><![CDATA[介绍 本文主要记录在学习尚学堂的Java课程时的一些笔记 该课程中尚学堂的笔记链接官方已给出，点击 这里 查看 一、安装问题总结1.在命令行输入java命令时出错 出错内容如下： 1234Error: Registry key &apos;Software\JavaSoft\Java Runtime Environment&apos;\CurrentVersion&apos;has value &apos;1.7&apos;, but &apos;1.8&apos; is required.Error: could not find java.dllError: Could not find Java SE Runtime Environment. 原因分析：这是电脑中以前装过jdk8版本且没有卸载完整，而且在环境变量的顶部出现了以下内容： 1C:\Program Files (x86)\Common Files\Oracle\Java\javapath; 解决方法如下： 先完整卸载所有的jdk和jre软件 进入环境变量的path中，把顶部的这条删掉： 1C:\Program Files (x86)\Common Files\Oracle\Java\javapath; 找到以上路径的Java文件夹，直接将其删除 重新安装jdk7版本，并且进行相应的环境变量设置，即可正常运行]]></content>
+    <title><![CDATA[小白教程：史上最详尽V2Ray搭建服务器图文教程]]></title>
+    <url>%2F2019%2F09%2F20%2F%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%AF%A6%E5%B0%BDV2Ray%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Java学习笔记]]></title>
+    <url>%2F2019%2F09%2F02%2FJava%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[介绍 本文主要记录在学习Java课程时的一些笔记 关于java中的一些基础知识点，尚学堂的笔记中有提到，可直接点击 这里 查看 一、知识点梳理1.关于形参与实参2.关于方法的定义3.java中的排序方法二、问题总结1.在安装时命令行输入java命令时出错 出错内容如下： 1234Error: Registry key &apos;Software\JavaSoft\Java Runtime Environment&apos;\CurrentVersion&apos;has value &apos;1.7&apos;, but &apos;1.8&apos; is required.Error: could not find java.dllError: Could not find Java SE Runtime Environment. 原因分析：这是电脑中以前装过jdk8版本且没有卸载完整，而且在环境变量的顶部出现了以下内容： 1C:\Program Files (x86)\Common Files\Oracle\Java\javapath; 解决方法如下： 先完整卸载所有的jdk和jre软件 进入环境变量的path中，把顶部的这条删掉： 1C:\Program Files (x86)\Common Files\Oracle\Java\javapath; 找到以上路径的Java文件夹，直接将其删除 重新安装jdk7版本，并且进行相应的环境变量设置，即可正常运行 2.定义变量时的冗杂 总是先定义变量再重新给变量赋值，其实可以一步到位，减少代码数量12int sum=0;for(int x=1;x&lt;100;x++)&#123;&#125; 3.定义方法时出错 经检查发现方法的位置写错了地方，应该是写在主函数的外面，但是我写在了主函数的里面，所以导致无法调用方法]]></content>
       <categories>
         <category>学习笔记</category>
       </categories>
@@ -122,8 +127,8 @@
         <category>博客搭建</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>博客</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -249,8 +254,8 @@
         <category>博客搭建</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>博客</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>

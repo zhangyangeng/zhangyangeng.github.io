@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-09-07T08:55:14.001Z</updated>
+  <updated>2019-09-20T09:18:43.773Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -17,17 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java学习笔记（尚学堂）</title>
-    <link href="http://zhangyangeng.github.io/2019/09/02/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%B0%9A%E5%AD%A6%E5%A0%82%EF%BC%89/"/>
-    <id>http://zhangyangeng.github.io/2019/09/02/Java学习笔记（尚学堂）/</id>
+    <title>小白教程：史上最详尽V2Ray搭建服务器图文教程</title>
+    <link href="http://zhangyangeng.github.io/2019/09/20/%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%AF%A6%E5%B0%BDV2Ray%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/"/>
+    <id>http://zhangyangeng.github.io/2019/09/20/小白教程：史上最详尽V2Ray搭建服务器图文教程/</id>
+    <published>2019-09-20T09:18:43.000Z</published>
+    <updated>2019-09-20T09:18:43.773Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java学习笔记</title>
+    <link href="http://zhangyangeng.github.io/2019/09/02/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://zhangyangeng.github.io/2019/09/02/Java学习笔记/</id>
     <published>2019-09-02T13:31:10.000Z</published>
-    <updated>2019-09-07T08:55:14.001Z</updated>
+    <updated>2019-09-25T16:21:06.183Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;本文主要记录在学习尚学堂的Java课程时的一些笔记&lt;/li&gt;
-&lt;li&gt;该课程中尚学堂的笔记链接官方已给出，点击 &lt;a href=&quot;https://www.sxt.cn/Java_jQuery_in_action/thirteen-animation-effects.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt; 查看&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;本文主要记录在学习Java课程时的一些笔记&lt;/li&gt;
+&lt;li&gt;关于java中的一些基础知识点，尚学堂的笔记中有提到，可直接点击 &lt;a href=&quot;https://www.sxt.cn/Java_jQuery_in_action/thirteen-animation-effects.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt; 查看&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -261,9 +275,9 @@
       <category term="博客搭建" scheme="http://zhangyangeng.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="Hexo" scheme="http://zhangyangeng.github.io/tags/Hexo/"/>
-    
       <category term="博客" scheme="http://zhangyangeng.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="Hexo" scheme="http://zhangyangeng.github.io/tags/Hexo/"/>
     
   </entry>
   
@@ -447,27 +461,6 @@
 &lt;li&gt;该教程中的所有链接均指向为官方链接，望知悉。&lt;/li&gt;
 &lt;li&gt;该教程为我上一篇教程的后续教程，即Hexo的主题配置及修改。&lt;/li&gt;
 &lt;li&gt;该教程主要是针对NexT主题，其他主题略有出入，如有需要请自行百度。&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="博客搭建" scheme="http://zhangyangeng.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="Hexo" scheme="http://zhangyangeng.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何解决初始化Hexo卡住不动</title>
-    <link href="http://zhangyangeng.github.io/2019/01/29/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E5%88%9D%E5%A7%8B%E5%8C%96Hexo%E5%8D%A1%E4%BD%8F%E4%B8%8D%E5%8A%A8/"/>
-    <id>http://zhangyangeng.github.io/2019/01/29/如何解决初始化Hexo卡住不动/</id>
-    <published>2019-01-29T06:18:27.000Z</published>
-    <updated>2019-04-07T08:24:32.314Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;很多人在搭建Hexo博客的过程中，总是在init这一步卡在20%/30%这里就不动了，博主也遇到了这个问题。查阅网上资料，有以下两种方法。请自行选择。&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
