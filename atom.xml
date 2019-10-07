@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-09-20T09:18:43.773Z</updated>
+  <updated>2019-10-07T13:03:19.261Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -17,16 +17,50 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Docker学习笔记</title>
+    <link href="http://zhangyangeng.github.io/2019/09/26/Docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://zhangyangeng.github.io/2019/09/26/Docker学习笔记/</id>
+    <published>2019-09-26T08:09:38.000Z</published>
+    <updated>2019-10-07T13:03:19.261Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;记录在Docker学习中的一些笔记&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="容器" scheme="http://zhangyangeng.github.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小白教程：史上最详尽V2Ray搭建服务器图文教程</title>
     <link href="http://zhangyangeng.github.io/2019/09/20/%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%AF%A6%E5%B0%BDV2Ray%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/"/>
     <id>http://zhangyangeng.github.io/2019/09/20/小白教程：史上最详尽V2Ray搭建服务器图文教程/</id>
     <published>2019-09-20T09:18:43.000Z</published>
-    <updated>2019-09-20T09:18:43.773Z</updated>
+    <updated>2019-10-07T13:03:53.589Z</updated>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本文从服务器的购买、配置，V2Ray的服务器端的配置，V2Ray软件的下载这些方面来介绍&lt;/li&gt;
+&lt;li&gt;让你从小白一步步搭建属于自己的VPN&lt;/li&gt;
+&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，任何后果本人都不承担&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;
+    
     </summary>
     
+      <category term="科学上网" scheme="http://zhangyangeng.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="服务器" scheme="http://zhangyangeng.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="翻墙" scheme="http://zhangyangeng.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
     
   </entry>
   
@@ -35,7 +69,7 @@
     <link href="http://zhangyangeng.github.io/2019/09/02/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://zhangyangeng.github.io/2019/09/02/Java学习笔记/</id>
     <published>2019-09-02T13:31:10.000Z</published>
-    <updated>2019-09-25T16:21:06.183Z</updated>
+    <updated>2019-10-07T13:03:32.044Z</updated>
     
     <summary type="html">
     
@@ -59,7 +93,7 @@
     <link href="http://zhangyangeng.github.io/2019/09/01/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://zhangyangeng.github.io/2019/09/01/数据库学习笔记/</id>
     <published>2019-09-01T13:34:29.000Z</published>
-    <updated>2019-09-01T13:39:38.178Z</updated>
+    <updated>2019-10-07T13:05:10.551Z</updated>
     
     <summary type="html">
     
@@ -80,7 +114,7 @@
     <link href="http://zhangyangeng.github.io/2019/09/01/%E4%BA%91%E8%AE%A1%E7%AE%97%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://zhangyangeng.github.io/2019/09/01/云计算学习笔记/</id>
     <published>2019-09-01T12:34:01.000Z</published>
-    <updated>2019-09-02T05:31:56.580Z</updated>
+    <updated>2019-10-07T13:04:36.080Z</updated>
     
     <summary type="html">
     
@@ -215,7 +249,7 @@
     <link href="http://zhangyangeng.github.io/2019/04/24/%E5%8D%8E%E4%B8%BAICT%E4%B9%8B%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     <id>http://zhangyangeng.github.io/2019/04/24/华为ICT之人工智能/</id>
     <published>2019-04-24T14:34:10.000Z</published>
-    <updated>2019-04-24T15:42:40.725Z</updated>
+    <updated>2019-10-07T13:04:46.080Z</updated>
     
     <summary type="html">
     
@@ -237,7 +271,7 @@
     <link href="http://zhangyangeng.github.io/2019/04/23/%E5%8D%8E%E4%B8%BAICT%E4%B9%8B%E5%AD%98%E5%82%A8/"/>
     <id>http://zhangyangeng.github.io/2019/04/23/华为ICT之存储/</id>
     <published>2019-04-23T13:27:11.000Z</published>
-    <updated>2019-04-24T09:13:56.700Z</updated>
+    <updated>2019-10-07T13:05:02.272Z</updated>
     
     <summary type="html">
     
@@ -286,7 +320,7 @@
     <link href="http://zhangyangeng.github.io/2019/03/22/%E5%8D%8E%E4%B8%BAICT%E4%B9%8B%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     <id>http://zhangyangeng.github.io/2019/03/22/华为ICT之大数据/</id>
     <published>2019-03-22T14:28:51.000Z</published>
-    <updated>2019-04-09T15:07:09.690Z</updated>
+    <updated>2019-10-07T13:04:54.591Z</updated>
     
     <summary type="html">
     
@@ -444,30 +478,6 @@
     
     
       <category term="干货收藏" scheme="http://zhangyangeng.github.io/tags/%E5%B9%B2%E8%B4%A7%E6%94%B6%E8%97%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo博客之NexT主题配置教程</title>
-    <link href="http://zhangyangeng.github.io/2019/02/01/Hexo%E5%8D%9A%E5%AE%A2%E4%B9%8BNexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/"/>
-    <id>http://zhangyangeng.github.io/2019/02/01/Hexo博客之NexT主题配置教程/</id>
-    <published>2019-02-01T10:38:07.000Z</published>
-    <updated>2019-07-13T12:14:24.847Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;在看本篇之前，请确保你已成功搭建好个人博客。如没有，请移步：&lt;a href=&quot;/2019/01/26/个人博客搭建入门教程/&quot; title=&quot;[博客搭建教程]&quot;&gt;[博客搭建教程]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;该教程中的所有链接均指向为官方链接，望知悉。&lt;/li&gt;
-&lt;li&gt;该教程为我上一篇教程的后续教程，即Hexo的主题配置及修改。&lt;/li&gt;
-&lt;li&gt;该教程主要是针对NexT主题，其他主题略有出入，如有需要请自行百度。&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="博客搭建" scheme="http://zhangyangeng.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-      <category term="Hexo" scheme="http://zhangyangeng.github.io/tags/Hexo/"/>
     
   </entry>
   
