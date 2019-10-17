@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-10-07T13:03:19.261Z</updated>
+  <updated>2019-10-17T15:04:05.796Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>巧妙恢复U盘内的损坏文件（更新中）</title>
+    <link href="http://zhangyangeng.github.io/2019/10/14/%E5%B7%A7%E5%A6%99%E6%81%A2%E5%A4%8DU%E7%9B%98%E5%86%85%E7%9A%84%E6%8D%9F%E5%A4%B1%E6%96%87%E4%BB%B6/"/>
+    <id>http://zhangyangeng.github.io/2019/10/14/巧妙恢复U盘内的损失文件/</id>
+    <published>2019-10-14T12:47:27.000Z</published>
+    <updated>2019-10-17T15:04:05.796Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;有时我们的U盘或者内存卡会因为某些不知名原因导致损坏一部分文件，就会生成 &lt;code&gt;LOST.DIR&lt;/code&gt; 文件夹，这里面放的便是损坏的文件&lt;/li&gt;
+&lt;li&gt;该教程用TrlDNET软件识别，也有在线端，请点 &lt;a href=&quot;http://mark0.net/onlinetrid.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;引申：该软件可以帮助你识别任何你没有后缀名的文件类型&lt;/li&gt;
+&lt;li&gt;本教程并不能让你完全恢复，望知悉&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="实用技巧" scheme="http://zhangyangeng.github.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="技巧" scheme="http://zhangyangeng.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="干货收藏" scheme="http://zhangyangeng.github.io/tags/%E5%B9%B2%E8%B4%A7%E6%94%B6%E8%97%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker学习笔记</title>
@@ -44,14 +70,14 @@
     <link href="http://zhangyangeng.github.io/2019/09/20/%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%AF%A6%E5%B0%BDV2Ray%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/"/>
     <id>http://zhangyangeng.github.io/2019/09/20/小白教程：史上最详尽V2Ray搭建服务器图文教程/</id>
     <published>2019-09-20T09:18:43.000Z</published>
-    <updated>2019-10-13T15:15:08.811Z</updated>
+    <updated>2019-10-14T12:41:04.925Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;本文从服务器的购买、配置，V2Ray的服务器端的配置，V2Ray软件的下载这些方面来介绍&lt;/li&gt;
 &lt;li&gt;让你从小白一步步搭建属于自己的VPN&lt;/li&gt;
-&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，任何后果本人都不承担&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -69,7 +95,7 @@
     <link href="http://zhangyangeng.github.io/2019/09/02/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://zhangyangeng.github.io/2019/09/02/Java学习笔记/</id>
     <published>2019-09-02T13:31:10.000Z</published>
-    <updated>2019-10-07T13:03:32.044Z</updated>
+    <updated>2019-10-17T13:01:08.637Z</updated>
     
     <summary type="html">
     
@@ -249,7 +275,7 @@
     <link href="http://zhangyangeng.github.io/2019/04/24/%E5%8D%8E%E4%B8%BAICT%E4%B9%8B%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
     <id>http://zhangyangeng.github.io/2019/04/24/华为ICT之人工智能/</id>
     <published>2019-04-24T14:34:10.000Z</published>
-    <updated>2019-10-07T13:04:46.080Z</updated>
+    <updated>2019-10-14T12:50:28.628Z</updated>
     
     <summary type="html">
     
@@ -262,7 +288,9 @@
       <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="ICT，学习" scheme="http://zhangyangeng.github.io/tags/ICT%EF%BC%8C%E5%AD%A6%E4%B9%A0/"/>
+      <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="ICT" scheme="http://zhangyangeng.github.io/tags/ICT/"/>
     
   </entry>
   
@@ -455,29 +483,6 @@
       <category term="技巧" scheme="http://zhangyangeng.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
     
       <category term="百度云" scheme="http://zhangyangeng.github.io/tags/%E7%99%BE%E5%BA%A6%E4%BA%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最全功能网站集合</title>
-    <link href="http://zhangyangeng.github.io/2019/02/02/%E6%9C%80%E5%85%A8%E5%8A%9F%E8%83%BD%E7%BD%91%E7%AB%99%E9%9B%86%E5%90%88/"/>
-    <id>http://zhangyangeng.github.io/2019/02/02/最全功能网站集合/</id>
-    <published>2019-02-02T11:08:29.000Z</published>
-    <updated>2019-10-13T14:57:31.683Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;本文档收录了个人觉得不错的一些网站&lt;/li&gt;
-&lt;li&gt;如有更好推荐，请在评论区留言&lt;/li&gt;
-&lt;li&gt;如有问题纠正，请在评论区留言&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="个人收藏" scheme="http://zhangyangeng.github.io/categories/%E4%B8%AA%E4%BA%BA%E6%94%B6%E8%97%8F/"/>
-    
-    
-      <category term="干货收藏" scheme="http://zhangyangeng.github.io/tags/%E5%B9%B2%E8%B4%A7%E6%94%B6%E8%97%8F/"/>
     
   </entry>
   
