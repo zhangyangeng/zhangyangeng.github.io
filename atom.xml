@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-10-17T15:04:05.796Z</updated>
+  <updated>2019-10-20T12:59:47.704Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>巧妙恢复U盘内的损坏文件（更新中）</title>
+    <title>巧妙恢复U盘内的损坏文件</title>
     <link href="http://zhangyangeng.github.io/2019/10/14/%E5%B7%A7%E5%A6%99%E6%81%A2%E5%A4%8DU%E7%9B%98%E5%86%85%E7%9A%84%E6%8D%9F%E5%A4%B1%E6%96%87%E4%BB%B6/"/>
     <id>http://zhangyangeng.github.io/2019/10/14/巧妙恢复U盘内的损失文件/</id>
     <published>2019-10-14T12:47:27.000Z</published>
-    <updated>2019-10-17T15:04:05.796Z</updated>
+    <updated>2019-10-20T12:59:47.704Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;有时我们的U盘或者内存卡会因为某些不知名原因导致损坏一部分文件，就会生成 &lt;code&gt;LOST.DIR&lt;/code&gt; 文件夹，这里面放的便是损坏的文件&lt;/li&gt;
-&lt;li&gt;该教程用TrlDNET软件识别，也有在线端，请点 &lt;a href=&quot;http://mark0.net/onlinetrid.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;引申：该软件可以帮助你识别任何你没有后缀名的文件类型&lt;/li&gt;
+&lt;li&gt;该教程用TrlDNET软件识别这些损坏文件&lt;/li&gt;
+&lt;li&gt;当然，如果你不想下载软件，它也有在线端，请点 &lt;a href=&quot;http://mark0.net/onlinetrid.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;本教程并不能让你完全恢复，望知悉&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
@@ -95,7 +95,7 @@
     <link href="http://zhangyangeng.github.io/2019/09/02/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://zhangyangeng.github.io/2019/09/02/Java学习笔记/</id>
     <published>2019-09-02T13:31:10.000Z</published>
-    <updated>2019-10-17T13:01:08.637Z</updated>
+    <updated>2019-10-19T12:58:35.982Z</updated>
     
     <summary type="html">
     
