@@ -107,7 +107,7 @@
 <meta property="og:site_name" content="Wrysmile">
 <meta property="og:description" content="介绍 本文主要记录在学习Java课程时的一些笔记 关于java中的一些基础知识点，尚学堂的笔记中有提到，可直接点击 这里 查看">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-19T12:58:35.982Z">
+<meta property="og:updated_time" content="2019-11-06T12:47:20.207Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习笔记">
 <meta name="twitter:description" content="介绍 本文主要记录在学习Java课程时的一些笔记 关于java中的一些基础知识点，尚学堂的笔记中有提到，可直接点击 这里 查看">
@@ -410,7 +410,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  562 字
+                  750 字
                 </span>
               
 
@@ -465,6 +465,19 @@
 </li>
 <li>最后一行的 <code>scan.close();</code> 用来关闭scan</li>
 </ul>
+<h2 id="6-String类的substring-方法"><a href="#6-String类的substring-方法" class="headerlink" title="6.String类的substring()方法"></a>6.String类的substring()方法</h2><ul>
+<li>该方法是用来截取字符串的</li>
+<li><p><code>public String substring(int beginIndex)</code> 返回一个新字符串，它是此字符串的一个子字符串。该子字符串始于指定索引处的字符，一直到此字符串末尾。</p>
+<blockquote>
+<p>例：”unhappy”.substring(2)   returns”happy”</p>
+</blockquote>
+</li>
+<li><p><code>public String substring(int beginIndex, int endIndex)</code> 返回一个新字符串，它是此字符串的一个子字符串。该子字符串从指定的 beginIndex 处开始，到指定的 endIndex-1处结束。</p>
+<blockquote>
+<p>例：”smiles”.substring(0,5) returns “smile”</p>
+</blockquote>
+</li>
+</ul>
 <h1 id="二、问题总结"><a href="#二、问题总结" class="headerlink" title="二、问题总结"></a>二、问题总结</h1><h2 id="1-在安装时命令行输入java命令时出错"><a href="#1-在安装时命令行输入java命令时出错" class="headerlink" title="1.在安装时命令行输入java命令时出错"></a>1.在安装时命令行输入java命令时出错</h2><ul>
 <li><p>出错内容如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Error: Registry key &apos;Software\JavaSoft\Java Runtime Environment&apos;\CurrentVersion&apos;</span><br><span class="line">has value &apos;1.7&apos;, but &apos;1.8&apos; is required.</span><br><span class="line">Error: could not find java.dll</span><br><span class="line">Error: Could not find Java SE Runtime Environment.</span><br></pre></td></tr></table></figure>
@@ -491,6 +504,9 @@
 <h2 id="3-定义方法时出错"><a href="#3-定义方法时出错" class="headerlink" title="3.定义方法时出错"></a>3.定义方法时出错</h2><ul>
 <li>经检查发现方法的位置写错了地方，应该是写在主函数的外面，但是我写在了主函数的里面，所以导致无法调用方法</li>
 </ul>
+<h2 id="4-通过Scanner获取键盘输入时一直无法进入程序"><a href="#4-通过Scanner获取键盘输入时一直无法进入程序" class="headerlink" title="4.通过Scanner获取键盘输入时一直无法进入程序"></a>4.通过Scanner获取键盘输入时一直无法进入程序</h2><ul>
+<li>经检查发现，是程序内部并不能成功运行，导致无法进行，遇到这种情况一定要仔细检查程序</li>
+</ul>
 
       
     </div>
@@ -511,7 +527,7 @@
   <p><span>本文标题:</span><a href="/2019/09/02/Java学习笔记/">Java学习笔记</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年09月02日 - 21:09</p>
-  <p><span>最后更新:</span>2019年10月19日 - 20:10</p>
+  <p><span>最后更新:</span>2019年11月06日 - 20:11</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/09/02/Java学习笔记/" title="Java学习笔记">http://zhangyangeng.github.io/2019/09/02/Java学习笔记/</a>
@@ -795,7 +811,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、知识点梳理"><span class="nav-text">一、知识点梳理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-关于形参与实参"><span class="nav-text">1.关于形参与实参</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-关于方法的定义"><span class="nav-text">2.关于方法的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-java中的排序方法"><span class="nav-text">3.java中的排序方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-递归"><span class="nav-text">4.递归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-如何实现从键盘获取数据"><span class="nav-text">5.如何实现从键盘获取数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、问题总结"><span class="nav-text">二、问题总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-在安装时命令行输入java命令时出错"><span class="nav-text">1.在安装时命令行输入java命令时出错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-定义变量时的冗杂"><span class="nav-text">2.定义变量时的冗杂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-定义方法时出错"><span class="nav-text">3.定义方法时出错</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、知识点梳理"><span class="nav-text">一、知识点梳理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-关于形参与实参"><span class="nav-text">1.关于形参与实参</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-关于方法的定义"><span class="nav-text">2.关于方法的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-java中的排序方法"><span class="nav-text">3.java中的排序方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-递归"><span class="nav-text">4.递归</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-如何实现从键盘获取数据"><span class="nav-text">5.如何实现从键盘获取数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-String类的substring-方法"><span class="nav-text">6.String类的substring()方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、问题总结"><span class="nav-text">二、问题总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-在安装时命令行输入java命令时出错"><span class="nav-text">1.在安装时命令行输入java命令时出错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-定义变量时的冗杂"><span class="nav-text">2.定义变量时的冗杂</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-定义方法时出错"><span class="nav-text">3.定义方法时出错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-通过Scanner获取键盘输入时一直无法进入程序"><span class="nav-text">4.通过Scanner获取键盘输入时一直无法进入程序</span></a></li></ol></li></ol></div>
             
 
           </div>
