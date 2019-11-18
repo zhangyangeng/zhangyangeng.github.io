@@ -112,7 +112,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/16/MyxujtBDlqdQYZ8.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/LUSutm3KnXMHcjA.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/Emayov943ZAFcxb.jpg">
-<meta property="og:updated_time" content="2019-09-18T15:57:55.691Z">
+<meta property="og:updated_time" content="2019-11-18T15:47:04.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（尚硅谷）">
 <meta name="twitter:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.9k 字
+                  2.2k 字
                 </span>
               
 
@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7 分钟
+                  8 分钟
                 </span>
               
             </div>
@@ -467,9 +467,8 @@
 <li><p>可以编写到head中的style标签里，将样式表编写的style标签中（称为”内部样式”)，然后通过css选择器选中指定元素，然后可以同时为这些元素一起设置样式，可以使样式进一步的复用</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			p&#123;							//使含有p标签的语句一起设置样式</span><br><span class="line">				color:red;</span><br><span class="line">				font-size:40px;</span><br><span class="line">			&#125;		</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">//可以使表现和结构进一步分离，比较推荐的使用方式</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>想要达到其他文件也可以显示同样的样式表，需要将样式表编写到外部的css，即写入.css文件中（内容形同于上面一点）</p>
-</li>
-<li>然后通过link标签来将外部的css文件引入到当前页面中。(注意：link标签需要写到style标签中)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</span><br><span class="line">//link前两个属性固定，后面填写相对路径即可，且为自结束标签</span><br><span class="line">//将css样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用。同时通过link标签引入可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用。</span><br></pre></td></tr></table></figure>
+<li><p>想要达到其他文件也可以显示同样的样式表，需要将样式表编写到外部的css，即写入.css文件中（内容形同于上面一点）。然后通过link标签来将外部的css文件引入到当前页面中。(注意：link标签需要写到style标签中)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</span><br><span class="line">//link前两个属性固定，后面填写相对路径即可，且为自结束标签</span><br><span class="line">//将css样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用。同时通过link标签引入可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用。</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="3-CSS语法"><a href="#3-CSS语法" class="headerlink" title="3.CSS语法"></a>3.CSS语法</h2><ol>
@@ -569,7 +568,7 @@
 </li>
 </ul>
 <h3 id="10-伪元素选择器"><a href="#10-伪元素选择器" class="headerlink" title="(10).伪元素选择器"></a>(10).伪元素选择器</h3><ul>
-<li>作用：用来表示元素中的一些特殊位置</li>
+<li>作用：用来表示元素中的一些特殊位置，以下几个基本都不支持IE6了</li>
 </ul>
 <ol>
 <li>首字母选择器：<code>:first-letter</code></li>
@@ -604,7 +603,32 @@
 <li>注意：p标签后面默认什么都没有，需要结合content样式一起使用<font color="#FF0000">（content可以向before或after的位置添加一些内容）</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:after&#123;</span><br><span class="line">	content:&quot;我会出现在整个段落的最后端&quot;;</span><br><span class="line">	color: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="11-属性选择器"><a href="#11-属性选择器" class="headerlink" title="(11).属性选择器"></a>(11).属性选择器</h3>
+<h3 id="11-属性选择器"><a href="#11-属性选择器" class="headerlink" title="(11).属性选择器"></a>(11).属性选择器</h3><ul>
+<li>可以根据元素中的属性或属性值来选取指定元素</li>
+<li>语法：[属性名]选取含有指定属性的元素；[属性名=”属性值”]选取含有指定属性值的元素；[属性名^=”属性值”]选取属性值以指定内容开头的元素；[属性名$=”属性值”]选取属性值以指定内容结尾的元素；[属性名*=”属性值”]选取属性值包含指定内容的元素</li>
+</ul>
+<ol>
+<li>title属性：<code>title=&quot;内容&quot;</code></li>
+</ol>
+<ul>
+<li>作用：鼠标移动到元素上时，title属性的值会作为提示文字出现</li>
+<li><p>例子1：想要为所有具有title属性的p元素设置背景颜色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子2：为title属性值是hello的元素设置一个背景颜色为换色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title=&quot;hello&quot;]&#123;</span><br><span class="line">		background-color: yelow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子3：为title属性值以ab开头的元素设置一个背景颜色为黄色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title^=&quot;ab&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子4：为title属性值以c结尾的元素设置一个背景颜色为黄色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title$=&quot;c&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子5：为title属性值含有ab的元素设置一个背景颜色为黄色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title*=&quot;ab&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
       
     </div>
     
@@ -624,7 +648,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/">CSS学习笔记（尚硅谷）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 20:08</p>
-  <p><span>最后更新:</span>2019年09月18日 - 23:09</p>
+  <p><span>最后更新:</span>2019年11月18日 - 23:11</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/" title="CSS学习笔记（尚硅谷）">http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</a>

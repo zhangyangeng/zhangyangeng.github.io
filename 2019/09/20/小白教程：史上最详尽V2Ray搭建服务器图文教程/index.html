@@ -132,7 +132,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/29/IpkYyXF61zwrJBM.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/28/LtRnmVadPKTWhDb.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/28/cTwIXKEpFSBOZnf.png">
-<meta property="og:updated_time" content="2019-10-14T12:41:04.925Z">
+<meta property="og:updated_time" content="2019-11-15T03:36:58.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="小白教程：史上最详尽V2Ray搭建服务器图文教程（持续更新中）">
 <meta name="twitter:description" content="介绍 本文从服务器的购买、配置，V2Ray的服务器端的配置，V2Ray软件的下载这些方面来介绍 让你从小白一步步搭建属于自己的VPN 注意：请不要进行任何商业行为，产生任何后果都与本人无关">
@@ -569,34 +569,34 @@
 <li><p>保存生效</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -p</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>检查BBR是否开启</p>
+<li><p>检查BBR是否开启，返回第二段说明 <font color="#FF0000">开启成功</font></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_available_congestion_control</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>返回如下说明 <font color="#FF0000">开启成功</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net.ipv4.tcp_available_congestion_control = bbr cubic reno</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net.ipv4.tcp_available_congestion_control = bbr cubic reno</span><br></pre></td></tr></table></figure>
 <ol start="4">
-<li>检查BBR是否启动成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
+<li>检查BBR是否启动成功，返回第二段说明 <font color="#FF0000">启动成功</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>返回如下说明 <font color="#FF0000">启动成功</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcp_bbr                20480  14</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcp_bbr                20480  14</span><br></pre></td></tr></table></figure>
 <h2 id="2-CentOS-7开启BBR加速"><a href="#2-CentOS-7开启BBR加速" class="headerlink" title="2.CentOS 7开启BBR加速"></a>2.CentOS 7开启BBR加速</h2><ol>
 <li><p>yum系统更新</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>查看系统版本</p>
+<li><p>查看系统版本，如果输出第二段则表示升级到了7.6</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/redhat-release</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>如果输出如下则表示升级到了7.6<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CentOS Linux release 7.6.1810 (Core)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CentOS Linux release 7.6.1810 (Core)</span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li><p>安装elrepo并升级内核，三条命令分别执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br><span class="line">rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm</span><br><span class="line">yum --enablerepo=elrepo-kernel install kernel-ml -y</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>安装完成后使用下面命令查看当前已安装的内核</p>
+<li><p>安装完成后使用下面命令查看当前已安装的内核，返回第二段</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk -F\&apos; &apos;$1==&quot;menuentry &quot; &#123;print i++ &quot; : &quot; $2&#125;&apos; /etc/grub2.cfg</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>返回<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0 : CentOS Linux (4.19.0-1.el7.elrepo.x86_64) 7 (Core)</span><br><span class="line">1 : CentOS Linux 7 Rescue ee7953a3b5944053a26f29daf8c71e2f (3.10.0-862.14.4.el7.x86_64)</span><br><span class="line">2 : CentOS Linux (3.10.0-862.14.4.el7.x86_64) 7 (Core)</span><br><span class="line">3 : CentOS Linux (3.10.0-862.3.2.el7.x86_64) 7 (Core)</span><br><span class="line">4 : CentOS Linux (3.10.0-862.el7.x86_64) 7 (Core)</span><br><span class="line">5 : CentOS Linux (0-rescue-4bbda2095d924b72b05507b68bd509f0) 7 (Core)</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0 : CentOS Linux (4.19.0-1.el7.elrepo.x86_64) 7 (Core)</span><br><span class="line">1 : CentOS Linux 7 Rescue ee7953a3b5944053a26f29daf8c71e2f (3.10.0-862.14.4.el7.x86_64)</span><br><span class="line">2 : CentOS Linux (3.10.0-862.14.4.el7.x86_64) 7 (Core)</span><br><span class="line">3 : CentOS Linux (3.10.0-862.3.2.el7.x86_64) 7 (Core)</span><br><span class="line">4 : CentOS Linux (3.10.0-862.el7.x86_64) 7 (Core)</span><br><span class="line">5 : CentOS Linux (0-rescue-4bbda2095d924b72b05507b68bd509f0) 7 (Core)</span><br></pre></td></tr></table></figure>
 <ol start="5">
 <li><p>把CentOS Linux (4.19.0-1.el7.elrepo.x86_64) 7 (Core)内核设置为默认</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grub2-set-default 0</span><br></pre></td></tr></table></figure>
@@ -613,16 +613,16 @@
 <li><p>加载系统参数（正常情况下会输出我们之前加入的内容）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -p</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>验证BBR是否已经开启</p>
+<li><p>验证BBR是否已经开启，返回第二段说明 <font color="#FF0000">开启成功</font></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_available_congestion_control</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>返回如下说明 <font color="#FF0000">开启成功</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net.ipv4.tcp_available_congestion_control = reno cubic bbr</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">net.ipv4.tcp_available_congestion_control = reno cubic bbr</span><br></pre></td></tr></table></figure>
 <ol start="11">
-<li>检查BBR是否启动成功<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
+<li>检查BBR是否启动成功，返回第二段说明 <font color="#FF0000">启动成功</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsmod | grep bbr</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>返回如下说明 <font color="#FF0000">启动成功</font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcp_bbr                20480  2</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tcp_bbr                20480  2</span><br></pre></td></tr></table></figure>
 <h1 id="五、Windows-、Android-、iPad-上分别配置v2ray软件"><a href="#五、Windows-、Android-、iPad-上分别配置v2ray软件" class="headerlink" title="五、Windows 、Android 、iPad 上分别配置v2ray软件"></a>五、Windows 、Android 、iPad 上分别配置v2ray软件</h1><h2 id="1-Windows端"><a href="#1-Windows端" class="headerlink" title="1.Windows端"></a>1.Windows端</h2><h1 id="六、服务器IP被墙的解决方法"><a href="#六、服务器IP被墙的解决方法" class="headerlink" title="六、服务器IP被墙的解决方法"></a>六、服务器IP被墙的解决方法</h1><h2 id="1-重新新建部署服务器"><a href="#1-重新新建部署服务器" class="headerlink" title="1.重新新建部署服务器"></a>1.重新新建部署服务器</h2><ul>
 <li>这种方法就是重新创建一个服务器，根据上面的方法重新进行配置服务器，成功后删除你原来的服务器</li>
 <li>优点：几乎没有</li>
@@ -657,7 +657,7 @@
   <p><span>本文标题:</span><a href="/2019/09/20/小白教程：史上最详尽V2Ray搭建服务器图文教程/">小白教程：史上最详尽V2Ray搭建服务器图文教程（持续更新中）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年09月20日 - 17:09</p>
-  <p><span>最后更新:</span>2019年10月14日 - 20:10</p>
+  <p><span>最后更新:</span>2019年11月15日 - 11:11</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/09/20/小白教程：史上最详尽V2Ray搭建服务器图文教程/" title="小白教程：史上最详尽V2Ray搭建服务器图文教程（持续更新中）">http://zhangyangeng.github.io/2019/09/20/小白教程：史上最详尽V2Ray搭建服务器图文教程/</a>
