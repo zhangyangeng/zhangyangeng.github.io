@@ -112,7 +112,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/16/MyxujtBDlqdQYZ8.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/LUSutm3KnXMHcjA.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/Emayov943ZAFcxb.jpg">
-<meta property="og:updated_time" content="2019-12-02T15:51:38.120Z">
+<meta property="og:updated_time" content="2019-12-15T10:34:28.353Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（尚硅谷）">
 <meta name="twitter:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.1k 字
+                  4.1k 字
                 </span>
               
 
@@ -432,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  11 分钟
+                  15 分钟
                 </span>
               
             </div>
@@ -729,7 +729,111 @@
 <li>书写形式：<code>#aabbcc</code> ，数组范围为00~FF</li>
 <li>三组两位数组重复的可以直接简写，即上边的可以简写为：<code>#abc</code></li>
 </ul>
-<h2 id="11-字体的样式"><a href="#11-字体的样式" class="headerlink" title="11.字体的样式"></a>11.字体的样式</h2><h1 id="二、问题纠错"><a href="#二、问题纠错" class="headerlink" title="二、问题纠错"></a>二、问题纠错</h1><h2 id="1-相对路径问题"><a href="#1-相对路径问题" class="headerlink" title="1.相对路径问题"></a>1.相对路径问题</h2><ul>
+<h2 id="11-字体的样式"><a href="#11-字体的样式" class="headerlink" title="11.字体的样式"></a>11.字体的样式</h2><ul>
+<li>注意：css中可以使用 <code>font</code> 同时设置字体相关的所有样式，而不同的值之间使用空格隔开</li>
+<li>关于font的相关属性，斜体、粗体、小大字母无顺序要求，但最后两项必须是大小和字体，且不可调换</li>
+</ul>
+<h3 id="a-颜色"><a href="#a-颜色" class="headerlink" title="a.颜色"></a>a.颜色</h3><ul>
+<li><code>color</code></li>
+</ul>
+<h3 id="b-大小"><a href="#b-大小" class="headerlink" title="b.大小"></a>b.大小</h3><ul>
+<li><code>font-size</code> ，默认大小为16px</li>
+<li><font color="#F00">注意：正如小学时的方字格一样，每个字都处于一个隐形的方字格中，，所以在设置大小时，实际上是设置的格子的大小，并不是文字本身的大小</font></li>
+<li><font color="#F00">注意：当字体不同时，文字的显示效果也不同</font>
+
+</li>
+</ul>
+<h3 id="c-字体"><a href="#c-字体" class="headerlink" title="c.字体"></a>c.字体</h3><ul>
+<li><code>font-family</code> 后面+字体，如果浏览器不支持该字体，则使用默认字体</li>
+<li>可以设置多个字体，且浏览器优先使用最前面的字体，若不支持，则下一个</li>
+<li>浏览器使用的字体默认是计算机中的字体</li>
+</ul>
+<h3 id="d-字体分类（共5类）"><a href="#d-字体分类（共5类）" class="headerlink" title="d.字体分类（共5类）"></a>d.字体分类（共5类）</h3><ul>
+<li><code>衬线字体：serif</code> <br>       <code>非衬线字体：sans-serif</code> <br>       <code>等宽字体：monospace</code> <br>       <code>草书字体：cursive</code> <br>       <code>虚幻字体：fantasy</code></li>
+<li>以上的分类全是字体的大类，当使用该类时，浏览器会自动选择指定的字体</li>
+<li>一般使用前两个大类</li>
+</ul>
+<h3 id="e-斜体效果"><a href="#e-斜体效果" class="headerlink" title="e.斜体效果"></a>e.斜体效果</h3><ul>
+<li><code>font-style</code> 含有以下三个可选值：</li>
+</ul>
+<ol>
+<li>normal：默认值即正常显示</li>
+<li>italic，斜体显示</li>
+<li>oblique，倾斜</li>
+</ol>
+<ul>
+<li>2和3在大部分的浏览器上不会做区分，但一般使用第二个</li>
+</ul>
+<h3 id="f-加粗效果"><a href="#f-加粗效果" class="headerlink" title="f.加粗效果"></a>f.加粗效果</h3><ul>
+<li><code>font-weight</code> 含有以下三个可选值</li>
+</ul>
+<ol>
+<li>normal：默认值即正常显示</li>
+<li>bold，粗体显示</li>
+<li>100~900，400为默认，低于400就是细字体效果，高于400就是粗体效果</li>
+</ol>
+<h2 id="12-行间距"><a href="#12-行间距" class="headerlink" title="12.行间距"></a>12.行间距</h2><ul>
+<li>就是通过设置行高来间接设置行间距，而文字默认会在行高中垂直居中显示</li>
+<li>表示为： <code>line-height: 40px；</code></li>
+<li>行间距=行高-字体大小</li>
+</ul>
+<h3 id="a-行间距可接收的值"><a href="#a-行间距可接收的值" class="headerlink" title="a.行间距可接收的值"></a>a.行间距可接收的值</h3><ol>
+<li>直接接收一个大小</li>
+<li>指定一个百分数，相对于字体计算行高</li>
+<li>传一个数值，则行高会设置为字体大小相应的倍数（<font color="#F00">常用</font>）</li>
+</ol>
+<h3 id="b-注意事项"><a href="#b-注意事项" class="headerlink" title="b.注意事项"></a>b.注意事项</h3><ol>
+<li>对于单行文本，可以将行高设置为和父元素一样的高度，即可实现垂直居中</li>
+<li>在font中也可以指定行高，格式为： <code>字体大小/行高大小 字体</code> （这里行高大小为可选值，不选则为默认）</li>
+<li>对于第2点，为了避免覆盖效果，行高需放在font后面</li>
+</ol>
+<h2 id="13-文本的样式"><a href="#13-文本的样式" class="headerlink" title="13.文本的样式"></a>13.文本的样式</h2><h3 id="a-文本的大小写"><a href="#a-文本的大小写" class="headerlink" title="a.文本的大小写"></a>a.文本的大小写</h3><ul>
+<li>表示为： <code>text-transform</code> ，对中文无意义，可选值有如下四种：</li>
+</ul>
+<ol>
+<li>none：默认值</li>
+<li>capitalize：单词的首字母大写（通过空格来识别单词的）</li>
+<li>uppercase：所有字母都大写</li>
+<li>lowercase：所有字母都小写</li>
+</ol>
+<h3 id="b-文本的装饰"><a href="#b-文本的装饰" class="headerlink" title="b.文本的装饰"></a>b.文本的装饰</h3><ul>
+<li>表示为： <code>text-decoration</code> ，可选值有如下四种：</li>
+</ul>
+<ol>
+<li>none：不添加任何修饰</li>
+<li>underline：添加下划线</li>
+<li>overline：添加上划线</li>
+<li>line-through：删除线</li>
+</ol>
+<ul>
+<li>注意：超链接中默认会添加下划线，即超链接的 <code>text-decoration</code> 中的值为 underline，若想去除该下划线，则需要给超链接的 <code>text-decoration</code> 设为 none。</li>
+</ul>
+<h3 id="c-字符间距"><a href="#c-字符间距" class="headerlink" title="c.字符间距"></a>c.字符间距</h3><ul>
+<li>表示为： <code>letter-spacing</code> ，默认值为0 px</li>
+</ul>
+<h3 id="d-单词间的距离"><a href="#d-单词间的距离" class="headerlink" title="d.单词间的距离"></a>d.单词间的距离</h3><ul>
+<li>表示为： <code>word-spacing</code> ，单纯设置空格大小的</li>
+</ul>
+<h3 id="e-文本对齐方式"><a href="#e-文本对齐方式" class="headerlink" title="e.文本对齐方式"></a>e.文本对齐方式</h3><ul>
+<li>表示为： <code>text-align</code> ，可选值有如下四种：</li>
+</ul>
+<ol>
+<li>left：默认，为左对齐</li>
+<li>right：右对齐</li>
+<li>center：居中</li>
+<li>justify：两端对齐</li>
+</ol>
+<h3 id="f-首行缩进"><a href="#f-首行缩进" class="headerlink" title="f.首行缩进"></a>f.首行缩进</h3><ul>
+<li>表示为： <code>text-indent</code> ，单位为em</li>
+<li>2em即为首行缩进2字符</li>
+<li>当指定负值时，即向左移动，可实现隐藏相应的内容</li>
+</ul>
+<h1 id="二、盒子模型（重点）"><a href="#二、盒子模型（重点）" class="headerlink" title="二、盒子模型（重点）"></a>二、盒子模型（重点）</h1><h2 id="1-基础知识"><a href="#1-基础知识" class="headerlink" title="1.基础知识"></a>1.基础知识</h2><ul>
+<li>盒子模型又叫框模型，所有的元素都是盒子</li>
+<li>盒子的大小由内容区、内边距和边框共同决定的</li>
+<li>盒子模型包含四部分：外边距（margin）、内边距（padding）、内容区（content）、边框（border）</li>
+</ul>
+<h1 id="三、问题纠错"><a href="#三、问题纠错" class="headerlink" title="三、问题纠错"></a>三、问题纠错</h1><h2 id="1-相对路径问题"><a href="#1-相对路径问题" class="headerlink" title="1.相对路径问题"></a>1.相对路径问题</h2><ul>
 <li>在html中调用css时使用 <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;相对路径&quot;</code> 时，一直无法成功显示css样式</li>
 <li>因为我用的是HBuilder创建的项目，所以css文件默认存放在了css文件夹中，所以相对路径的写法为 <code>css/style.css</code></li>
 </ul>
@@ -753,7 +857,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/">CSS学习笔记（尚硅谷）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 20:08</p>
-  <p><span>最后更新:</span>2019年12月02日 - 23:12</p>
+  <p><span>最后更新:</span>2019年12月15日 - 18:12</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/" title="CSS学习笔记（尚硅谷）">http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</a>
@@ -942,7 +1046,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-count">26</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -953,7 +1057,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -964,7 +1068,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1037,7 +1141,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础知识"><span class="nav-text">一、基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-块元素"><span class="nav-text">5.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素"><span class="nav-text">6.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-常用选择器"><span class="nav-text">7.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id选择器"><span class="nav-text">(2).id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-选择器分组（并集选择器）"><span class="nav-text">(4).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-通配选择器"><span class="nav-text">(5).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-伪类选择器"><span class="nav-text">(9).伪类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-伪元素选择器"><span class="nav-text">(10).伪元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-属性选择器"><span class="nav-text">(11).属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-兄弟元素选择器"><span class="nav-text">(12).兄弟元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-否定伪类选择器"><span class="nav-text">(13).否定伪类选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-样式的继承（？？？）"><span class="nav-text">8.样式的继承（？？？）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-选择器的优先级"><span class="nav-text">9.选择器的优先级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-作用"><span class="nav-text">a.作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-优先级比较"><span class="nav-text">b.优先级比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-优先级的运算"><span class="nav-text">c.优先级的运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-注意事项"><span class="nav-text">d.注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-关于a的伪类"><span class="nav-text">e.关于a的伪类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-单位"><span class="nav-text">10.单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-字体单位"><span class="nav-text">a.字体单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-颜色单位"><span class="nav-text">b.颜色单位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-字体的样式"><span class="nav-text">11.字体的样式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、问题纠错"><span class="nav-text">二、问题纠错</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-相对路径问题"><span class="nav-text">1.相对路径问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础知识"><span class="nav-text">一、基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-块元素"><span class="nav-text">5.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素"><span class="nav-text">6.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-常用选择器"><span class="nav-text">7.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id选择器"><span class="nav-text">(2).id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-选择器分组（并集选择器）"><span class="nav-text">(4).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-通配选择器"><span class="nav-text">(5).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-伪类选择器"><span class="nav-text">(9).伪类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-伪元素选择器"><span class="nav-text">(10).伪元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-属性选择器"><span class="nav-text">(11).属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-兄弟元素选择器"><span class="nav-text">(12).兄弟元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-否定伪类选择器"><span class="nav-text">(13).否定伪类选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-样式的继承（？？？）"><span class="nav-text">8.样式的继承（？？？）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-选择器的优先级"><span class="nav-text">9.选择器的优先级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-作用"><span class="nav-text">a.作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-优先级比较"><span class="nav-text">b.优先级比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-优先级的运算"><span class="nav-text">c.优先级的运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-注意事项"><span class="nav-text">d.注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-关于a的伪类"><span class="nav-text">e.关于a的伪类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-单位"><span class="nav-text">10.单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-字体单位"><span class="nav-text">a.字体单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-颜色单位"><span class="nav-text">b.颜色单位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-字体的样式"><span class="nav-text">11.字体的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-颜色"><span class="nav-text">a.颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-大小"><span class="nav-text">b.大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字体"><span class="nav-text">c.字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-字体分类（共5类）"><span class="nav-text">d.字体分类（共5类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-斜体效果"><span class="nav-text">e.斜体效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-加粗效果"><span class="nav-text">f.加粗效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-行间距"><span class="nav-text">12.行间距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-行间距可接收的值"><span class="nav-text">a.行间距可接收的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-注意事项"><span class="nav-text">b.注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-文本的样式"><span class="nav-text">13.文本的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-文本的大小写"><span class="nav-text">a.文本的大小写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-文本的装饰"><span class="nav-text">b.文本的装饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字符间距"><span class="nav-text">c.字符间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-单词间的距离"><span class="nav-text">d.单词间的距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-文本对齐方式"><span class="nav-text">e.文本对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-首行缩进"><span class="nav-text">f.首行缩进</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、盒子模型（重点）"><span class="nav-text">二、盒子模型（重点）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础知识"><span class="nav-text">1.基础知识</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、问题纠错"><span class="nav-text">三、问题纠错</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-相对路径问题"><span class="nav-text">1.相对路径问题</span></a></li></ol></li></ol></div>
             
 
           </div>
