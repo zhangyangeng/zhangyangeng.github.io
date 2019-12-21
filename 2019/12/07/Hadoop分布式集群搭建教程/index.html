@@ -118,10 +118,18 @@
 <meta property="og:image" content="https://i.loli.net/2019/12/21/8bCRIeNxYnGaP76.png">
 <meta property="og:image" content="https://i.loli.net/2019/12/21/UaLDrXj56KhMgdZ.png">
 <meta property="og:image" content="https://i.loli.net/2019/12/21/4673W2aYtT1KZAw.png">
-<meta property="og:image" content="http://zhangyangeng.github.io/2019/12/07/Hadoop分布式集群搭建教程/images/修改主机名02.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/21/pfUovZ495PH6KaG.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/21/psItOKBLyqv7mTN.png">
+<meta property="og:image" content="http://zhangyangeng.github.io/2019/12/07/Hadoop分布式集群搭建教程/images/ssh检测.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/20/i6Bnd3MXDaH1mqc.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/20/4CZKDl3Orc7bzdN.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/21/7lgxi6QVO5uB9Dd.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/21/eEz5PFlQGLXdKMk.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/21/RsPxIvUcr5FZ3WM.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/21/FNcmsRSA6avT9It.png">
 <meta property="og:image" content="http://zhangyangeng.github.io/2019/12/07/Hadoop分布式集群搭建教程/images/ssh连接.png">
 <meta property="og:image" content="http://zhangyangeng.github.io/2019/12/07/Hadoop分布式集群搭建教程/images/hadoop-env01.png">
-<meta property="og:updated_time" content="2019-12-21T06:33:38.891Z">
+<meta property="og:updated_time" content="2019-12-21T07:04:03.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hadoop分布式集群搭建教程">
 <meta name="twitter:description" content="介绍 本教程介绍了关于Hadoop分布式集群搭建的教程 参考自：这里 整理自：李超超同学的教程">
@@ -425,7 +433,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3k 字
+                  2.7k 字
                 </span>
               
 
@@ -441,7 +449,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  12 分钟
+                  11 分钟
                 </span>
               
             </div>
@@ -486,20 +494,138 @@
 <li>选择稍后安装系统，下一步<br><img src="https://i.loli.net/2019/12/20/jkecQu1r4MNTaAn.png" alt="安装02.png"></li>
 <li>选择Linux，CentOS 7 64位，下一步<br><img src="https://i.loli.net/2019/12/20/wul6nS1gGKO9CtM.png" alt="安装03.png"></li>
 <li>将虚拟机名设置为namenode，下一步<br><img src="https://i.loli.net/2019/12/20/Tel3SgiY7nUdrza.png" alt="安装04.png"></li>
-<li>选择，将虚拟磁盘存储为单个文件（优化性能），下一步<br><img src="https://i.loli.net/2019/12/20/mTGZBrekWzMCpoY.png" alt="安装05.png"></li>
+<li>选择将虚拟磁盘存储为单个文件（优化性能），下一步<br><img src="https://i.loli.net/2019/12/20/mTGZBrekWzMCpoY.png" alt="安装05.png"></li>
 <li>自定义硬件<br><img src="https://i.loli.net/2019/12/20/FcQXdHf5knhNS2j.png" alt="安装06.png"></li>
 <li>将虚拟机内存设置为2G<br><img src="https://i.loli.net/2019/12/20/cKD7HnF9ZyNWIOC.png" alt="安装07.png"></li>
 <li>选择centos镜像文件  &gt;  关闭  &gt;  完成  &gt;  开启虚拟机<br><img src="https://i.loli.net/2019/12/20/2h4xNBEb1yr7MJY.png" alt="安装08.png"></li>
 <li>选择第一项，进入安装界面<br><img src="https://i.loli.net/2019/12/21/8bCRIeNxYnGaP76.png" alt="安装09.png"></li>
 <li>选择中文，下一步<br><img src="https://i.loli.net/2019/12/21/UaLDrXj56KhMgdZ.png" alt="安装10.png"></li>
 <li>点击网络连接<br><img src="https://i.loli.net/2019/12/21/4673W2aYtT1KZAw.png" alt="安装11.png"></li>
-<li>打开以太网开关，<figure class="highlight plain"><figcaption><span>`hadoop-namenode` ~~~，点击完成</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br></pre></td><td class="code"><pre><span class="line">![安装12.png](https://i.loli.net/2019/12/21/pfUovZ495PH6KaG.png)</span><br><span class="line">13. 其他设置，可按自己需求设置。开始安装。</span><br><span class="line">![安装13.png](https://i.loli.net/2019/12/21/psItOKBLyqv7mTN.png)</span><br><span class="line">14. 设置root密码，用户暂不创建。安装完成后，开机，使用root用户登录。</span><br><span class="line"></span><br><span class="line"># 三、创建Hadoop用户</span><br><span class="line">1. 将用户家目录设置为/usr/hadoop</span><br><span class="line">```shell</span><br><span class="line">useradd -d /usr/hadoop hadoop</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">2. 将用户家目录权限设置为允许自己读写运行，同组用户读运行，其他用户读运行的权限</span><br><span class="line">```shell</span><br><span class="line">chmod 755 /usr/hadoop</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">3. 设置用户密码</span><br><span class="line">```shell</span><br><span class="line">passwd hadoop</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line"># 四、安装软件</span><br><span class="line">1. 切换用户</span><br><span class="line">```shell</span><br><span class="line"># 切换root用户</span><br><span class="line">su</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">2. 更新软件源</span><br><span class="line">```shell</span><br><span class="line">yum update</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">3. 安装vim，编辑配置文件</span><br><span class="line">```shell</span><br><span class="line">yum install vim  </span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">4. 安装ssh，连接其他主机，首先检查是否装有ssh</span><br><span class="line">```shell</span><br><span class="line"># 输入ssh，若有以下截图信息，则不需要安装</span><br><span class="line">ssh</span><br><span class="line">```</span><br><span class="line">![](./images/ssh检测.png)</span><br><span class="line">否则输入以下命令安装ssh</span><br><span class="line">```</span><br><span class="line">yum install ssh</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">5. 安装net-tools，用来查看ip</span><br><span class="line">```</span><br><span class="line">yum install net-tools</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">6. 这时就可以通过 `ifconfig` 命令来查看ip地址了，记住自己的ip地址，待会通过Xshell来进行连接</span><br><span class="line"></span><br><span class="line"># 五、Xshell连接Centos</span><br><span class="line">1. 点击添加会话</span><br><span class="line">![Xshell1.png](https://i.loli.net/2019/12/20/i6Bnd3MXDaH1mqc.png)</span><br><span class="line">2. 名称自己起（namenode），协议SSH，端口22，主机为IP地址</span><br><span class="line">![Xshell2.png](https://i.loli.net/2019/12/20/4CZKDl3Orc7bzdN.png)</span><br><span class="line">3. 完成后连接 &gt; 接受并保存密钥 &gt; 输入用户名，密码登录</span><br><span class="line">4. 这样就可以通过Xshell来连接linux，比在虚拟机里直接操作方便</span><br><span class="line"></span><br><span class="line"># 六、Xftp连接Centos</span><br><span class="line">1. 新建会话 &gt; 连接 等步骤同xshell</span><br><span class="line">2. 因为后期需要将压缩包上传进去，这里使用Xftp就很方便，左边为本机的资源管理器，右边为linux的资源管理器</span><br><span class="line">3. 将hadoop和jdk的压缩包直接从左边拖到右边的 `/home/hadoop` 路径下（这里hadoop为用户名，根据自己的设置来定，建议使用该路径，方便后期配置）</span><br><span class="line"></span><br><span class="line"># 七、环境搭建</span><br><span class="line">## 1.关闭防火墙</span><br><span class="line">- 注意：需要在root权限下</span><br><span class="line">```shell</span><br><span class="line">sudo systemctl disable firewalld</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">## 2.安装JDK</span><br><span class="line">1. 进入hadoop目录</span><br><span class="line">```shell</span><br><span class="line">cd /home/hadoop</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">2. 解压jdk包</span><br><span class="line">```shell</span><br><span class="line">tar -zxvf 包名</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">3. 将解压后的文件夹重命名</span><br><span class="line">```shell</span><br><span class="line">mv 解压后的文件夹名 java</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">4. 将解压后的文件复制到/usr/local目录下（可以通过ls命令查看解压后的文件名）</span><br><span class="line">```shell</span><br><span class="line">cp -r 解压后的文件夹名 /usr/local</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">5. 配置环境变量，先使用vim打开配置文件</span><br><span class="line">```shell</span><br><span class="line">vim /etc/profile</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">6. 输入 i 启动编辑模式，用键盘的方向键在文件最后添加如下内容（#后面的内容不需要，自行删去）</span><br><span class="line">```shell</span><br><span class="line">export JAVA_HOME=/usr/local/java   # jdk目录（按上述操作，可不进行修改）</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">7. 添加完成以后，按ESC键，再按shift+冒号，输入wq保存退出</span><br><span class="line">8. 更新环境变量</span><br><span class="line">```shell</span><br><span class="line">source /etc/profile</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">9. 测试jdk环境，输入以下命令，输出对应的java版本信息，则配置成功</span><br><span class="line">```shell</span><br><span class="line">java -version</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">## 3.Hadoop安装</span><br><span class="line">1. 进入hadoop目录</span><br><span class="line">```shell</span><br><span class="line">cd /usr/hadoop</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">2. 解压hadoop包</span><br><span class="line">```shell</span><br><span class="line">tar -zxvf 包名</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">3. 给解压后的包名修改为hadoop</span><br><span class="line">```shell</span><br><span class="line">mv 解压后的文件夹名 hadoop</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">4. 复制到/usr/local/hadoop文件夹下</span><br><span class="line">```shell</span><br><span class="line">cp -r hadoop /usr/local/hadoop</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">5. 配置环境变量，当前所在位置应该是 `/usr/hadoop` ,若不是，切换到该目录下。然后编辑 `.bashrc` 文件</span><br><span class="line">```shell</span><br><span class="line">vim .bashrc</span><br><span class="line">```</span><br><span class="line">6. 在文件末尾添加以下内容（#后面的内容不需要，自行删去）</span><br><span class="line">```shell</span><br><span class="line">export HADOOP_HOME=/usr/local/hadoop  # hadoop的路径（若按以上步骤操作，不做更改）</span><br><span class="line">export HADOOP_COMMON_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_HDFS_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_MAPRED_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_YARN_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_OPTS=&quot;-Djava.library.path=$HADOOP_HOME/lib/native&quot;</span><br><span class="line">export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native</span><br><span class="line">export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">7. 添加完成以后，按ESC键，再按shift+冒号，输入wq保存退出</span><br><span class="line"></span><br><span class="line">8. 更新环境变量</span><br><span class="line">```shell</span><br><span class="line">source ~/.bashrc</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">## 4.设置hostname</span><br><span class="line">1. 查看主机ip，找到 `ens33` 字段的 `inet` 后面的ip，该ip就是下面namenode-IP的ip</span><br><span class="line">```shell</span><br><span class="line">ifconfig</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">2. 编辑 `/etc/hosts` 文件</span><br><span class="line">```shell</span><br><span class="line">vim /etc/hosts</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">3. 在文件中添加以下信息，只需将每行前面的英文单词修改为对应主机的IP即可（注意：datanode01-IP为namenode的地址加1，datanode02-IP为namenode的地址加2）</span><br><span class="line">```shell</span><br><span class="line">namenode-IP hadoop-namenode</span><br><span class="line">datanode01-IP hadoop-datanode01</span><br><span class="line">datanode02-IP hadoop-datanode02</span><br><span class="line">```</span><br><span class="line"></span><br><span class="line">## 5.克隆两台主机</span><br><span class="line">&gt; 克隆后的主机，不再需要安装JDK，Hadoop以及刚开始安装的软件。注意：namenode虚拟机开启状态下无法进行克隆，请先关机。</span><br><span class="line"></span><br><span class="line">1. 右键namenode选项卡  &gt;  管理  &gt;  克隆  （两台主机方法一样）</span><br><span class="line">![克隆主机01.png](https://i.loli.net/2019/12/21/7lgxi6QVO5uB9Dd.png)</span><br><span class="line">2. 下一步</span><br><span class="line">![克隆主机02.png](https://i.loli.net/2019/12/21/eEz5PFlQGLXdKMk.png)</span><br><span class="line">3. 选择创建完整主机，下一步</span><br><span class="line">![克隆主机03.png](https://i.loli.net/2019/12/21/RsPxIvUcr5FZ3WM.png)</span><br><span class="line">4. 虚拟主机名称改为datanode01（为了方便），位置可自行修改。</span><br><span class="line">![克隆主机04.png](https://i.loli.net/2019/12/21/FNcmsRSA6avT9It.png)</span><br><span class="line">5. 完成。克隆第二台同上，只需将第四张图片修改为datanode02</span><br><span class="line">6. 克隆完成以后需要登录进入系统，进行主机名的修改，先切换为root权限，然后使用 `hostnamectl` 命令查看当前主机名，发现主机名如下：</span><br><span class="line">&lt;img src=&quot;./images/修改主机名01.png&quot; style=&quot;zoom:50%;&quot; /&gt;</span><br><span class="line">7. ~~~修改主机名为hadoop-datanode02</span><br></pre></td></tr></table></figure></li>
+<li>打开以太网开关，点击完成<br><img src="https://i.loli.net/2019/12/21/pfUovZ495PH6KaG.png" alt="安装12.png"></li>
+<li>其他设置，可按自己需求设置。开始安装。<br><img src="https://i.loli.net/2019/12/21/psItOKBLyqv7mTN.png" alt="安装13.png"></li>
+<li>设置root密码，用户暂不创建。安装完成后，开机，使用root用户登录。</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo hostnamectl set-hostname hadoop-datanode02</span><br></pre></td></tr></table></figure>
-<ol start="8">
-<li><del>~成功修改后使用 <code>hostnamectl</code> 命令查看，发现成功修改</del>~<br><img src="/2019/12/07/Hadoop分布式集群搭建教程/./images/修改主机名02.png" style="zoom:50%;"></li>
-<li>然后重启就可以正常显示了<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
+<h1 id="三、创建Hadoop用户"><a href="#三、创建Hadoop用户" class="headerlink" title="三、创建Hadoop用户"></a>三、创建Hadoop用户</h1><ol>
+<li><p>将用户家目录设置为/usr/hadoop</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd -d /usr/hadoop hadoop</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>将用户家目录权限设置为允许自己读写运行，同组用户读运行，其他用户读运行的权限</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 /usr/hadoop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置用户密码</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd hadoop</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="四、安装软件"><a href="#四、安装软件" class="headerlink" title="四、安装软件"></a>四、安装软件</h1><ol>
+<li><p>切换用户</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 切换root用户</span><br><span class="line">su</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更新软件源</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装vim，编辑配置文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install vim</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装ssh，连接其他主机，首先检查是否装有ssh</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 输入ssh，若有以下截图信息，则不需要安装</span><br><span class="line">ssh</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="/2019/12/07/Hadoop分布式集群搭建教程/./images/ssh检测.png" alt=""><br>否则输入以下命令安装ssh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install ssh</span><br></pre></td></tr></table></figure></p>
+<ol start="5">
+<li><p>安装net-tools，用来查看ip</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install net-tools</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>这时就可以通过 <code>ifconfig</code> 命令来查看ip地址了，记住自己的ip地址，待会通过Xshell来进行连接</p>
+</li>
+</ol>
+<h1 id="五、Xshell连接Centos"><a href="#五、Xshell连接Centos" class="headerlink" title="五、Xshell连接Centos"></a>五、Xshell连接Centos</h1><ol>
+<li>点击添加会话<br><img src="https://i.loli.net/2019/12/20/i6Bnd3MXDaH1mqc.png" alt="Xshell1.png"></li>
+<li>名称自己起（namenode），协议SSH，端口22，主机为IP地址<br><img src="https://i.loli.net/2019/12/20/4CZKDl3Orc7bzdN.png" alt="Xshell2.png"></li>
+<li>完成后连接 &gt; 接受并保存密钥 &gt; 输入用户名，密码登录</li>
+<li>这样就可以通过Xshell来连接linux，比在虚拟机里直接操作方便</li>
+</ol>
+<h1 id="六、Xftp连接Centos"><a href="#六、Xftp连接Centos" class="headerlink" title="六、Xftp连接Centos"></a>六、Xftp连接Centos</h1><ol>
+<li>新建会话 &gt; 连接 等步骤同xshell</li>
+<li>因为后期需要将压缩包上传进去，这里使用Xftp就很方便，左边为本机的资源管理器，右边为linux的资源管理器</li>
+<li>将hadoop和jdk的压缩包直接从左边拖到右边的 <code>/home/hadoop</code> 路径下（这里hadoop为用户名，根据自己的设置来定，建议使用该路径，方便后期配置）</li>
+</ol>
+<h1 id="七、环境搭建"><a href="#七、环境搭建" class="headerlink" title="七、环境搭建"></a>七、环境搭建</h1><h2 id="1-关闭防火墙"><a href="#1-关闭防火墙" class="headerlink" title="1.关闭防火墙"></a>1.关闭防火墙</h2><ul>
+<li>注意：需要在root权限下<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl disable firewalld</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="2-安装JDK"><a href="#2-安装JDK" class="headerlink" title="2.安装JDK"></a>2.安装JDK</h2><ol>
+<li><p>进入hadoop目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /home/hadoop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解压jdk包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf 包名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将解压后的文件夹重命名</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv 解压后的文件夹名 java</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将解压后的文件复制到/usr/local目录下（可以通过ls命令查看解压后的文件名）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r 解压后的文件夹名 /usr/local</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置环境变量，先使用vim打开配置文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输入 i 启动编辑模式，用键盘的方向键在文件最后添加如下内容（#后面的内容不需要，自行删去）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/local/java   # jdk目录（按上述操作，可不进行修改）</span><br><span class="line">export PATH=$PATH:$JAVA_HOME/bin</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加完成以后，按ESC键，再按shift+冒号，输入wq保存退出</p>
+</li>
+<li><p>更新环境变量</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试jdk环境，输入以下命令，输出对应的java版本信息，则配置成功</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="3-Hadoop安装"><a href="#3-Hadoop安装" class="headerlink" title="3.Hadoop安装"></a>3.Hadoop安装</h2><ol>
+<li><p>进入hadoop目录</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/hadoop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解压hadoop包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf 包名</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给解压后的包名修改为hadoop</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv 解压后的文件夹名 hadoop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制到/usr/local/hadoop文件夹下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r hadoop /usr/local/hadoop</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置环境变量，当前所在位置应该是 <code>/usr/hadoop</code> ,若不是，切换到该目录下。然后编辑 <code>.bashrc</code> 文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim .bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在文件末尾添加以下内容（#后面的内容不需要，自行删去）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">export HADOOP_HOME=/usr/local/hadoop  # hadoop的路径（若按以上步骤操作，不做更改）</span><br><span class="line">export HADOOP_COMMON_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_HDFS_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_MAPRED_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_YARN_HOME=$HADOOP_HOME</span><br><span class="line">export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"</span><br><span class="line">export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native</span><br><span class="line">export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加完成以后，按ESC键，再按shift+冒号，输入wq保存退出</p>
+</li>
+<li><p>更新环境变量</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source ~/.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="4-设置hostname"><a href="#4-设置hostname" class="headerlink" title="4.设置hostname"></a>4.设置hostname</h2><ol>
+<li><p>查看主机ip，找到 <code>ens33</code> 字段的 <code>inet</code> 后面的ip，该ip就是下面namenode-IP的ip</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编辑 <code>/etc/hosts</code> 文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/hosts</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在文件中添加以下信息，只需将每行前面的英文单词修改为对应主机的IP即可（注意：datanode01-IP为namenode的地址加1，datanode02-IP为namenode的地址加2）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">namenode-IP hadoop-namenode</span><br><span class="line">datanode01-IP hadoop-datanode01</span><br><span class="line">datanode02-IP hadoop-datanode02</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="5-克隆两台主机"><a href="#5-克隆两台主机" class="headerlink" title="5.克隆两台主机"></a>5.克隆两台主机</h2><blockquote>
+<p>克隆后的主机，不再需要安装JDK，Hadoop以及刚开始安装的软件。注意：namenode虚拟机开启状态下无法进行克隆，请先关机。</p>
+</blockquote>
+<ol>
+<li>右键namenode选项卡  &gt;  管理  &gt;  克隆  （两台主机方法一样）<br><img src="https://i.loli.net/2019/12/21/7lgxi6QVO5uB9Dd.png" alt="克隆主机01.png"></li>
+<li>下一步<br><img src="https://i.loli.net/2019/12/21/eEz5PFlQGLXdKMk.png" alt="克隆主机02.png"></li>
+<li>选择创建完整主机，下一步<br><img src="https://i.loli.net/2019/12/21/RsPxIvUcr5FZ3WM.png" alt="克隆主机03.png"></li>
+<li>虚拟主机名称改为datanode01（为了方便），位置可自行修改。<br><img src="https://i.loli.net/2019/12/21/FNcmsRSA6avT9It.png" alt="克隆主机04.png"></li>
+<li>完成。克隆第二台同上，只需将第四张图片修改为datanode02</li>
 </ol>
 <h2 id="6-设置静态IP"><a href="#6-设置静态IP" class="headerlink" title="6.设置静态IP"></a>6.设置静态IP</h2><ol>
 <li><p>编辑/etc/sysconfig/network-scripts/ifcfg-ens33</p>
@@ -913,7 +1039,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、环境配置信息"><span class="nav-text">一、环境配置信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、CentOS7安装"><span class="nav-text">二、CentOS7安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置信息"><span class="nav-text">1.配置信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装步骤"><span class="nav-text">2.安装步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-设置静态IP"><span class="nav-text">6.设置静态IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-设置SSH免密登录"><span class="nav-text">7.设置SSH免密登录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-配置Hadoop"><span class="nav-text">8.配置Hadoop</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-namenode的配置"><span class="nav-text">9.namenode的配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、运行示例验证"><span class="nav-text">八、运行示例验证</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题集合"><span class="nav-text">问题集合</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-ip分配错误"><span class="nav-text">1.ip分配错误</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、环境配置信息"><span class="nav-text">一、环境配置信息</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、CentOS7安装"><span class="nav-text">二、CentOS7安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置信息"><span class="nav-text">1.配置信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装步骤"><span class="nav-text">2.安装步骤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、创建Hadoop用户"><span class="nav-text">三、创建Hadoop用户</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、安装软件"><span class="nav-text">四、安装软件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、Xshell连接Centos"><span class="nav-text">五、Xshell连接Centos</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、Xftp连接Centos"><span class="nav-text">六、Xftp连接Centos</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、环境搭建"><span class="nav-text">七、环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-关闭防火墙"><span class="nav-text">1.关闭防火墙</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装JDK"><span class="nav-text">2.安装JDK</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Hadoop安装"><span class="nav-text">3.Hadoop安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-设置hostname"><span class="nav-text">4.设置hostname</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-克隆两台主机"><span class="nav-text">5.克隆两台主机</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-设置静态IP"><span class="nav-text">6.设置静态IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-设置SSH免密登录"><span class="nav-text">7.设置SSH免密登录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-配置Hadoop"><span class="nav-text">8.配置Hadoop</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-namenode的配置"><span class="nav-text">9.namenode的配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、运行示例验证"><span class="nav-text">八、运行示例验证</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#问题集合"><span class="nav-text">问题集合</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-ip分配错误"><span class="nav-text">1.ip分配错误</span></a></li></ol></li></ol></div>
             
 
           </div>
