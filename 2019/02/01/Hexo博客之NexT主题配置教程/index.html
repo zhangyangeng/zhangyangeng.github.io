@@ -132,7 +132,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/04/03/5ca451a159d5b.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/03/5ca4526c790d2.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/03/5ca452b973cbf.png">
-<meta property="og:updated_time" content="2019-11-14T13:05:43.555Z">
+<meta property="og:updated_time" content="2020-02-10T10:11:51.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客之NexT主题配置教程">
 <meta name="twitter:description" content="介绍 在看本篇之前，请确保你已成功搭建好个人博客。如没有，请移步：[博客搭建教程] 该教程中的所有链接均指向为官方链接，望知悉。 该教程为我上一篇教程的后续教程，即Hexo的主题配置及修改。 该教程主要是针对NexT主题，其他主题略有出入，如有需要请自行百度。">
@@ -760,10 +760,12 @@
 </li>
 <li>打开网页端网易云音乐，找到你想要插的歌曲，进入播放页面点击“生成外链播放器”<br><img src="https://i.loli.net/2019/04/03/5ca451a159d5b.png" alt="找歌"></li>
 <li>在这个界面找到框住的内容<br><img src="https://i.loli.net/2019/04/03/5ca451f436083.png" alt="斜杠后内容"></li>
-<li>在 <font color="##9932CC"> <em>主题配置文件</em> </font> 中适当位置增加网易云入口，如下：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 侧栏网易云音乐链接</span><br><span class="line">background_music:      //这里填写上一步红框中的内容,冒号后边有空格</span><br></pre></td></tr></table></figure>
+<li>在 <font color="##9932CC"> <em>主题配置文件</em> </font> 中适当位置增加网易云入口<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 侧栏网易云音乐链接</span><br><span class="line">background_music:      //这里填写上一步红框中的内容,冒号后边有空格</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p><img src="https://i.loli.net/2019/04/03/5ca45221501d1.png" alt="添加网易云链接"></p>
+<ul>
+<li>图片如下：<br><img src="https://i.loli.net/2019/04/03/5ca45221501d1.png" alt="添加网易云链接"></li>
+</ul>
 <h3 id="在文章中插入网易云链接"><a href="#在文章中插入网易云链接" class="headerlink" title="在文章中插入网易云链接"></a>在文章中插入网易云链接</h3><ol>
 <li>打开网页端网易云音乐，找到你想要插的歌曲，进入播放页面点击“生成外链播放器”<br><img src="https://i.loli.net/2019/04/03/5ca451a159d5b.png" alt="找歌"></li>
 <li>将以下代码直接插入文章中即可<br><img src="https://i.loli.net/2019/04/03/5ca4526c790d2.png" alt="修改播放器样式"><blockquote>
@@ -826,16 +828,18 @@
 </li>
 </ul>
 <h2 id="二十-隐藏首页部分文章"><a href="#二十-隐藏首页部分文章" class="headerlink" title="二十.隐藏首页部分文章"></a>二十.隐藏首页部分文章</h2><blockquote>
-<p>有的时候我们并不想让某些文章出现在首页上，但在归档中还是可以找到的，这时就需要下方的方法了，该方法出自CSDN，转载请声明：<a href="https://blog.csdn.net/m0_37323771/article/details/80672271" target="_blank" rel="noopener">https://blog.csdn.net/m0_37323771/article/details/80672271</a></p>
+<p>有的时候我们并不想让某些文章出现在首页上，但在归档中还是可以找到的，这时就需要下方的方法了，该方法出自CSDN，转载请声明：<a href="https://blog.csdn.net/m0_37323771/article/details/80672271" target="_blank" rel="noopener">原文</a></p>
 </blockquote>
 <h3 id="1-修改主题的index-swig"><a href="#1-修改主题的index-swig" class="headerlink" title="1.修改主题的index.swig"></a>1.修改主题的index.swig</h3><ul>
 <li>路径在<code>Hexo\themes\next\layout\index.swig</code></li>
-<li>将这段<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &lt;section id=&quot;posts&quot; class=&quot;posts-expand&quot;&gt;</span><br><span class="line">    &#123;% for post in page.posts %&#125;</span><br><span class="line">        &#123;&#123; post_template.render(post, true) &#125;&#125;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">  &lt;/section&gt;</span><br></pre></td></tr></table></figure>
+<li><p>将这段</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &lt;section id=&quot;posts&quot; class=&quot;posts-expand&quot;&gt;</span><br><span class="line">    &#123;% for post in page.posts %&#125;</span><br><span class="line">        &#123;&#123; post_template.render(post, true) &#125;&#125;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">  &lt;/section&gt;</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<p>改成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &lt;section id=&quot;posts&quot; class=&quot;posts-expand&quot;&gt;</span><br><span class="line">    &#123;% for post in page.posts %&#125;</span><br><span class="line">        &#123;% if post.notshow != true %&#125;</span><br><span class="line">            &#123;&#123; post_template.render(post, true) &#125;&#125;</span><br><span class="line">        &#123;% endif %&#125;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">  &lt;/section&gt;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>注意：上边在for循环中判断文章中的属性notshow，如果不为true就打印出文章。所以在需要隐藏的文章front-matter中添加notshow:true就会隐藏。</li>
+<li><p>改成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;% block content %&#125;</span><br><span class="line">  &lt;section id=&quot;posts&quot; class=&quot;posts-expand&quot;&gt;</span><br><span class="line">    &#123;% for post in page.posts %&#125;</span><br><span class="line">        &#123;% if post.notshow != true %&#125;</span><br><span class="line">            &#123;&#123; post_template.render(post, true) &#125;&#125;</span><br><span class="line">        &#123;% endif %&#125;</span><br><span class="line">    &#123;% endfor %&#125;</span><br><span class="line">  &lt;/section&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意：上边在for循环中判断文章中的属性notshow，如果不为true就打印出文章。所以在需要隐藏的文章front-matter中添加notshow:true就会隐藏。</p>
+</li>
 </ul>
 <h3 id="2-将notshow直接写入front-matter中"><a href="#2-将notshow直接写入front-matter中" class="headerlink" title="2.将notshow直接写入front-matter中"></a>2.将notshow直接写入front-matter中</h3><ul>
 <li>打开你Hexo的根目录，找到 <code>scaffolds</code> 文件中的 <code>post.md</code>文件，并用VScode，记事本等软件打开</li>
@@ -877,7 +881,7 @@
   <p><span>本文标题:</span><a href="/2019/02/01/Hexo博客之NexT主题配置教程/">Hexo博客之NexT主题配置教程</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年02月01日 - 18:02</p>
-  <p><span>最后更新:</span>2019年11月14日 - 21:11</p>
+  <p><span>最后更新:</span>2020年02月10日 - 18:02</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/02/01/Hexo博客之NexT主题配置教程/" title="Hexo博客之NexT主题配置教程">http://zhangyangeng.github.io/2019/02/01/Hexo博客之NexT主题配置教程/</a>
@@ -1086,7 +1090,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1187,7 +1191,7 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

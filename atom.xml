@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2019-12-21T07:04:03.362Z</updated>
+  <updated>2020-02-10T10:21:47.523Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -17,27 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hadoop分布式集群搭建教程</title>
-    <link href="http://zhangyangeng.github.io/2019/12/07/Hadoop%E5%88%86%E5%B8%83%E5%BC%8F%E9%9B%86%E7%BE%A4%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/"/>
-    <id>http://zhangyangeng.github.io/2019/12/07/Hadoop分布式集群搭建教程/</id>
-    <published>2019-12-07T15:00:42.000Z</published>
-    <updated>2019-12-21T07:04:03.362Z</updated>
+    <title>玩转微信小技巧</title>
+    <link href="http://zhangyangeng.github.io/2020/02/05/%E7%8E%A9%E8%BD%AC%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>http://zhangyangeng.github.io/2020/02/05/玩转微信小技巧/</id>
+    <published>2020-02-05T09:24:29.000Z</published>
+    <updated>2020-02-10T10:21:47.523Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;本教程介绍了关于Hadoop分布式集群搭建的教程&lt;/li&gt;
-&lt;li&gt;参考自：&lt;a href=&quot;https://www.jianshu.com/p/1b0ef092bc08&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;整理自：李超超同学的教程&lt;/li&gt;&lt;/ul&gt;
+      
+      
+        
+        
+          &lt;h1 id=&quot;一、个性设置篇&quot;&gt;&lt;a href=&quot;#一、个性设置篇&quot; class=&quot;headerlink&quot; title=&quot;一、个性设置篇&quot;&gt;&lt;/a&gt;一、个性设置篇&lt;/h1&gt;&lt;h2 id=&quot;1-网名下面加一行下划线&quot;&gt;&lt;a href=&quot;#1-网名下面加一行下划线&quot;
+        
+      
     
     </summary>
     
-      <category term="实用教程" scheme="http://zhangyangeng.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+      <category term="玩机技巧" scheme="http://zhangyangeng.github.io/categories/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/"/>
     
     
-      <category term="教程" scheme="http://zhangyangeng.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+      <category term="技巧" scheme="http://zhangyangeng.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="Hadoop" scheme="http://zhangyangeng.github.io/tags/Hadoop/"/>
+      <category term="搞机" scheme="http://zhangyangeng.github.io/tags/%E6%90%9E%E6%9C%BA/"/>
     
   </entry>
   
@@ -95,7 +98,7 @@
     <link href="http://zhangyangeng.github.io/2019/09/20/%E5%B0%8F%E7%99%BD%E6%95%99%E7%A8%8B%EF%BC%9A%E5%8F%B2%E4%B8%8A%E6%9C%80%E8%AF%A6%E5%B0%BDV2Ray%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/"/>
     <id>http://zhangyangeng.github.io/2019/09/20/小白教程：史上最详尽V2Ray搭建服务器图文教程/</id>
     <published>2019-09-20T09:18:43.000Z</published>
-    <updated>2019-11-15T03:36:58.055Z</updated>
+    <updated>2020-02-10T10:01:47.049Z</updated>
     
     <summary type="html">
     
