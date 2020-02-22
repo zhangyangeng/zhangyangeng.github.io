@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhangyangeng.github.io/"/>
-  <updated>2020-02-10T10:21:47.523Z</updated>
+  <updated>2020-02-18T10:21:09.590Z</updated>
   <id>http://zhangyangeng.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Nginx 学习笔记</title>
+    <link href="http://zhangyangeng.github.io/2020/02/18/Nginx%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://zhangyangeng.github.io/2020/02/18/Nginx学习笔记/</id>
+    <published>2020-02-18T06:31:06.000Z</published>
+    <updated>2020-02-18T10:21:09.590Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本文主要记录在学习 Nginx 时的一些笔记&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://zhangyangeng.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="学习" scheme="http://zhangyangeng.github.io/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>玩转微信小技巧</title>
     <link href="http://zhangyangeng.github.io/2020/02/05/%E7%8E%A9%E8%BD%AC%E5%BE%AE%E4%BF%A1%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>http://zhangyangeng.github.io/2020/02/05/玩转微信小技巧/</id>
     <published>2020-02-05T09:24:29.000Z</published>
-    <updated>2020-02-10T10:21:47.523Z</updated>
+    <updated>2020-02-18T06:37:31.920Z</updated>
     
     <summary type="html">
     
@@ -190,7 +211,7 @@
     <link href="http://zhangyangeng.github.io/2019/08/22/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%B0%9A%E7%A1%85%E8%B0%B7%EF%BC%89/"/>
     <id>http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</id>
     <published>2019-08-22T12:21:16.000Z</published>
-    <updated>2019-12-15T10:34:28.353Z</updated>
+    <updated>2020-02-22T11:10:47.033Z</updated>
     
     <summary type="html">
     
@@ -463,30 +484,6 @@
     
     
       <category term="技巧" scheme="http://zhangyangeng.github.io/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微软office2019版激活方法</title>
-    <link href="http://zhangyangeng.github.io/2019/02/28/%E5%BE%AE%E8%BD%AFoffice2019%E7%89%88%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95/"/>
-    <id>http://zhangyangeng.github.io/2019/02/28/微软office2019版激活方法/</id>
-    <published>2019-02-28T14:55:33.000Z</published>
-    <updated>2019-07-13T12:13:30.603Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;当前比较方便的一个激活Microsoft office2019版的方法&lt;/li&gt;
-&lt;li&gt;该方法来自国外论坛，可以激活180天，但据说180天后会自动激活，待测。&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="实用技巧" scheme="http://zhangyangeng.github.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="office" scheme="http://zhangyangeng.github.io/tags/office/"/>
-    
-      <category term="软件破解" scheme="http://zhangyangeng.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%A0%B4%E8%A7%A3/"/>
     
   </entry>
   
