@@ -113,7 +113,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/18/LUSutm3KnXMHcjA.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/Emayov943ZAFcxb.jpg">
 <meta property="og:image" content="https://i.loli.net/2020/02/12/qVHyCojp2RzkIU4.png">
-<meta property="og:updated_time" content="2020-02-22T15:16:18.505Z">
+<meta property="og:updated_time" content="2020-02-23T14:39:39.178Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（尚硅谷）">
 <meta name="twitter:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
@@ -417,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  6.2k 字
+                  8.1k 字
                 </span>
               
 
@@ -433,7 +433,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  23 分钟
+                  29 分钟
                 </span>
               
             </div>
@@ -516,13 +516,13 @@
 </ul>
 <h2 id="7-字体的样式"><a href="#7-字体的样式" class="headerlink" title="7.字体的样式"></a>7.字体的样式</h2><ul>
 <li>注意：css 中可以使用 <code>font</code> 同时设置字体相关的所有样式，而不同的值之间使用空格隔开</li>
-<li>关于 font 的相关属性，斜体、粗体、小大字母无顺序要求，但最后两项必须是大小和字体，且不可调换</li>
+<li>关于 font 的相关属性，斜体、粗体、小大字母无顺序要求，但<font color="#FF0000">最后两项必须是大小和字体，且不可调换</font></li>
 </ul>
 <h3 id="a-颜色"><a href="#a-颜色" class="headerlink" title="a.颜色"></a>a.颜色</h3><ul>
 <li><code>color</code></li>
 </ul>
 <h3 id="b-大小"><a href="#b-大小" class="headerlink" title="b.大小"></a>b.大小</h3><ul>
-<li><code>font-size</code> ，默认大小为16px</li>
+<li><code>font-size</code> ，浏览器默认大小为16px</li>
 <li><font color="#F00">注意：正如小学时的方字格一样，每个字都处于一个隐形的方字格中，，所以在设置大小时，实际上是设置的格子的大小，并不是文字本身的大小</font></li>
 <li><font color="#F00">注意：当字体不同时，文字的显示效果也不同</font>
 
@@ -613,6 +613,16 @@
 <li>2em 即为首行缩进2字符</li>
 <li>当指定负值时，即向左移动，可实现隐藏相应的内容</li>
 </ul>
+<h2 id="10-背景的样式"><a href="#10-背景的样式" class="headerlink" title="10.背景的样式"></a>10.背景的样式</h2><ul>
+<li>颜色：<code>background-color</code></li>
+</ul>
+<h3 id="图像："><a href="#图像：" class="headerlink" title="图像："></a>图像：</h3><ul>
+<li><code>background-image: url(图片的相对路径)</code> 。</li>
+<li>若图片大于元素，默认会显示左上角；若背景图片和元素一样大，则会全部显示；若图片小于元素，则会默认将背景图片平铺以充满元素</li>
+<li>可以同时为一个元素指定背景色和背景图片，这样背景色会作为背景图片的底色，且在一般情况下设置背景图片时都会同时指定一个背景颜色</li>
+<li><code>background-repeat</code> 用于设置背景图片的的重复方式</li>
+<li>可选值：<br>repeat：默认值，图片会双方向重复<br>no-repeat：图片不会重复，有多大就显示多大<br>repeat-x：背景图片沿水平方向重复<br>repeat-y：背景图片沿垂直方向重复</li>
+</ul>
 <h1 id="二、元素和选择器"><a href="#二、元素和选择器" class="headerlink" title="二、元素和选择器"></a>二、元素和选择器</h1><h2 id="1-块元素"><a href="#1-块元素" class="headerlink" title="1.块元素"></a>1.块元素</h2><ul>
 <li>div标签就是一个块元素，没有任何语义，不会为它里边的元素设置任何的默认样式。且自己会独占一行，<font color="#FF0000">主要用来对页面进行布局的</font>。</li>
 <li>若在其中修改style属性，整行都会变色，效果如下：<br><img src="https://i.loli.net/2019/09/15/mLZYDI56fNukgGv.png" alt="div标签.png"></li>
@@ -622,7 +632,7 @@
 </ul>
 <h2 id="2-内联元素"><a href="#2-内联元素" class="headerlink" title="2.内联元素"></a>2.内联元素</h2><ul>
 <li>span是一个内联元素（行内元素，即只占自身大小），没有任何语义，专门用来选中文字用来设置样式</li>
-<li>常见内联元素：a/img/iframe（注意：a元素可以包含任意元素，除他本身）</li>
+<li>常见内联元素：a/img/iframe/伪类（注意：a元素可以包含任意元素，除他本身）</li>
 <li><font color="#FF0000">一般情况下只使用块元素包含内联元素</font>,即：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;span&gt;</span><br><span class="line">	内容</span><br><span class="line">	&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -913,16 +923,24 @@
 <li>内联元素在文档流中只占自身的大小，默认从左向右排列。宽度和高度默认都是内容大小。</li>
 <li>父元素的高度默认是被子元素撑开的。</li>
 </ul>
-<h2 id="11-盒子的浮动"><a href="#11-盒子的浮动" class="headerlink" title="11.盒子的浮动"></a>11.盒子的浮动</h2><ul>
-<li>使用 float 属性来使盒子脱离文档流，达到水平排放的效果</li>
-<li>可选值：<br>none：默认值，元素在文档流中排列<br>left：元素脱离文档流，向页面的左侧浮动<br>right：元素脱离文档流，向页面的右侧浮动</li>
-<li>元素浮动以后会尽量往左上或者右上浮动，直到遇到父元素的边框或者其他的浮动元素</li>
+<h2 id="11-盒子的浮动"><a href="#11-盒子的浮动" class="headerlink" title="11.盒子的浮动"></a>11.盒子的浮动</h2><h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="(1).介绍"></a>(1).介绍</h3><ul>
+<li><p>使用 float 属性来使盒子脱离文档流，达到水平排放的效果</p>
+</li>
+<li><p>可选值：<br>none：默认值，元素在文档流中排列<br>left：元素脱离文档流，向页面的左侧浮动<br>right：元素脱离文档流，向页面的右侧浮动</p>
+<h3 id="2-注意事项"><a href="#2-注意事项" class="headerlink" title="(2).注意事项"></a>(2).注意事项</h3></li>
+<li><p>元素浮动以后会尽量往左上或者右上浮动，直到遇到父元素的边框或者其他的浮动元素</p>
+</li>
 <li>如果浮动元素上边是一个没有浮动的块元素，则不会超过该块元素</li>
 <li>浮动的元素不会超过他上边的兄弟元素，最多一边齐</li>
 <li>浮动的元素不会盖住文字，文字会自动环绕在浮动元素周围</li>
 <li>块元素脱离文档流后，高度和宽度都被内容撑开<br>内联元素脱离文档流后，会变成块元素，高度和宽度都被内容撑开</li>
 </ul>
-<h2 id="12-BFC属性"><a href="#12-BFC属性" class="headerlink" title="12.BFC属性"></a>12.BFC属性</h2><h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="(1).介绍"></a>(1).介绍</h3><ul>
+<h3 id="3-清除浮动对其他元素的影响"><a href="#3-清除浮动对其他元素的影响" class="headerlink" title="(3)清除浮动对其他元素的影响"></a>(3)清除浮动对其他元素的影响</h3><ul>
+<li>使用 clear 来清除其他浮动元素对当前元素的影响</li>
+<li>此方法只可以清除兄弟元素的浮动，无法清除父子元素的浮动</li>
+<li>可选值：<br>none：默认值，不清楚浮动<br>left：清除左侧浮动元素对当前元素的影响<br>right：清除右侧浮动元素对当前元素的影响<br>both：清除两侧浮动元素对当前元素的影响，默认清除对它影响最大的那个元素的浮动</li>
+</ul>
+<h2 id="12-BFC属性"><a href="#12-BFC属性" class="headerlink" title="12.BFC属性"></a>12.BFC属性</h2><h3 id="1-介绍-1"><a href="#1-介绍-1" class="headerlink" title="(1).介绍"></a>(1).介绍</h3><ul>
 <li>W3C标准中，在页面中的每个元素都有一个隐藏的属性——Block Formatting Context，简称BFC。该属性默认是关闭的，可以选择打开或者关闭</li>
 </ul>
 <h3 id="2-开启后的特性"><a href="#2-开启后的特性" class="headerlink" title="(2).开启后的特性"></a>(2).开启后的特性</h3><ul>
@@ -939,11 +957,78 @@
 <h2 id="13-高度塌陷问题"><a href="#13-高度塌陷问题" class="headerlink" title="13.高度塌陷问题"></a>13.高度塌陷问题</h2><ul>
 <li>在文档流中，父元素的高度默认是被子元素撑开的。但是当为子元素设置浮动以后，子元素脱离文档流，使得子元素无法撑起父元素的高度，此时就会造成父元素的高度塌陷问题。</li>
 <li>虽然可以给父元素设置一个高度，但子元素高度发生改变时，父元素并不能自动适应子元素的变化，所以不推荐此种方法。</li>
-<li>推荐方法：开启元素的 BFC 属性。开启的前三种方法都会造成父元素的宽度丢失问题，所以这里推荐使用第四种方法，即在父元素中设置为：<code>overflow: hidden;</code>。</li>
+<li>推荐方法：开启元素的 BFC 属性。开启的前三种方法都会造成父元素的宽度丢失问题，所以这里推荐使用第四种方法，即在父元素中设置为：<code>overflow: hidden;</code></li>
+<li><font color="#FF0000">最终方法1：在高度塌陷的父元素里边的最后，添加一个空白的div，对于这个空白的div执行清除浮动效果，此时这个div就可以撑开父元素的高度了，且基本没有副作用，但会添加多余的结构</font></li>
+<li><font color="#FF0000">最终推荐方法2：通过after伪类向元素最后添加一个空白的块元素，然后对其清除浮动，这样就不会添加多余的架构，代码如下：</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:after&#123;</span><br><span class="line">	content: &quot;&quot;;	//这里仅仅为了撑开父元素，所以内容区不需要写内容</span><br><span class="line">	display: block;	//转成块元素</span><br><span class="line">	clear: both;	//清除浮动</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="14-定位"><a href="#14-定位" class="headerlink" title="14.定位"></a>14.定位</h2><ul>
+<li>将指定的元素摆放到页面的任意位置</li>
+<li>通过 <code>position</code> 属性来设置元素的定位</li>
+<li>可选值：<br>static：默认值，没有开启定位<br>relative：开启元素的相对定位<br>absolute：开启元素的绝对定位<br>fixed：开启元素的固定定位（绝对定位的一种）</li>
+</ul>
+<h3 id="1-相对定位"><a href="#1-相对定位" class="headerlink" title="(1).相对定位"></a>(1).相对定位</h3><ul>
+<li><p>当开启元素的相对定位但不设置偏移量时，没有任何变化。设置代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">position: relative;</span><br><span class="line">left: 100px;		//相对于原来的位置</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>偏移量为 left、right、top、bottom：元素相对于其定位位置的左、右、上、下侧偏移量</p>
+</li>
+<li>相对定位的元素不会脱离文档流</li>
+<li>相对定位会使元素提升一个层级，所以定位的元素可以盖住文档中的元素</li>
+<li>相对定位不会改变元素的性质，块还是块，内联还是内联</li>
+</ul>
+<h3 id="2-绝对定位"><a href="#2-绝对定位" class="headerlink" title="(2).绝对定位"></a>(2).绝对定位</h3><ul>
+<li>开启绝对定位会使元素脱离文档流</li>
+<li>开启绝对定位后如果不设置偏移量，则元素位置不会发生变化</li>
+<li>绝对定位是相对于离他最近的开启了定位的祖先元素进行定位的（一般情况，开启了子元素的绝对定位都会同时开启父元素的相对定位），如果所有的祖先元素都没有开启定位，则相对于浏览器窗口进行定位的</li>
+<li>绝对定位会使元素提升一个层级，所以定位的元素可以盖住文档中的元素</li>
+<li>绝对定位会改变元素的性质，内联元素变成块元素，故可以设置宽高；块元素变成内联元素，故宽度和高度默认都被内容撑开</li>
+</ul>
+<h3 id="3-固定定位"><a href="#3-固定定位" class="headerlink" title="(3).固定定位"></a>(3).固定定位</h3><ul>
+<li>固定定位也是一种绝对定位，大部分特点都和绝对定位一样</li>
+<li>不同的是：固定定位永远都会相对于浏览器窗口进行定位</li>
+<li>固定定位会固定在浏览器窗口的某一个位置，不会随滚动条滚动。即浏览器页面的小广告</li>
+<li>IE6不支持固定定位</li>
+</ul>
+<h3 id="4-层级"><a href="#4-层级" class="headerlink" title="(4).层级"></a>(4).层级</h3><ul>
+<li>如果定位元素的层级是一样的，则下边的元素会盖住上边的</li>
+<li>通过 <code>z-index</code> 属性来设置元素的层级，其值为正整数，该值会作为当前元素的层级，层级越高，越优先显示。但父元素的层级再高，也不会盖住子元素</li>
+<li>对于没有开启定位的元素，不能使用 <code>z-index</code> </li>
+</ul>
+<h3 id="5-元素透明"><a href="#5-元素透明" class="headerlink" title="(5).元素透明"></a>(5).元素透明</h3><ul>
+<li>使用 <code>obacity</code> 可以用来设置元素背景的透明度，它需要一个0-1之间的值</li>
+<li>0表示全透明；1表示不透明；0.5表示半透明</li>
+<li>不支持IE8及以下，但可以使用 <code>filter: alpha(opacity=透明度);</code> 来设置，这里的值为0-100之间</li>
+</ul>
+<h1 id="四、简单布局实践"><a href="#四、简单布局实践" class="headerlink" title="四、简单布局实践"></a>四、简单布局实践</h1><h2 id="1-导航条的设计"><a href="#1-导航条的设计" class="headerlink" title="1.导航条的设计"></a>1.导航条的设计</h2><ul>
+<li>导航条可以用无序列表和div来创建，一般用无需列表</li>
+<li>使用无序列表时需要清除掉前面的小点，使用 <code>list-style: none;</code> 来清除</li>
+<li>想要给超链接即a标签设置宽度等，需要使用 <code>display: block</code> 转为块元素</li>
+<li>对于宽度以及居中问题，首先给父标签即 <code>ul标签</code> 设置一个固定宽度，其子标签即 <code>li标签</code> 按父元素的比例设置，最后将超链接所在标签即 <code>a标签</code> 设置为100%即可</li>
+<li>想要鼠标滑过的特效，需要使用<font color="#FF0000">伪类选择器</font>来设置</li>
+<li>想要使得超链接在里面垂直水平居中，垂直方向增加相应的内边距即可，水平方向用 <code>text-align: center;</code> 来设置居中</li>
+</ul>
+<h2 id="2-PS的设计"><a href="#2-PS的设计" class="headerlink" title="2.PS的设计"></a>2.PS的设计</h2><ul>
+<li>在首选项（快捷键ctrl+K）中把标尺和文字的单位改成像素。</li>
+</ul>
+<h3 id="部分快捷键："><a href="#部分快捷键：" class="headerlink" title="部分快捷键："></a>部分快捷键：</h3><ul>
+<li>Ctrl+R：开启/关闭标尺</li>
+<li>Ctrl+H：显示/隐藏辅助线</li>
+<li>F8：用矩形选框选中以后用它可以快捷查看高度和宽度</li>
+</ul>
+<h2 id="3-简单页面的设计"><a href="#3-简单页面的设计" class="headerlink" title="3.简单页面的设计"></a>3.简单页面的设计</h2><ul>
+<li>浏览器默认字体16px大小，但一般使用12px大小，所以需要统一字体大小，且把行高和字体一块设置</li>
+<li>如果之前通过设置行高来文字垂直居中时，修改字体大小时会影响居中效果，所以一定要在设置字体大小的时候同时把行高设置了</li>
 </ul>
 <h1 id="四、问题纠错"><a href="#四、问题纠错" class="headerlink" title="四、问题纠错"></a>四、问题纠错</h1><h2 id="1-相对路径问题"><a href="#1-相对路径问题" class="headerlink" title="1.相对路径问题"></a>1.相对路径问题</h2><ul>
 <li>在 html 中调用css时使用 <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;相对路径&quot;</code> 时，一直无法成功显示css样式</li>
-<li>因为我用的是 HBuilder 创建的项目，所以 css 文件默认存放在了 css 文件夹中，所以相对路径的写法为 <code>css/style.css</code>+</li>
+<li>因为我用的是 HBuilder 创建的项目，所以 css 文件默认存放在了 css 文件夹中，所以相对路径的写法为 <code>css/style.css</code> 。</li>
+</ul>
+<h2 id="2-无序列表默认横排显示问题"><a href="#2-无序列表默认横排显示问题" class="headerlink" title="2.无序列表默认横排显示问题"></a>2.无序列表默认横排显示问题</h2><ul>
+<li><p>在做导航实验时，发现创建的无序列表默认就是横排显示，而不是竖排显示</p>
+</li>
+<li><p>原因是我在一个 <code>li</code> 标签中写的无序列表，如果想要竖排显示的话，每一个列表项都需要使用一个 <code>li</code> 标签来修饰，即：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
       
@@ -965,7 +1050,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/">CSS学习笔记（尚硅谷）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 20:08</p>
-  <p><span>最后更新:</span>2020年02月22日 - 23:02</p>
+  <p><span>最后更新:</span>2020年02月23日 - 22:02</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/" title="CSS学习笔记（尚硅谷）">http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</a>
@@ -1249,7 +1334,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础知识"><span class="nav-text">一、基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-样式的继承（？？？）"><span class="nav-text">5.样式的继承（？？？）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-单位"><span class="nav-text">6.单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-字体单位"><span class="nav-text">a.字体单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-颜色单位"><span class="nav-text">b.颜色单位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-字体的样式"><span class="nav-text">7.字体的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-颜色"><span class="nav-text">a.颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-大小"><span class="nav-text">b.大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字体"><span class="nav-text">c.字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-字体分类（共5类）"><span class="nav-text">d.字体分类（共5类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-斜体效果"><span class="nav-text">e.斜体效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-加粗效果"><span class="nav-text">f.加粗效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-行间距"><span class="nav-text">8.行间距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-行间距可接收的值"><span class="nav-text">a.行间距可接收的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-注意事项"><span class="nav-text">b.注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-文本的样式"><span class="nav-text">9.文本的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-文本的大小写"><span class="nav-text">a.文本的大小写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-文本的装饰"><span class="nav-text">b.文本的装饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字符间距"><span class="nav-text">c.字符间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-单词间的距离"><span class="nav-text">d.单词间的距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-文本对齐方式"><span class="nav-text">e.文本对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-首行缩进"><span class="nav-text">f.首行缩进</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、元素和选择器"><span class="nav-text">二、元素和选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-块元素"><span class="nav-text">1.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-内联元素"><span class="nav-text">2.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-常用选择器"><span class="nav-text">3.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id选择器"><span class="nav-text">(2).id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-选择器分组（并集选择器）"><span class="nav-text">(4).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-通配选择器"><span class="nav-text">(5).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-伪类选择器"><span class="nav-text">(9).伪类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-伪元素选择器"><span class="nav-text">(10).伪元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-属性选择器"><span class="nav-text">(11).属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-兄弟元素选择器"><span class="nav-text">(12).兄弟元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-否定伪类选择器"><span class="nav-text">(13).否定伪类选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-选择器的优先级"><span class="nav-text">4.选择器的优先级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-作用"><span class="nav-text">a.作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-优先级比较"><span class="nav-text">b.优先级比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-优先级的运算"><span class="nav-text">c.优先级的运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-注意事项"><span class="nav-text">d.注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-关于a的伪类"><span class="nav-text">e.关于a的伪类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、盒子模型（重点）"><span class="nav-text">三、盒子模型（重点）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础知识"><span class="nav-text">1.基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-边框（border）"><span class="nav-text">2.边框（border）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-必须设置的三个样式"><span class="nav-text">(1).必须设置的三个样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4种方向的设定"><span class="nav-text">(2).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-单独设置某样式的边"><span class="nav-text">(3).单独设置某样式的边</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-简写属性"><span class="nav-text">(4).简写属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-内边距（padding）"><span class="nav-text">3.内边距（padding）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-外边距（margin）"><span class="nav-text">4.外边距（margin）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4种方向的设定"><span class="nav-text">(1).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-简写属性"><span class="nav-text">(2).简写属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-垂直方向的重叠"><span class="nav-text">(3).垂直方向的重叠</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-浏览器默认样式"><span class="nav-text">5.浏览器默认样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素的盒模型"><span class="nav-text">6.内联元素的盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-display-样式"><span class="nav-text">7.display 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-visibility-样式"><span class="nav-text">8.visibility 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-overflow-样式"><span class="nav-text">9.overflow 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-文档流"><span class="nav-text">10.文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-盒子的浮动"><span class="nav-text">11.盒子的浮动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-BFC属性"><span class="nav-text">12.BFC属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍"><span class="nav-text">(1).介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-开启后的特性"><span class="nav-text">(2).开启后的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-开启方法"><span class="nav-text">(3).开启方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-高度塌陷问题"><span class="nav-text">13.高度塌陷问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、问题纠错"><span class="nav-text">四、问题纠错</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-相对路径问题"><span class="nav-text">1.相对路径问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础知识"><span class="nav-text">一、基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-样式的继承（？？？）"><span class="nav-text">5.样式的继承（？？？）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-单位"><span class="nav-text">6.单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-字体单位"><span class="nav-text">a.字体单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-颜色单位"><span class="nav-text">b.颜色单位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-字体的样式"><span class="nav-text">7.字体的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-颜色"><span class="nav-text">a.颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-大小"><span class="nav-text">b.大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字体"><span class="nav-text">c.字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-字体分类（共5类）"><span class="nav-text">d.字体分类（共5类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-斜体效果"><span class="nav-text">e.斜体效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-加粗效果"><span class="nav-text">f.加粗效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-行间距"><span class="nav-text">8.行间距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-行间距可接收的值"><span class="nav-text">a.行间距可接收的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-注意事项"><span class="nav-text">b.注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-文本的样式"><span class="nav-text">9.文本的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-文本的大小写"><span class="nav-text">a.文本的大小写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-文本的装饰"><span class="nav-text">b.文本的装饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字符间距"><span class="nav-text">c.字符间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-单词间的距离"><span class="nav-text">d.单词间的距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-文本对齐方式"><span class="nav-text">e.文本对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-首行缩进"><span class="nav-text">f.首行缩进</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-背景的样式"><span class="nav-text">10.背景的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图像："><span class="nav-text">图像：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、元素和选择器"><span class="nav-text">二、元素和选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-块元素"><span class="nav-text">1.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-内联元素"><span class="nav-text">2.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-常用选择器"><span class="nav-text">3.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id选择器"><span class="nav-text">(2).id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-选择器分组（并集选择器）"><span class="nav-text">(4).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-通配选择器"><span class="nav-text">(5).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-伪类选择器"><span class="nav-text">(9).伪类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-伪元素选择器"><span class="nav-text">(10).伪元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-属性选择器"><span class="nav-text">(11).属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-兄弟元素选择器"><span class="nav-text">(12).兄弟元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-否定伪类选择器"><span class="nav-text">(13).否定伪类选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-选择器的优先级"><span class="nav-text">4.选择器的优先级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-作用"><span class="nav-text">a.作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-优先级比较"><span class="nav-text">b.优先级比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-优先级的运算"><span class="nav-text">c.优先级的运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-注意事项"><span class="nav-text">d.注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-关于a的伪类"><span class="nav-text">e.关于a的伪类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、盒子模型（重点）"><span class="nav-text">三、盒子模型（重点）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础知识"><span class="nav-text">1.基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-边框（border）"><span class="nav-text">2.边框（border）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-必须设置的三个样式"><span class="nav-text">(1).必须设置的三个样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4种方向的设定"><span class="nav-text">(2).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-单独设置某样式的边"><span class="nav-text">(3).单独设置某样式的边</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-简写属性"><span class="nav-text">(4).简写属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-内边距（padding）"><span class="nav-text">3.内边距（padding）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-外边距（margin）"><span class="nav-text">4.外边距（margin）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4种方向的设定"><span class="nav-text">(1).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-简写属性"><span class="nav-text">(2).简写属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-垂直方向的重叠"><span class="nav-text">(3).垂直方向的重叠</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-浏览器默认样式"><span class="nav-text">5.浏览器默认样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素的盒模型"><span class="nav-text">6.内联元素的盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-display-样式"><span class="nav-text">7.display 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-visibility-样式"><span class="nav-text">8.visibility 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-overflow-样式"><span class="nav-text">9.overflow 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-文档流"><span class="nav-text">10.文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-盒子的浮动"><span class="nav-text">11.盒子的浮动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍"><span class="nav-text">(1).介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-注意事项"><span class="nav-text">(2).注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-清除浮动对其他元素的影响"><span class="nav-text">(3)清除浮动对其他元素的影响</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-BFC属性"><span class="nav-text">12.BFC属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍-1"><span class="nav-text">(1).介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-开启后的特性"><span class="nav-text">(2).开启后的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-开启方法"><span class="nav-text">(3).开启方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-高度塌陷问题"><span class="nav-text">13.高度塌陷问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-定位"><span class="nav-text">14.定位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-相对定位"><span class="nav-text">(1).相对定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-绝对定位"><span class="nav-text">(2).绝对定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-固定定位"><span class="nav-text">(3).固定定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-层级"><span class="nav-text">(4).层级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-元素透明"><span class="nav-text">(5).元素透明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、简单布局实践"><span class="nav-text">四、简单布局实践</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-导航条的设计"><span class="nav-text">1.导航条的设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-PS的设计"><span class="nav-text">2.PS的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#部分快捷键："><span class="nav-text">部分快捷键：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-简单页面的设计"><span class="nav-text">3.简单页面的设计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、问题纠错"><span class="nav-text">四、问题纠错</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-相对路径问题"><span class="nav-text">1.相对路径问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-无序列表默认横排显示问题"><span class="nav-text">2.无序列表默认横排显示问题</span></a></li></ol></li></ol></div>
             
 
           </div>
