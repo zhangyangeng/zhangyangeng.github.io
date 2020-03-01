@@ -110,10 +110,14 @@
 <meta property="og:image" content="https://i.loli.net/2019/09/15/mLZYDI56fNukgGv.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/16/m7lGtUio4LBThbp.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/16/MyxujtBDlqdQYZ8.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/29/wITXCASsprjnQ5E.png">
 <meta property="og:image" content="https://i.loli.net/2019/09/18/LUSutm3KnXMHcjA.jpg">
-<meta property="og:image" content="https://i.loli.net/2019/09/18/Emayov943ZAFcxb.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/02/29/y8f3UCdYDZtxWoX.png">
 <meta property="og:image" content="https://i.loli.net/2020/02/12/qVHyCojp2RzkIU4.png">
-<meta property="og:updated_time" content="2020-02-24T15:00:21.872Z">
+<meta property="og:image" content="https://i.loli.net/2020/02/25/5kDX8h4rsuYnjAf.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/25/2m93XHaE14MuCBl.png">
+<meta property="og:image" content="https://i.loli.net/2020/02/25/PmEIfnrTXoJWxL3.png">
+<meta property="og:updated_time" content="2020-02-29T05:58:01.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS学习笔记（尚硅谷）">
 <meta name="twitter:description" content="介绍 本文主要记录在学习尚硅谷的HTML课程（关于CSS方面）时的一些笔记">
@@ -417,7 +421,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  10.5k 字
+                  11.9k 字
                 </span>
               
 
@@ -433,7 +437,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  39 分钟
+                  45 分钟
                 </span>
               
             </div>
@@ -459,34 +463,47 @@
 </li>
 </ul>
 <h1 id="一、基础知识"><a href="#一、基础知识" class="headerlink" title="一、基础知识"></a>一、基础知识</h1><h2 id="1-CSS"><a href="#1-CSS" class="headerlink" title="1.CSS"></a>1.CSS</h2><ul>
-<li>即层叠样式表，网页可以看成一层一层的结构，而CSS可以分别为网页的各个层次设置样式</li>
+<li>即层叠样式表，网页可以看成一层一层的结构，而 CSS 可以分别为网页的各个层次设置样式。</li>
 </ul>
-<h2 id="2-CSS样式编写位置"><a href="#2-CSS样式编写位置" class="headerlink" title="2.CSS样式编写位置"></a>2.CSS样式编写位置</h2><ul>
-<li><p>可以编写到元素（即标签）内的style属性中，称为“内联样式”，只对当前的元素中的内容起作用，不方便复用，属于结构和表现耦合，不方便后期维护，不推荐使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">		&lt;p style=&quot;color: red;font-size:40px;&quot;&gt;这里修改了颜色和字体&lt;/p&gt;</span><br><span class="line">		//color:red 前者为样式值，后者为样式名，中间用冒号分割开，且每一个样式都要以分号结尾。</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="2-CSS-样式编写位置"><a href="#2-CSS-样式编写位置" class="headerlink" title="2.CSS 样式编写位置"></a>2.CSS 样式编写位置</h2><h3 id="1-内联样式"><a href="#1-内联样式" class="headerlink" title="(1).内联样式"></a>(1).内联样式</h3><ul>
+<li>可以编写到元素（即标签）内的 <code>style</code> 属性中，称为“内联样式”</li>
+<li><p><code>color: red;</code> 前者为样式值，后者为样式名，中间用冒号分割开，且每一个样式都要以分号结尾</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">		&lt;p style=&quot;color: red; font-size: 40px;&quot;&gt;这里修改了颜色和字体&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>可以编写到head中的style标签里，将样式表编写的style标签中（称为”内部样式”)，然后通过css选择器选中指定元素，然后可以同时为这些元素一起设置样式，可以使样式进一步的复用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			p&#123;							//使含有p标签的语句一起设置样式</span><br><span class="line">				color:red;</span><br><span class="line">				font-size:40px;</span><br><span class="line">			&#125;		</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">//可以使表现和结构进一步分离，比较推荐的使用方式</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>想要达到其他文件也可以显示同样的样式表，需要将样式表编写到外部的css，即写入.css文件中（内容形同于上面一点）。然后通过link标签来将外部的css文件引入到当前页面中。(注意：link标签需要写到style标签中)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</span><br><span class="line">//link前两个属性固定，后面填写相对路径即可，且为自结束标签</span><br><span class="line">//将css样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用。同时通过link标签引入可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用。</span><br></pre></td></tr></table></figure>
+<li><p>该样式只对当前的元素中的内容起作用，不方便复用，属于结构和表现耦合，不方便后期维护，<font color="#F00">绝对不要使用</font></p>
 </li>
 </ul>
-<h2 id="3-CSS语法"><a href="#3-CSS语法" class="headerlink" title="3.CSS语法"></a>3.CSS语法</h2><ol>
-<li>注释写法：需要在style标签或css文件中填写，用 <code>/* */</code>来编写</li>
+<h3 id="2-内部样式"><a href="#2-内部样式" class="headerlink" title="(2).内部样式"></a>(2).内部样式</h3><ul>
+<li>可以编写到 <code>&lt;head&gt;</code> 中的 <code>&lt;style&gt;</code> 标签里，将样式表编写到 <code>&lt;style&gt;</code> 标签中（称为”内部样式”)</li>
+<li><p>通过 css 选择器选中指定元素，然后可以同时为这些元素一起设置样式，可以使样式进一步的复用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">			p&#123;							//使含有p标签的语句一起设置样式</span><br><span class="line">				color:red;</span><br><span class="line">				font-size:40px;</span><br><span class="line">			&#125;		</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以使表现和结构进一步分离，比较推荐的使用方式</p>
+</li>
+</ul>
+<h3 id="3-外部样式"><a href="#3-外部样式" class="headerlink" title="(3).外部样式"></a>(3).外部样式</h3><ul>
+<li>想要让其他文件也可以引用同样的样式表，需要将样式表编写到外部的 css，即写入 <code>.css</code> 文件中（内容形同于上面一点）</li>
+<li>通过 <code>&lt;link&gt;</code> 标签来将外部的 css 文件引入到当前页面中。</li>
+<li><p>注意：<code>&lt;link&gt;</code> 标签需要写到 <code>&lt;style&gt;</code> 标签中，<code>&lt;link&gt;</code> 前两个属性固定，后面填写相对路径即可，且为自结束标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot; /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>将 css 样式统一编写到外部的样式表中，完全使结构和表现分离，可实现在不同页面中使用，最大限度的使样式可以进行复用，同时引入 <code>&lt;link&gt;</code> 标签可以利用浏览器的缓存，加快用户访问的速度，在开发中最推荐使用</p>
+</li>
+</ul>
+<h2 id="3-CSS-语法"><a href="#3-CSS-语法" class="headerlink" title="3.CSS 语法"></a>3.CSS 语法</h2><ol>
+<li>注释写法：需要在 <code>&lt;style&gt;</code> 标签或 css 文件中填写，用 <code>/* */</code>来编写</li>
 <li>选择器：通过选择器可以选中页面中指定元素，并将声明块中的样式应用到选择器对应的元素上</li>
-<li>声明块：使用一对{}括起来，其中内容实际上是一组一组的名值对结构——称为声明。多个声明之间用分号隔开。</li>
+<li>声明块：使用一对 {} 括起来，其中内容实际上是一组一组的名值对结构（称为声明）。多个声明之间用分号隔开。</li>
 </ol>
-<h2 id="4-IDE集成开发工具"><a href="#4-IDE集成开发工具" class="headerlink" title="4.IDE集成开发工具"></a>4.IDE集成开发工具</h2><ul>
-<li>DreamWeaver（收费）</li>
-<li>WebStome（收费）</li>
-<li>Hbuilder（收费）</li>
+<h2 id="4-样式的继承"><a href="#4-样式的继承" class="headerlink" title="4.样式的继承"></a>4.样式的继承</h2><ul>
+<li>为一个元素设置样式同时也会应用到它的后代元素上</li>
+<li><p>利用继承可以将一些通用的样式统一设置到共同的祖先元素上，这样只需设置一次即可让所有的元素都具有该样式</p>
+</li>
+<li><font color="#FF0000">注意：背景、边框、定位等相关的样式不会被继承</font>
+
+</li>
 </ul>
-<h2 id="5-样式的继承（？？？）"><a href="#5-样式的继承（？？？）" class="headerlink" title="5.样式的继承（？？？）"></a>5.样式的继承（？？？）</h2><ol>
-<li>在外标签中写入标签，然后在外标签中设置样式，内标签会自动继承外标签的样式</li>
-<li>注意：背景、边框、定位等相关的样式不会被继承</li>
-</ol>
-<h2 id="6-单位"><a href="#6-单位" class="headerlink" title="6.单位"></a>6.单位</h2><h3 id="a-字体单位"><a href="#a-字体单位" class="headerlink" title="a.字体单位"></a>a.字体单位</h3><ol>
+<h2 id="5-单位"><a href="#5-单位" class="headerlink" title="5.单位"></a>5.单位</h2><h3 id="a-字体单位"><a href="#a-字体单位" class="headerlink" title="a.字体单位"></a>a.字体单位</h3><ol>
 <li>像素：<code>px</code> （一个像素相当于屏幕上的一个小点）</li>
 <li>百分比：<code>%</code> （根据父元素字体大小来计算百分比）</li>
 </ol>
@@ -514,7 +531,7 @@
 <li>书写形式：<code>#aabbcc</code> ，数组范围为00~FF</li>
 <li>三组两位数组重复的可以直接简写，即上边的可以简写为：<code>#abc</code></li>
 </ul>
-<h2 id="7-字体的样式"><a href="#7-字体的样式" class="headerlink" title="7.字体的样式"></a>7.字体的样式</h2><ul>
+<h2 id="6-字体的样式"><a href="#6-字体的样式" class="headerlink" title="6.字体的样式"></a>6.字体的样式</h2><ul>
 <li>注意：css 中可以使用 <code>font</code> 同时设置字体相关的所有样式，而不同的值之间使用空格隔开</li>
 <li>关于 font 的相关属性，斜体、粗体、小大字母无顺序要求，但<font color="#FF0000">最后两项必须是大小和字体，且不可调换</font></li>
 </ul>
@@ -557,7 +574,7 @@
 <li>bold，粗体显示</li>
 <li>100~900，400为默认，低于400就是细字体效果，高于400就是粗体效果</li>
 </ol>
-<h2 id="8-行间距"><a href="#8-行间距" class="headerlink" title="8.行间距"></a>8.行间距</h2><ul>
+<h2 id="7-行间距"><a href="#7-行间距" class="headerlink" title="7.行间距"></a>7.行间距</h2><ul>
 <li>就是通过设置行高来间接设置行间距，而文字默认会在行高中垂直居中显示</li>
 <li>表示为： <code>line-height: 40px；</code></li>
 <li>行间距=行高-字体大小</li>
@@ -572,7 +589,7 @@
 <li>在 font 中也可以指定行高，格式为： <code>字体大小/行高大小 字体</code> （这里行高大小为可选值，不选则为默认）</li>
 <li>对于第2点，为了避免覆盖效果，行高需放在 font 后面</li>
 </ol>
-<h2 id="9-文本的样式"><a href="#9-文本的样式" class="headerlink" title="9.文本的样式"></a>9.文本的样式</h2><h3 id="a-文本的大小写"><a href="#a-文本的大小写" class="headerlink" title="a.文本的大小写"></a>a.文本的大小写</h3><ul>
+<h2 id="8-文本的样式"><a href="#8-文本的样式" class="headerlink" title="8.文本的样式"></a>8.文本的样式</h2><h3 id="a-文本的大小写"><a href="#a-文本的大小写" class="headerlink" title="a.文本的大小写"></a>a.文本的大小写</h3><ul>
 <li>表示为： <code>text-transform</code> ，对中文无意义，可选值有如下四种：</li>
 </ul>
 <ol>
@@ -613,7 +630,7 @@
 <li>2em 即为首行缩进2字符</li>
 <li>当指定负值时，即向左移动，可实现隐藏相应的内容</li>
 </ul>
-<h2 id="10-背景的样式"><a href="#10-背景的样式" class="headerlink" title="10.背景的样式"></a>10.背景的样式</h2><h3 id="1-背景图片："><a href="#1-背景图片：" class="headerlink" title="(1).背景图片："></a>(1).背景图片：</h3><ul>
+<h2 id="9-背景的样式"><a href="#9-背景的样式" class="headerlink" title="9.背景的样式"></a>9.背景的样式</h2><h3 id="1-背景图片："><a href="#1-背景图片：" class="headerlink" title="(1).背景图片："></a>(1).背景图片：</h3><ul>
 <li><code>background-image: url(图片的相对路径)</code> 。</li>
 <li>若图片大于元素，默认会显示左上角；若背景图片和元素一样大，则会全部显示；若图片小于元素，则会默认将背景图片平铺以充满元素</li>
 <li>可以同时为一个元素指定背景色和背景图片，这样背景色会作为背景图片的底色，且在一般情况下设置背景图片时都会同时指定一个背景颜色</li>
@@ -632,7 +649,7 @@
 <li>通过 <code>background</code> 可以同时设置背景相关的样式，且没有顺序要求，也没有数量要求</li>
 <li>不写的属性就使用默认样式</li>
 </ul>
-<h2 id="11-表格"><a href="#11-表格" class="headerlink" title="11.表格"></a>11.表格</h2><h3 id="1-表格的基础形式"><a href="#1-表格的基础形式" class="headerlink" title="(1).表格的基础形式"></a>(1).表格的基础形式</h3><ul>
+<h2 id="10-表格"><a href="#10-表格" class="headerlink" title="10.表格"></a>10.表格</h2><h3 id="1-表格的基础形式"><a href="#1-表格的基础形式" class="headerlink" title="(1).表格的基础形式"></a>(1).表格的基础形式</h3><ul>
 <li><p>两行两列的表格代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;th&gt;A1&lt;/td&gt;</span><br><span class="line">		&lt;th&gt;A2&lt;/td&gt;</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;B1&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;B2&lt;/td&gt;</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
 </li>
@@ -650,16 +667,25 @@
 <li>为了方便设置，将表格分为了3部分，<code>表头：&lt;thead&gt;</code> <code>表格主体：&lt;tbody&gt;</code> <code>表格底部：&lt;tfoot&gt;</code> ，这三个标签需要写到table 标签中，而 tr 需要写到这三个标签中</li>
 <li>如果浏览器没有写 tbody ，浏览器会自动在表格中添加 tbody ，并且将所有的 tr 都放到 tbody 中，所以 tr 并不是 table 的子元素</li>
 </ul>
+<h2 id="11-命名规范"><a href="#11-命名规范" class="headerlink" title="11.命名规范"></a>11.命名规范</h2><ul>
+<li>尽量使用英文，也可以拼音，但不可以混用</li>
+<li>驼峰命名法：首字母小写，每个单词的开头字母大写，如 helloWorld</li>
+<li>小写字母法</li>
+<li>连字符法：在单词之间使用_或-连接，如aaa-bbb-ccc</li>
+</ul>
 <h1 id="二、元素和选择器"><a href="#二、元素和选择器" class="headerlink" title="二、元素和选择器"></a>二、元素和选择器</h1><h2 id="1-块元素"><a href="#1-块元素" class="headerlink" title="1.块元素"></a>1.块元素</h2><ul>
-<li>div标签就是一个块元素，没有任何语义，不会为它里边的元素设置任何的默认样式。且自己会独占一行，<font color="#FF0000">主要用来对页面进行布局的</font>。</li>
-<li>若在其中修改style属性，整行都会变色，效果如下：<br><img src="https://i.loli.net/2019/09/15/mLZYDI56fNukgGv.png" alt="div标签.png"></li>
-<li>p/h1/h2/table….都是块元素（注意：p元素不可以包含其他的块元素）</li>
+<li>块元素没有任何语义，不会为它里边的元素设置任何的默认样式。且自己会独占一行，<font color="#FF0000">主要用来对页面进行布局的</font>。</li>
+<li><code>&lt;div&gt;</code> 标签就是一个块元素，若在其中修改 style 属性，整行都会变色，效果如下：<br><img src="https://i.loli.net/2019/09/15/mLZYDI56fNukgGv.png" alt="div标签.png"></li>
+<li><code>&lt;p&gt;/&lt;h1&gt;/&lt;h2&gt;/&lt;table&gt;</code> ….都是块元素</li>
+<li><font color="#FF0000">注意：<code>&lt;p&gt;</code> 元素不可以包含其他的块元素</font></li>
 <li><font color="#FF0000">一般情况下只使用块元素包含内联元素</font>，即：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;span&gt;</span><br><span class="line">	内容</span><br><span class="line">	&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="2-内联元素"><a href="#2-内联元素" class="headerlink" title="2.内联元素"></a>2.内联元素</h2><ul>
-<li>span是一个内联元素（行内元素，即只占自身大小），没有任何语义，专门用来选中文字用来设置样式</li>
-<li>常见内联元素：a/img/iframe/伪类（注意：a元素可以包含任意元素，除他本身）</li>
+<li>内联元素（行内元素，即只占自身大小），没有任何语义，专门用来选中文字用来设置样式</li>
+<li><code>&lt;span&gt;</code> 没有语义，一般用来在网页选中文字</li>
+<li>常见内联元素：<code>&lt;span&gt;/&lt;a&gt;/&lt;em&gt;/&lt;img&gt;/&lt;iframe&gt;/伪类</code></li>
+<li><font color="#FF0000">注意：<code>&lt;a&gt;</code> 元素可以包含任意元素，除他本身</font></li>
 <li><font color="#FF0000">一般情况下只使用块元素包含内联元素</font>,即：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">	&lt;span&gt;</span><br><span class="line">	内容</span><br><span class="line">	&lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -667,35 +693,35 @@
 <li>作用：通过元素选择器可以选择页面中的所有指定元素</li>
 <li>语法：<code>标签名+{}</code></li>
 </ul>
-<h3 id="2-id选择器"><a href="#2-id选择器" class="headerlink" title="(2).id选择器"></a>(2).id选择器</h3><ul>
-<li>作用：通过元素的id属性值选中唯一的一个元素</li>
+<h3 id="2-id-选择器"><a href="#2-id-选择器" class="headerlink" title="(2).id 选择器"></a>(2).id 选择器</h3><ul>
+<li>作用：通过元素的 <code>id</code> 属性值选中唯一的一个元素</li>
 <li>语法：<code>#id属性值+{}</code>。效果如下：<br><img src="https://i.loli.net/2019/09/16/m7lGtUio4LBThbp.png" alt="id选择块.png"></li>
 <li><font color="#FF0000">对于id选择器来说，不建议使用复合选择器</font>
 
 </li>
 </ul>
 <h3 id="3-类选择器"><a href="#3-类选择器" class="headerlink" title="(3).类选择器"></a>(3).类选择器</h3><ul>
-<li>作用：通过元素的class属性值选中一组元素（相比较id属性值其使用的更多）。</li>
+<li>作用：通过元素的 <code>class</code> 属性值选中一组元素（相比较 <code>id</code> 属性值其使用的更多）。</li>
 <li>语法：<code>.class属性值+{}</code>。效果如下：<br><img src="https://i.loli.net/2019/09/16/MyxujtBDlqdQYZ8.png" alt="class.png"></li>
-<li>特点：可以同时为一个元素设置多个class属性值，多个值之间使用空格隔开。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=&quot;p2 hello&quot;&gt;多个属性值&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<li>特点：可以同时为一个元素设置多个 <code>class</code> 属性值，多个值之间使用空格隔开。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=&quot;p2 hello&quot;&gt;多个属性值&lt;/p&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="4-选择器分组（并集选择器）"><a href="#4-选择器分组（并集选择器）" class="headerlink" title="(4).选择器分组（并集选择器）"></a>(4).选择器分组（并集选择器）</h3><ul>
-<li>作用：可以同时选中多个选择器对应的元素</li>
-<li>语法：<code>选择器1，选择器2，选择器N+{}</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#p1 ,.p2 ,h1&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="5-通配选择器"><a href="#5-通配选择器" class="headerlink" title="(5).通配选择器"></a>(5).通配选择器</h3><ul>
+<h3 id="4-通配选择器"><a href="#4-通配选择器" class="headerlink" title="(4).通配选择器"></a>(4).通配选择器</h3><ul>
 <li>作用：可以用来选中页面中的所有元素</li>
 <li>语法：<code>*+{}</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
+<h3 id="5-选择器分组（并集选择器）"><a href="#5-选择器分组（并集选择器）" class="headerlink" title="(5).选择器分组（并集选择器）"></a>(5).选择器分组（并集选择器）</h3><ul>
+<li>作用：可以同时选中多个选择器对应的元素</li>
+<li>语法：<code>选择器1，选择器2，选择器N+{}</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#p1 ,.p2 ,h1&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 <h3 id="6-复合选择器（交集选择器）"><a href="#6-复合选择器（交集选择器）" class="headerlink" title="(6).复合选择器（交集选择器）"></a>(6).复合选择器（交集选择器）</h3><ul>
 <li>作用：可以选中同时满足多个选择器元素</li>
-<li><p>语法：<code>选择器1选择器2选择器N+{}</code></p>
+<li><p>语法：<code>选择器1选择器2选择器N+{}</code> ，但其中有元素选择器时，必须使用元素选择器开头</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">span .p3&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><font color="#FF0000">对于id选择器来说，不建议使用复合选择器</font>
+<li><font color="#FF0000">对于 <code>id</code> 选择器来说，不建议使用复合选择器</font>
 
 </li>
 </ul>
@@ -707,112 +733,127 @@
 <h3 id="8-子元素选择器"><a href="#8-子元素选择器" class="headerlink" title="(8).子元素选择器"></a>(8).子元素选择器</h3><ul>
 <li>作用：选中指定元素的指定子元素</li>
 <li>语法：<code>父元素 &gt; 子元素+{}</code></li>
-<li>注意：IE6及以下浏览器不支持子元素选择器<blockquote>
-<p>区分于上边的后代元素选择器。上者为空格，下者为大于号</p>
-</blockquote>
-</li>
+<li>注意：IE6 及以下浏览器不支持子元素选择器。区分于上边的后代元素选择器。上者为空格，下者为大于号</li>
 </ul>
-<h3 id="9-伪类选择器"><a href="#9-伪类选择器" class="headerlink" title="(9).伪类选择器"></a>(9).伪类选择器</h3><ul>
-<li>作用：专门用来表示元素的一种<font color="#FF0000">特殊的状态</font></li>
-</ul>
-<ol>
-<li>若专门用来定义链接样式的话，有下面四种<br><img src="https://i.loli.net/2019/09/18/LUSutm3KnXMHcjA.jpg" alt="伪类.jpg"></li>
-</ol>
-<ul>
-<li><p>语法：上图四种类似 <code>a:link+{}</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a:link&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><font color="#FF0000">注意：由于涉及用户隐私，visit中只能设置字体的颜色</font></li>
-<li><font color="#FF0000">注意：hover和active不只是可以给a标签设置，p标签也同样可以设置，IE6中不支持对超链接以外的元素设置</font></li>
-</ul>
-<ol start="2">
-<li>其余用途的伪类选择器，如下：<br><img src="https://i.loli.net/2019/09/18/Emayov943ZAFcxb.jpg" alt="伪类2.jpg"></li>
-</ol>
-<ul>
-<li><p>focus 搭配 input 标签来使用，可以用来获取焦点使文本框修改颜色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">input:focus&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br><span class="line">······</span><br><span class="line">&lt;input type=&quot;text&quot; /&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>selection为p标签中选中的内容使用样式（该伪类在火狐浏览器中需要在冒号后加<code>-moz-</code>）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p::selection&#123;</span><br><span class="line">	background-color: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="10-伪元素选择器"><a href="#10-伪元素选择器" class="headerlink" title="(10).伪元素选择器"></a>(10).伪元素选择器</h3><ul>
-<li>作用：用来表示元素中的一些特殊位置，以下几个基本都不支持IE6了</li>
-</ul>
-<ol>
-<li>首字母选择器：<code>:first-letter</code></li>
-</ol>
-<ul>
-<li>作用：为p中的第一个字符设置一个特殊的样式<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p:first-letter&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ol start="2">
-<li>首行选择器：<code>:first-line</code></li>
-</ol>
-<ul>
-<li>作用：为p中的第一行设置一个背景颜色<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p:first-line&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ol start="3">
-<li>before选择器：<code>:before</code></li>
-</ol>
-<ul>
-<li>作用：表示元素最前边的部分</li>
-<li><p>注意：p标签前面默认什么都没有，需要结合content样式一起使用<font color="#FF0000">（content可以向before或after的位置添加一些内容）</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:before&#123;</span><br><span class="line">	content:&quot;我会出现在整个段落的最前端&quot;;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>注意：这部分内容是由css添加的，故在浏览器中无法被选中</p>
-</li>
-</ul>
-<ol start="4">
-<li>after选择器：<code>:after</code></li>
-</ol>
-<ul>
-<li>作用：表示元素最后边的部分</li>
-<li>注意：p标签后面默认什么都没有，需要结合 content 样式一起使用<font color="#FF0000">（content可以向before或after的位置添加一些内容）</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:after&#123;</span><br><span class="line">	content:&quot;我会出现在整个段落的最后端&quot;;</span><br><span class="line">	color: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="11-属性选择器"><a href="#11-属性选择器" class="headerlink" title="(11).属性选择器"></a>(11).属性选择器</h3><ul>
-<li>可以根据元素中的属性或属性值来选取指定元素</li>
-<li>语法：[属性名]选取含有指定属性的元素；[属性名=”属性值”]选取含有指定属性值的元素；[属性名^=”属性值”]选取属性值以指定内容开头的元素；[属性名$=”属性值”]选取属性值以指定内容结尾的元素；[属性名*=”属性值”]选取属性值包含指定内容的元素</li>
-</ul>
-<ol>
-<li>title属性：<code>title=&quot;内容&quot;</code></li>
-</ol>
-<ul>
-<li>作用：鼠标移动到元素上时，title 属性的值会作为提示文字出现</li>
-<li><p>例子1：想要为所有具有 title 属性的p元素设置背景颜色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>例子2：为 title 属性值是 hello 的元素设置一个背景颜色为换色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title=&quot;hello&quot;]&#123;</span><br><span class="line">		background-color: yelow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>例子3：为 title 属性值以ab开头的元素设置一个背景颜色为黄色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title^=&quot;ab&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>例子4：为 title 属性值以c结尾的元素设置一个背景颜色为黄色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title$=&quot;c&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>例子5：为 title 属性值含有ab的元素设置一个背景颜色为黄色</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title*=&quot;ab&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="12-兄弟元素选择器"><a href="#12-兄弟元素选择器" class="headerlink" title="(12).兄弟元素选择器"></a>(12).兄弟元素选择器</h3><ol>
+<h3 id="9-兄弟元素选择器"><a href="#9-兄弟元素选择器" class="headerlink" title="(9).兄弟元素选择器"></a>(9).兄弟元素选择器</h3><ol>
 <li>后一个兄弟元素选择器：<code>span+p</code></li>
 </ol>
 <ul>
-<li>作用：用来选择 span 元素后边的第一个p元素</li>
+<li>作用：用来选择 <code>&lt;span&gt;</code> 元素后边的第一个 <code>&lt;p&gt;</code> 元素</li>
 </ul>
 <ol start="2">
 <li>后边所有兄弟元素选择器：<code>span~p</code></li>
 </ol>
 <ul>
-<li>作用：用来选择 span 元素后边的所有p元素</li>
+<li>作用：用来选择 <code>&lt;span&gt;</code> 元素后边的所有 <code>&lt;p&gt;</code> 元素</li>
 </ul>
-<h3 id="13-否定伪类选择器"><a href="#13-否定伪类选择器" class="headerlink" title="(13).否定伪类选择器"></a>(13).否定伪类选择器</h3><ul>
+<h3 id="10-伪类选择器"><a href="#10-伪类选择器" class="headerlink" title="(10).伪类选择器"></a>(10).伪类选择器</h3><ul>
+<li>写法：一般都是使用 <code>:</code> 开头的</li>
+<li>作用：专门用来表示元素的一种<font color="#FF0000">特殊的状态</font><br><img src="https://i.loli.net/2020/02/29/wITXCASsprjnQ5E.png" alt="伪类.png"></li>
+</ul>
+<h4 id="a-超链接的伪类"><a href="#a-超链接的伪类" class="headerlink" title="a.超链接的伪类"></a>a.超链接的伪类</h4><ul>
+<li><p>有下面四种：<br><img src="https://i.loli.net/2019/09/18/LUSutm3KnXMHcjA.jpg" alt="伪类.jpg"></p>
+</li>
+<li><p>在写法上上面四种都类似，例如：<code>a:link+{}</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a:link&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><font color="#FF0000">注意：由于涉及用户隐私，<code>visited</code> 中只能设置字体的颜色</font></li>
+<li><font color="#FF0000">注意：<code>hover</code> 和 <code>active</code> 不只是可以给 <code>&lt;a&gt;</code> 标签设置，<code>&lt;p&gt;</code> 标签也同样可以设置，IE6 中不支持对超链接以外的元素设置</font>
+
+</li>
+</ul>
+<h4 id="b-焦点选择器"><a href="#b-焦点选择器" class="headerlink" title="b.焦点选择器"></a>b.焦点选择器</h4><ul>
+<li>语法：<code>:focus</code></li>
+<li>作用：用来获取焦点的</li>
+<li><code>focus</code> 搭配 <code>&lt;input&gt;</code> 标签来使用，可以用来获取焦点使文本框修改颜色<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">input:focus&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br><span class="line">······</span><br><span class="line">&lt;input type=&quot;text&quot; /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="c-首元素选择器"><a href="#c-首元素选择器" class="headerlink" title="c.首元素选择器"></a>c.首元素选择器</h4><ul>
+<li>语法：<code>:first-child</code></li>
+<li>作用：选择所有中的第一个子元素<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &gt; li:first-child&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="d-末元素选择器"><a href="#d-末元素选择器" class="headerlink" title="d.末元素选择器"></a>d.末元素选择器</h4><ul>
+<li>语法：<code>:last-child</code></li>
+<li>作用：选择所有中的最后一个子元素<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &gt; li:last-child&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="e-任意元素选择器"><a href="#e-任意元素选择器" class="headerlink" title="e.任意元素选择器"></a>e.任意元素选择器</h4><ul>
+<li>语法：<code>:nth-child(n)</code></li>
+<li>作用：选择其中的第 n 个子元素（n为0到正无穷，2n 或 even 表示选中偶数位的，2n+1 或odd 表示选中奇数位的）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ul &gt; li:nth-child(n)&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="f-上面三个的延伸"><a href="#f-上面三个的延伸" class="headerlink" title="f.上面三个的延伸"></a>f.上面三个的延伸</h4><ul>
+<li>语法：<code>:first-of-type</code> 、<code>:last-of-type</code> 、<code>:nth-of-type</code></li>
+<li>不同点：上面三个是根据所有子元素进行排序的，而下面这三个是在同类型元素中进行排序</li>
+</ul>
+<h4 id="g-否定伪类选择器"><a href="#g-否定伪类选择器" class="headerlink" title="g.否定伪类选择器"></a>g.否定伪类选择器</h4><ul>
 <li>作用：从已选中的元素中剔除其指定的元素</li>
 <li>语法：<code>已选中的:not(需要剔除的)</code></li>
-<li>如下代码，就是剔除掉p元素中 class 是 hello 的<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">P:not(.hello)&#123;</span><br><span class="line">&#125;</span><br><span class="line">&lt;p class=&quot;hello&quot;&gt;我是被剔除的&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<li>如下代码，就是剔除掉 <code>&lt;p&gt;</code> 元素中 <code>class</code> 是 hello 的<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">P:not(.hello)&#123;</span><br><span class="line">&#125;</span><br><span class="line">&lt;p class=&quot;hello&quot;&gt;我是被剔除的&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="11-伪元素选择器"><a href="#11-伪元素选择器" class="headerlink" title="(11).伪元素选择器"></a>(11).伪元素选择器</h3><ul>
+<li>写法：官方使用 <code>::</code> 开头，但也可以使用 <code>:</code></li>
+<li>作用：用来表示元素中的一些特殊位置，以下几个基本都不支持 IE6 了<br><img src="https://i.loli.net/2020/02/29/y8f3UCdYDZtxWoX.png" alt="伪元素.png"></li>
+</ul>
+<h4 id="a-首字母选择器"><a href="#a-首字母选择器" class="headerlink" title="a.首字母选择器"></a>a.首字母选择器</h4><ul>
+<li><p>语法：<code>::first-letter</code></p>
+</li>
+<li><p>作用：为 <code>&lt;p&gt;</code> 中一段话中的第一个字符设置一个特殊的样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p::first-letter&#123;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="b-首行选择器"><a href="#b-首行选择器" class="headerlink" title="b.首行选择器"></a>b.首行选择器</h4><ul>
+<li><p>语法：<code>::first-line</code></p>
+</li>
+<li><p>作用：为 <code>&lt;p&gt;</code> 中的第一行设置一个样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p:first-line&#123;</span><br><span class="line">	background-color: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="c-before-选择器"><a href="#c-before-选择器" class="headerlink" title="c.before 选择器"></a>c.before 选择器</h4><ul>
+<li><p>语法：<code>::before</code></p>
+</li>
+<li><p>作用：表示元素最前边的部分</p>
+</li>
+<li><p>注意：<code>&lt;p&gt;</code> 标签前面默认什么都没有，需要结合 <code>content</code> 样式一起使用<font color="#FF0000">（<code>content</code> 可以向 <code>before</code> 或 <code>after</code> 的位置添加一些内容）</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:before&#123;</span><br><span class="line">	content:&quot;我会出现在整个段落的最前端&quot;;</span><br><span class="line">	color: red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注意：这部分内容是由 css 添加的，故在浏览器中无法被选中</p>
+</li>
+</ul>
+<h4 id="d-after-选择器"><a href="#d-after-选择器" class="headerlink" title="d.after 选择器"></a>d.after 选择器</h4><ul>
+<li>语法：<code>::after</code></li>
+<li>作用：表示元素最后边的部分</li>
+<li>注意：<code>&lt;p&gt;</code> 标签后面默认什么都没有，需要结合 <code>content</code> 样式一起使用<font color="#FF0000">（<code>content</code> 可以向 <code>before</code> 或 <code>after</code> 的位置添加一些内容）</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">p:after&#123;</span><br><span class="line">	content:&quot;我会出现在整个段落的最后端&quot;;</span><br><span class="line">	color: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="e-selection-选择器"><a href="#e-selection-选择器" class="headerlink" title="e.selection 选择器"></a>e.selection 选择器</h4><ul>
+<li>语法：<code>::selection</code></li>
+<li>作用：表示选中的内容，即鼠标在网页中选中时</li>
+<li><code>selection</code> 为 <code>&lt;p&gt;</code> 标签中选中的内容使用样式（该伪类在火狐浏览器中需要在冒号后加<code>-moz-</code>）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">p::selection&#123;</span><br><span class="line">	background-color: orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="12-属性选择器"><a href="#12-属性选择器" class="headerlink" title="(12).属性选择器"></a>(12).属性选择器</h3><ul>
+<li>可以根据元素中的属性或属性值来选取指定元素</li>
+<li><p>语法：<br><code>[属性名]</code> 选取含有指定属性的元素；<br><code>[属性名=&quot;属性值&quot;]</code> 选取含有指定属性值的元素；<br><code>[属性名^=&quot;属性值&quot;]</code> 选取属性值以指定内容开头的元素；<br><code>[属性名$=&quot;属性值&quot;]</code> 选取属性值以指定内容结尾的元素；<br><code>[属性名*=&quot;属性值&quot;]</code> 选取属性值包含指定内容的元素</p>
+</li>
+<li><p>如：title 属性：<code>title=&quot;内容&quot;</code> 其作用是鼠标移动到元素上时，<code>title</code> 属性的值会作为提示文字出现</p>
+</li>
+<li><p>例子1：为所有具有 <code>title</code> 属性的 p 元素设置背景颜色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子2：为 <code>title</code> 属性值是 hello 的元素设置一个背景颜色为换色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title=&quot;hello&quot;]&#123;</span><br><span class="line">		background-color: yelow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子3：为 <code>title</code> 属性值以 ab 开头的元素设置一个背景颜色为黄色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title^=&quot;ab&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子4：为 <code>title</code> 属性值以 c 结尾的元素设置一个背景颜色为黄色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title$=&quot;c&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>例子5：为 <code>title</code> 属性值含有 ab 的元素设置一个背景颜色为黄色</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	p[title*=&quot;ab&quot;]&#123;</span><br><span class="line">		background-color: yellow;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="4-选择器的优先级"><a href="#4-选择器的优先级" class="headerlink" title="4.选择器的优先级"></a>4.选择器的优先级</h2><h3 id="a-作用"><a href="#a-作用" class="headerlink" title="a.作用"></a>a.作用</h3><ul>
@@ -828,23 +869,23 @@
 <tbody>
 <tr>
 <td style="text-align:center">内联样式</td>
-<td style="text-align:center">1000</td>
+<td style="text-align:center">1,0,0,0 </td>
 </tr>
 <tr>
 <td style="text-align:center">id选择器</td>
-<td style="text-align:center">100</td>
+<td style="text-align:center">0,1,0,0 </td>
 </tr>
 <tr>
 <td style="text-align:center">类和伪类</td>
-<td style="text-align:center">10</td>
+<td style="text-align:center">0,0,1,0 </td>
 </tr>
 <tr>
 <td style="text-align:center">元素选择器</td>
-<td style="text-align:center">1</td>
+<td style="text-align:center">0,0,0,1 </td>
 </tr>
 <tr>
 <td style="text-align:center">通配选择器</td>
-<td style="text-align:center">0</td>
+<td style="text-align:center">0,0,0,0 </td>
 </tr>
 <tr>
 <td style="text-align:center">继承的样式</td>
@@ -852,20 +893,28 @@
 </tr>
 </tbody>
 </table>
-<h3 id="c-优先级的运算"><a href="#c-优先级的运算" class="headerlink" title="c.优先级的运算"></a>c.优先级的运算</h3><ol>
-<li>选择器中包含多种选择器时，需要将这些优先级相加，但计算的时候不会超过他的最大数量级</li>
-<li>当选择器的优先级一样时，选择靠后的样式</li>
-<li>并集选择器的优先级单独运算</li>
-</ol>
-<h3 id="d-注意事项"><a href="#d-注意事项" class="headerlink" title="d.注意事项"></a>d.注意事项</h3><ol>
-<li>不推荐使用内联样式，因为内联样式的优先级最高</li>
-<li>如果在样式的最后，添加一个 <code>!important</code> ，则会获得最高的优先级，但在开发时不建议这样使用</li>
-</ol>
-<h3 id="e-关于a的伪类"><a href="#e-关于a的伪类" class="headerlink" title="e.关于a的伪类"></a>e.关于a的伪类</h3><ol>
-<li><code>link</code> <code>visited</code> <code>hover</code> <code>active</code> 的优先级都一样，但优先使用后边的</li>
-<li><code>link</code> 和 <code>visited</code> 必须放在其余两个的前面</li>
-<li><code>hover</code> 和 <code>active</code> 位置不能变，否则不生效</li>
-</ol>
+<h3 id="c-优先级的运算"><a href="#c-优先级的运算" class="headerlink" title="c.优先级的运算"></a>c.优先级的运算</h3><ul>
+<li><p>选择器中包含多种选择器时，需要将这些优先级相加，但计算的时候不会超过他的最大数量级（正如上边的逗号，表示不能跨数量级）</p>
+</li>
+<li><p>当选择器的优先级一样时，优先选择靠后的样式，即覆盖</p>
+</li>
+<li><p>并集选择器的优先级单独运算</p>
+</li>
+</ul>
+<h3 id="d-注意事项"><a href="#d-注意事项" class="headerlink" title="d.注意事项"></a>d.注意事项</h3><ul>
+<li><p>不推荐使用内联样式，因为内联样式的优先级最高</p>
+</li>
+<li><p>如果在样式的最后，添加一个 <code>!important</code> ，则会获得最高的优先级，甚至超过内联样式，但在开发时不建议这样使用</p>
+</li>
+</ul>
+<h3 id="e-关于a的伪类"><a href="#e-关于a的伪类" class="headerlink" title="e.关于a的伪类"></a>e.关于a的伪类</h3><ul>
+<li><p><code>link</code> <code>visited</code> <code>hover</code> <code>active</code> 的优先级都一样，但优先使用后边的</p>
+</li>
+<li><p><code>link</code> 和 <code>visited</code> 必须放在其余两个的前面</p>
+</li>
+<li><p><code>hover</code> 和 <code>active</code> 位置不能变，否则不生效</p>
+</li>
+</ul>
 <h1 id="三、盒子模型（重点）"><a href="#三、盒子模型（重点）" class="headerlink" title="三、盒子模型（重点）"></a>三、盒子模型（重点）</h1><h2 id="1-基础知识"><a href="#1-基础知识" class="headerlink" title="1.基础知识"></a>1.基础知识</h2><ul>
 <li>盒子模型又叫框模型，所有的元素都是盒子</li>
 <li>盒子的大小由内容区、内边距和边框共同决定的</li>
@@ -923,7 +972,7 @@
 <h4 id="消除重叠的方法："><a href="#消除重叠的方法：" class="headerlink" title="消除重叠的方法："></a>消除重叠的方法：</h4><ul>
 <li>方法一：给子元素使用一个样式（边框、内边距），但此时会多像素，所以需要在盒子的高度上减去多的像素</li>
 <li>方法二：给父元素使用一个上内边距，但此时会多像素，所以需要在盒子的高度上减去多的像素</li>
-<li>方法三：给父元素设置一个伪类，将元素设置为表格显示，即 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.box1:before&#123;</span><br><span class="line">	content: &quot;&quot;;</span><br><span class="line">	display: table;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>方法三：给父元素设置一个伪类，将元素设置为表格显示，即<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.box1:before&#123;</span><br><span class="line">	content: &quot;&quot;;</span><br><span class="line">	display: table;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="5-浏览器默认样式"><a href="#5-浏览器默认样式" class="headerlink" title="5.浏览器默认样式"></a>5.浏览器默认样式</h2><ul>
@@ -996,7 +1045,7 @@
 <li><font color="#FF0000">最终推荐方法2：通过after伪类向元素最后添加一个空白的块元素，然后对其清除浮动，这样就不会添加多余的架构，代码如下：</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:after&#123;</span><br><span class="line">	content: &quot;&quot;;	//这里仅仅为了撑开父元素，所以内容区不需要写内容</span><br><span class="line">	display: block;	//转成块元素</span><br><span class="line">	clear: both;	//清除浮动</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="13-1-clearfix的最终写法："><a href="#13-1-clearfix的最终写法：" class="headerlink" title="13-1.clearfix的最终写法："></a>13-1.clearfix的最终写法：</h2><ul>
+<h2 id="13-1-clearfix的最终写法"><a href="#13-1-clearfix的最终写法" class="headerlink" title="13-1.clearfix的最终写法"></a>13-1.clearfix的最终写法</h2><ul>
 <li><p>使用 clearfix 既可以消除父子元素的重叠问题，又可以解决高度塌陷问题，代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.clearfix:before,</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">	content: &quot;&quot;;</span><br><span class="line">	display: table;</span><br><span class="line">	clear: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -1034,7 +1083,7 @@
 <h3 id="4-层级"><a href="#4-层级" class="headerlink" title="(4).层级"></a>(4).层级</h3><ul>
 <li>如果定位元素的层级是一样的，则下边的元素会盖住上边的</li>
 <li>通过 <code>z-index</code> 属性来设置元素的层级，其值为正整数，该值会作为当前元素的层级，层级越高，越优先显示。但父元素的层级再高，也不会盖住子元素</li>
-<li>对于没有开启定位的元素，不能使用 <code>z-index</code> </li>
+<li>对于没有开启定位的元素，不能使用 <code>z-index</code></li>
 </ul>
 <h3 id="5-元素透明"><a href="#5-元素透明" class="headerlink" title="(5).元素透明"></a>(5).元素透明</h3><ul>
 <li>使用 <code>obacity</code> 可以用来设置元素背景的透明度，它需要一个0-1之间的值</li>
@@ -1054,8 +1103,12 @@
 </li>
 </ul>
 <h3 id="1-文本框"><a href="#1-文本框" class="headerlink" title="(1).文本框"></a>(1).文本框</h3><ul>
-<li>使用 input 标签来创建，它的 type 属性是 text </li>
-<li>如果希望表单项中的数据提交的服务器，还必须给表单项指定 name 属性，name 表示提交内容的名字<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名：&lt;input type=&quot;text&quot; name=&quot;username&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<li>使用 input 标签来创建，它的 type 属性是 text</li>
+<li><p>如果希望表单项中的数据提交的服务器，还必须给表单项指定 name 属性，name 表示提交内容的名字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名：&lt;input type=&quot;text&quot; name=&quot;username&quot; /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文本框中有水印效果，起到提示作用，但一点进文本框就会消失，需要使用到 placeholder 属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名：&lt;input type=&quot;text&quot; name=&quot;username&quot; palceholder=&quot;Your name&quot;/&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="2-提交按钮"><a href="#2-提交按钮" class="headerlink" title="(2).提交按钮"></a>(2).提交按钮</h3><ul>
@@ -1081,11 +1134,18 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;botton&quot; value=&quot;按钮&quot; /&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>除了使用 input ，也可以使用 button 标签来创建按钮</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button type=&quot;button&quot;&gt;按钮&lt;/button</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button type=&quot;button&quot;&gt;按钮&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>想要实现鼠标移到按钮上时变成小手，可以使用 cursor 属性来设置鼠标指针的样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;button class=&quot;btn&quot; type=&quot;button&quot;&gt;按钮&lt;/button&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	.btn&#123;</span><br><span class="line">		cursor: pointer;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="5-密码框"><a href="#5-密码框" class="headerlink" title="(5).密码框"></a>(5).密码框</h3><ul>
-<li>使用 input 标签来创建，它的 type 属性是 password<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">密码：&lt;input type=&quot;password&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<li><p>使用 input 标签来创建，它的 type 属性是 password</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">密码：&lt;input type=&quot;password&quot; /&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>密码框中有水印效果，起到提示作用，但一点进密码框就会消失，需要使用到 placeholder 属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">密码：&lt;input type=&quot;password&quot; placeholder=&quot;Your password&quot;/&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="6-单选按钮"><a href="#6-单选按钮" class="headerlink" title="(6).单选按钮"></a>(6).单选按钮</h3><ul>
@@ -1104,7 +1164,7 @@
 <li>使用 select 标签来创建，在其中使用 option 标签来创建一个一个列表项</li>
 <li>下拉列表中的 name 属性要给 select 标签设置，而 value 属性要给 option 标签设置</li>
 <li>如果希望下拉列表中指定默认选中的选项，则在希望选中的项中添加 <code>selected=&quot;selected&quot;</code> 即可</li>
-<li><p>当为下拉列表添加一个 `multiple=”multipe” ，则下拉列表变为一个多选的下拉列表</p>
+<li><p>当为下拉列表添加一个 <code>multiple=&quot;multipe&quot;</code> ，则下拉列表变为一个多选的下拉列表</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">你喜欢的明星：</span><br><span class="line">	&lt;select name=&quot;star&quot;&gt;</span><br><span class="line">		&lt;option value=&quot;cyx&quot;&gt;陈奕迅&lt;/option&gt;</span><br><span class="line">		&lt;option value=&quot;sdl&quot;&gt;苏打绿&lt;/option&gt;</span><br><span class="line">		&lt;option value=&quot;wyt&quot;&gt;五月天&lt;/option&gt;</span><br><span class="line">	&lt;/select&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在 select 中可以使用 optgroup 来对选项分组，label 属性用来填写分组的名字</p>
@@ -1112,7 +1172,14 @@
 </li>
 </ul>
 <h3 id="9-文本域——简介"><a href="#9-文本域——简介" class="headerlink" title="(9).文本域——简介"></a>(9).文本域——简介</h3><ul>
-<li>使用 textarea 标签来创建<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">简介：&lt;textarea name=&quot;info&quot;&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+<li><p>使用 textarea 标签来创建</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">简介：&lt;textarea name=&quot;info&quot;&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用 resize 属性来设置文本域不能调整大小，即右下角没有调整按钮</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">resize: none;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文本域中有水印效果，起到提示作用，但一点进文本域就会消失，需要使用到 placeholder 属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">简介：&lt;textarea name=&quot;info&quot; placeholder=&quot;Your introduce&quot;&gt;&lt;/textarea&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="10-表单项的分组"><a href="#10-表单项的分组" class="headerlink" title="(10).表单项的分组"></a>(10).表单项的分组</h3><ul>
@@ -1120,9 +1187,22 @@
 <li>可以使用 legend 子标签指定组名<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;fieldset&gt;</span><br><span class="line">	&lt;legend&gt;用户信息&lt;/legend&gt;</span><br><span class="line">		&lt;label for=&quot;un&quot;&gt;用户名&lt;/label&gt;</span><br><span class="line">		&lt;input id=&quot;un&quot; type=&quot;text&quot; name=&quot;username&quot; /&gt;</span><br><span class="line">		&lt;label for=&quot;pw&quot;&gt;密码&lt;/label&gt;</span><br><span class="line">		&lt;input id=&quot;pw&quot; type=&quot;password&quot; /&gt;</span><br><span class="line">&lt;/fieldset&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="五、简单布局实践"><a href="#五、简单布局实践" class="headerlink" title="五、简单布局实践"></a>五、简单布局实践</h1><h2 id="1-导航条的设计"><a href="#1-导航条的设计" class="headerlink" title="1.导航条的设计"></a>1.导航条的设计</h2><ul>
-<li>导航条可以用无序列表和div来创建，一般用无需列表</li>
+<h1 id="五、CSS-Hack"><a href="#五、CSS-Hack" class="headerlink" title="五、CSS Hack"></a>五、CSS Hack</h1><ul>
+<li>使用 CSS-Hack 可以将一些特殊的代码只在某些特殊的浏览器中执行，而在其他浏览器中不执行</li>
+<li>CSS-Hack 实际上指的是一个特殊的代码</li>
+<li>条件Hack<br><img src="https://i.loli.net/2020/02/25/5kDX8h4rsuYnjAf.png" alt="CSS-Hack1.png"></li>
+<li><p>例：想要只在IE6中显示，即可如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--[if IE 6]&gt;</span><br><span class="line">	&lt;p&gt;只会在IE6中显示&lt;/p&gt;</span><br><span class="line">&lt;![endif]--&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>属性Hack<br><img src="https://i.loli.net/2020/02/25/2m93XHaE14MuCBl.png" alt="CSS-Hack2.png"></p>
+</li>
+<li><p>选择符Hack<br><img src="https://i.loli.net/2020/02/25/PmEIfnrTXoJWxL3.png" alt="CSS-Hack3.png"></p>
+</li>
+</ul>
+<h1 id="六、简单布局实践"><a href="#六、简单布局实践" class="headerlink" title="六、简单布局实践"></a>六、简单布局实践</h1><h2 id="1-导航条的设计"><a href="#1-导航条的设计" class="headerlink" title="1.导航条的设计"></a>1.导航条的设计</h2><ul>
+<li>导航条可以用无序列表和div来创建，一般用无序列表</li>
 <li>使用无序列表时需要清除掉前面的小点，使用 <code>list-style: none;</code> 来清除</li>
+<li>需要使无序列表水平摆放，所以需要给列表项即 <code>li标签</code> 设置向左浮动</li>
 <li>想要给超链接即a标签设置宽度等，需要使用 <code>display: block</code> 转为块元素</li>
 <li>对于宽度以及居中问题，首先给父标签即 <code>ul标签</code> 设置一个固定宽度，其子标签即 <code>li标签</code> 按父元素的比例设置，最后将超链接所在标签即 <code>a标签</code> 设置为100%即可</li>
 <li>想要鼠标滑过的特效，需要使用<font color="#FF0000">伪类选择器</font>来设置</li>
@@ -1135,6 +1215,7 @@
 <li>Ctrl+R：开启/关闭标尺</li>
 <li>Ctrl+H：显示/隐藏辅助线</li>
 <li>F8：用矩形选框选中以后用它可以快捷查看高度和宽度</li>
+<li>Alt+鼠标左键点击图层前面的眼睛：只显示当前图层，隐藏其余图层</li>
 </ul>
 <h2 id="3-简单页面的设计"><a href="#3-简单页面的设计" class="headerlink" title="3.简单页面的设计"></a>3.简单页面的设计</h2><ul>
 <li>浏览器默认字体16px大小，但一般使用12px大小，所以需要统一字体大小，且把行高和字体一块设置</li>
@@ -1153,8 +1234,16 @@
 <h2 id="5-雪碧图的制作与使用"><a href="#5-雪碧图的制作与使用" class="headerlink" title="5.雪碧图的制作与使用"></a>5.雪碧图的制作与使用</h2><ul>
 <li>将三张图片依次放进PS中打开，由于需要将三张图片合并起来，所以需要在第一张图片上拓展相应画布大小，在 图像-画布大小 中修改，并设置相应的定位方向</li>
 <li>修改好以后存储为 <code>png-24</code> 格式即可</li>
+<li>雪碧图只适用于做背景的图，在网页中引入的 img 标签是不能做成雪碧图的</li>
 </ul>
-<h1 id="附、问题纠错"><a href="#附、问题纠错" class="headerlink" title="附、问题纠错"></a>附、问题纠错</h1><h2 id="1-相对路径问题"><a href="#1-相对路径问题" class="headerlink" title="1.相对路径问题"></a>1.相对路径问题</h2><ul>
+<h2 id="6-POLO-360-项目练习"><a href="#6-POLO-360-项目练习" class="headerlink" title="6.POLO 360 项目练习"></a>6.POLO 360 项目练习</h2><ul>
+<li>在实际开发中，消除浏览器默认属性时一般不自己设置，而是引用别人设置好的一个消除样式，且该样式名为 <code>reset.css</code> ，常用的是一个外国友人所写的，他的原链接可以去 <a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">这里</a> 查看，因为是国外，如果打不开的话，可以直接点击我 <a href="https://pan.baidu.com/s/1DVApsJEjewS8bkarko904w" target="_blank" rel="noopener">这里</a> （提取码：k7i2）来进行下载</li>
+<li>当遇到文本即h标签或p标签在不同浏览器显示高度不同时，是因为每个浏览器对文字的行高设定不一致，所以需要给这些文字设定一个行高，可以这样快捷设置 <code>font: 15px/1;</code></li>
+<li>在一个p标签中，如果想要文字环绕图片，那么需要给图片设置浮动</li>
+<li>在做完页面以后，应当在多个浏览器中进行试验，一般在IE6上出现的Bug会比较多</li>
+<li>最后需要压缩CSS代码，即把不用的注释，空格，换行全部删掉，这里一般是使用工具来进行压缩，如：JsCssZip 。还需要压缩图片，即把图片做成雪碧图。</li>
+</ul>
+<h1 id="附、问题集合"><a href="#附、问题集合" class="headerlink" title="附、问题集合"></a>附、问题集合</h1><h2 id="1-相对路径问题"><a href="#1-相对路径问题" class="headerlink" title="1.相对路径问题"></a>1.相对路径问题</h2><ul>
 <li>在 html 中调用css时使用 <code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;相对路径&quot;</code> 时，一直无法成功显示css样式</li>
 <li>因为我用的是 HBuilder 创建的项目，所以 css 文件默认存放在了 css 文件夹中，所以相对路径的写法为 <code>css/style.css</code> 。</li>
 </ul>
@@ -1162,7 +1251,14 @@
 <li><p>在做导航实验时，发现创建的无序列表默认就是横排显示，而不是竖排显示</p>
 </li>
 <li><p>原因是我在一个 <code>li</code> 标签中写的无序列表，如果想要竖排显示的话，每一个列表项都需要使用一个 <code>li</code> 标签来修饰，即：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;新闻&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;联系&lt;/a&gt;&lt;/li&gt;</span><br><span class="line">&lt;li&gt;&lt;a href=&quot;#&quot;&gt;关于&lt;/a&gt;&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-在IE6中浮动元素出现双倍边距bug"><a href="#3-在IE6中浮动元素出现双倍边距bug" class="headerlink" title="3.在IE6中浮动元素出现双倍边距bug"></a>3.在IE6中浮动元素出现双倍边距bug</h2><ul>
+<li>原因是浮动的时候，同时加了一个同方向的外边距，所以会出现双倍bug，只需要在这个元素的样式里增加 <code>display: inline</code> 即可解决</li>
+</ul>
+<h2 id="4-在其他浏览器显示正常，在IE6中显示不正常"><a href="#4-在其他浏览器显示正常，在IE6中显示不正常" class="headerlink" title="4.在其他浏览器显示正常，在IE6中显示不正常"></a>4.在其他浏览器显示正常，在IE6中显示不正常</h2><ul>
+<li>可以给IE6单独重新设置一个样式，如：<code>_background-color: #bfa;</code> 这样就只会在IE6中解析了</li>
 </ul>
 
       
@@ -1184,7 +1280,7 @@
   <p><span>本文标题:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/">CSS学习笔记（尚硅谷）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年08月22日 - 20:08</p>
-  <p><span>最后更新:</span>2020年02月24日 - 23:02</p>
+  <p><span>最后更新:</span>2020年02月29日 - 13:02</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/08/22/CSS学习笔记（尚硅谷）/" title="CSS学习笔记（尚硅谷）">http://zhangyangeng.github.io/2019/08/22/CSS学习笔记（尚硅谷）/</a>
@@ -1373,7 +1469,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1395,7 +1491,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1468,7 +1564,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础知识"><span class="nav-text">一、基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS样式编写位置"><span class="nav-text">2.CSS样式编写位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS语法"><span class="nav-text">3.CSS语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-IDE集成开发工具"><span class="nav-text">4.IDE集成开发工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-样式的继承（？？？）"><span class="nav-text">5.样式的继承（？？？）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-单位"><span class="nav-text">6.单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-字体单位"><span class="nav-text">a.字体单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-颜色单位"><span class="nav-text">b.颜色单位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-字体的样式"><span class="nav-text">7.字体的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-颜色"><span class="nav-text">a.颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-大小"><span class="nav-text">b.大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字体"><span class="nav-text">c.字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-字体分类（共5类）"><span class="nav-text">d.字体分类（共5类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-斜体效果"><span class="nav-text">e.斜体效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-加粗效果"><span class="nav-text">f.加粗效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-行间距"><span class="nav-text">8.行间距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-行间距可接收的值"><span class="nav-text">a.行间距可接收的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-注意事项"><span class="nav-text">b.注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-文本的样式"><span class="nav-text">9.文本的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-文本的大小写"><span class="nav-text">a.文本的大小写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-文本的装饰"><span class="nav-text">b.文本的装饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字符间距"><span class="nav-text">c.字符间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-单词间的距离"><span class="nav-text">d.单词间的距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-文本对齐方式"><span class="nav-text">e.文本对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-首行缩进"><span class="nav-text">f.首行缩进</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-背景的样式"><span class="nav-text">10.背景的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-背景图片："><span class="nav-text">(1).背景图片：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-背景图片的重复："><span class="nav-text">(2).背景图片的重复：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-背景图片的位置："><span class="nav-text">(3).背景图片的位置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-简写属性"><span class="nav-text">(4).简写属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-表格"><span class="nav-text">11.表格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-表格的基础形式"><span class="nav-text">(1).表格的基础形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-表格的样式"><span class="nav-text">(2).表格的样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-长表格的样式"><span class="nav-text">(3).长表格的样式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、元素和选择器"><span class="nav-text">二、元素和选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-块元素"><span class="nav-text">1.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-内联元素"><span class="nav-text">2.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-常用选择器"><span class="nav-text">3.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id选择器"><span class="nav-text">(2).id选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-选择器分组（并集选择器）"><span class="nav-text">(4).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-通配选择器"><span class="nav-text">(5).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-伪类选择器"><span class="nav-text">(9).伪类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-伪元素选择器"><span class="nav-text">(10).伪元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-属性选择器"><span class="nav-text">(11).属性选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-兄弟元素选择器"><span class="nav-text">(12).兄弟元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-否定伪类选择器"><span class="nav-text">(13).否定伪类选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-选择器的优先级"><span class="nav-text">4.选择器的优先级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-作用"><span class="nav-text">a.作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-优先级比较"><span class="nav-text">b.优先级比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-优先级的运算"><span class="nav-text">c.优先级的运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-注意事项"><span class="nav-text">d.注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-关于a的伪类"><span class="nav-text">e.关于a的伪类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、盒子模型（重点）"><span class="nav-text">三、盒子模型（重点）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础知识"><span class="nav-text">1.基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-边框（border）"><span class="nav-text">2.边框（border）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-必须设置的三个样式"><span class="nav-text">(1).必须设置的三个样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4种方向的设定"><span class="nav-text">(2).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-单独设置某样式的边"><span class="nav-text">(3).单独设置某样式的边</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-简写属性-1"><span class="nav-text">(4).简写属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-内边距（padding）"><span class="nav-text">3.内边距（padding）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-外边距（margin）"><span class="nav-text">4.外边距（margin）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4种方向的设定"><span class="nav-text">(1).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-简写属性"><span class="nav-text">(2).简写属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-垂直方向的重叠"><span class="nav-text">(3).垂直方向的重叠</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#消除重叠的方法："><span class="nav-text">消除重叠的方法：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-浏览器默认样式"><span class="nav-text">5.浏览器默认样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素的盒模型"><span class="nav-text">6.内联元素的盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-display-样式"><span class="nav-text">7.display 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-visibility-样式"><span class="nav-text">8.visibility 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-overflow-样式"><span class="nav-text">9.overflow 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-文档流"><span class="nav-text">10.文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-盒子的浮动"><span class="nav-text">11.盒子的浮动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍"><span class="nav-text">(1).介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-注意事项"><span class="nav-text">(2).注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-清除浮动对其他元素的影响"><span class="nav-text">(3)清除浮动对其他元素的影响</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-BFC属性"><span class="nav-text">12.BFC属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍-1"><span class="nav-text">(1).介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-开启后的特性"><span class="nav-text">(2).开启后的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-开启方法"><span class="nav-text">(3).开启方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-0-高度塌陷问题"><span class="nav-text">13-0.高度塌陷问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-1-clearfix的最终写法："><span class="nav-text">13-1.clearfix的最终写法：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-定位"><span class="nav-text">14.定位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-相对定位"><span class="nav-text">(1).相对定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-绝对定位"><span class="nav-text">(2).绝对定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-固定定位"><span class="nav-text">(3).固定定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-层级"><span class="nav-text">(4).层级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-元素透明"><span class="nav-text">(5).元素透明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、表单"><span class="nav-text">四、表单</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础知识-1"><span class="nav-text">1.基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-表单的设计"><span class="nav-text">2.表单的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-label-标签"><span class="nav-text">(0).label 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-文本框"><span class="nav-text">(1).文本框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-提交按钮"><span class="nav-text">(2).提交按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-重置按钮"><span class="nav-text">(3).重置按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-按钮"><span class="nav-text">(4).按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-密码框"><span class="nav-text">(5).密码框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-单选按钮"><span class="nav-text">(6).单选按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-多选按钮"><span class="nav-text">(7).多选按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-下拉列表"><span class="nav-text">(8).下拉列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-文本域——简介"><span class="nav-text">(9).文本域——简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-表单项的分组"><span class="nav-text">(10).表单项的分组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、简单布局实践"><span class="nav-text">五、简单布局实践</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-导航条的设计"><span class="nav-text">1.导航条的设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-PS的设计"><span class="nav-text">2.PS的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#部分快捷键："><span class="nav-text">部分快捷键：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-简单页面的设计"><span class="nav-text">3.简单页面的设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-按钮的设计"><span class="nav-text">4.按钮的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一："><span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二："><span class="nav-text">方法二：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-雪碧图的制作与使用"><span class="nav-text">5.雪碧图的制作与使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附、问题纠错"><span class="nav-text">附、问题纠错</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-相对路径问题"><span class="nav-text">1.相对路径问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-无序列表默认横排显示问题"><span class="nav-text">2.无序列表默认横排显示问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、基础知识"><span class="nav-text">一、基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS"><span class="nav-text">1.CSS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-CSS-样式编写位置"><span class="nav-text">2.CSS 样式编写位置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-内联样式"><span class="nav-text">(1).内联样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-内部样式"><span class="nav-text">(2).内部样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-外部样式"><span class="nav-text">(3).外部样式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-CSS-语法"><span class="nav-text">3.CSS 语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-样式的继承"><span class="nav-text">4.样式的继承</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-单位"><span class="nav-text">5.单位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-字体单位"><span class="nav-text">a.字体单位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-颜色单位"><span class="nav-text">b.颜色单位</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-字体的样式"><span class="nav-text">6.字体的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-颜色"><span class="nav-text">a.颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-大小"><span class="nav-text">b.大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字体"><span class="nav-text">c.字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-字体分类（共5类）"><span class="nav-text">d.字体分类（共5类）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-斜体效果"><span class="nav-text">e.斜体效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-加粗效果"><span class="nav-text">f.加粗效果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-行间距"><span class="nav-text">7.行间距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-行间距可接收的值"><span class="nav-text">a.行间距可接收的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-注意事项"><span class="nav-text">b.注意事项</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-文本的样式"><span class="nav-text">8.文本的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-文本的大小写"><span class="nav-text">a.文本的大小写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-文本的装饰"><span class="nav-text">b.文本的装饰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-字符间距"><span class="nav-text">c.字符间距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-单词间的距离"><span class="nav-text">d.单词间的距离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-文本对齐方式"><span class="nav-text">e.文本对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#f-首行缩进"><span class="nav-text">f.首行缩进</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-背景的样式"><span class="nav-text">9.背景的样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-背景图片："><span class="nav-text">(1).背景图片：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-背景图片的重复："><span class="nav-text">(2).背景图片的重复：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-背景图片的位置："><span class="nav-text">(3).背景图片的位置：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-简写属性"><span class="nav-text">(4).简写属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-表格"><span class="nav-text">10.表格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-表格的基础形式"><span class="nav-text">(1).表格的基础形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-表格的样式"><span class="nav-text">(2).表格的样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-长表格的样式"><span class="nav-text">(3).长表格的样式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-命名规范"><span class="nav-text">11.命名规范</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、元素和选择器"><span class="nav-text">二、元素和选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-块元素"><span class="nav-text">1.块元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-内联元素"><span class="nav-text">2.内联元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-常用选择器"><span class="nav-text">3.常用选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-元素选择器"><span class="nav-text">(1).元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-id-选择器"><span class="nav-text">(2).id 选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-类选择器"><span class="nav-text">(3).类选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-通配选择器"><span class="nav-text">(4).通配选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-选择器分组（并集选择器）"><span class="nav-text">(5).选择器分组（并集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-复合选择器（交集选择器）"><span class="nav-text">(6).复合选择器（交集选择器）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-后代元素选择器"><span class="nav-text">(7).后代元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-子元素选择器"><span class="nav-text">(8).子元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-兄弟元素选择器"><span class="nav-text">(9).兄弟元素选择器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-伪类选择器"><span class="nav-text">(10).伪类选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-超链接的伪类"><span class="nav-text">a.超链接的伪类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-焦点选择器"><span class="nav-text">b.焦点选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-首元素选择器"><span class="nav-text">c.首元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#d-末元素选择器"><span class="nav-text">d.末元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#e-任意元素选择器"><span class="nav-text">e.任意元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#f-上面三个的延伸"><span class="nav-text">f.上面三个的延伸</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#g-否定伪类选择器"><span class="nav-text">g.否定伪类选择器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-伪元素选择器"><span class="nav-text">(11).伪元素选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#a-首字母选择器"><span class="nav-text">a.首字母选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#b-首行选择器"><span class="nav-text">b.首行选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#c-before-选择器"><span class="nav-text">c.before 选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#d-after-选择器"><span class="nav-text">d.after 选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#e-selection-选择器"><span class="nav-text">e.selection 选择器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-属性选择器"><span class="nav-text">(12).属性选择器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-选择器的优先级"><span class="nav-text">4.选择器的优先级</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#a-作用"><span class="nav-text">a.作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#b-优先级比较"><span class="nav-text">b.优先级比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#c-优先级的运算"><span class="nav-text">c.优先级的运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#d-注意事项"><span class="nav-text">d.注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#e-关于a的伪类"><span class="nav-text">e.关于a的伪类</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、盒子模型（重点）"><span class="nav-text">三、盒子模型（重点）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础知识"><span class="nav-text">1.基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-边框（border）"><span class="nav-text">2.边框（border）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-必须设置的三个样式"><span class="nav-text">(1).必须设置的三个样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4种方向的设定"><span class="nav-text">(2).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-单独设置某样式的边"><span class="nav-text">(3).单独设置某样式的边</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-简写属性-1"><span class="nav-text">(4).简写属性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-内边距（padding）"><span class="nav-text">3.内边距（padding）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-外边距（margin）"><span class="nav-text">4.外边距（margin）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4种方向的设定"><span class="nav-text">(1).4种方向的设定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-简写属性"><span class="nav-text">(2).简写属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-垂直方向的重叠"><span class="nav-text">(3).垂直方向的重叠</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#消除重叠的方法："><span class="nav-text">消除重叠的方法：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-浏览器默认样式"><span class="nav-text">5.浏览器默认样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-内联元素的盒模型"><span class="nav-text">6.内联元素的盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-display-样式"><span class="nav-text">7.display 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-visibility-样式"><span class="nav-text">8.visibility 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-overflow-样式"><span class="nav-text">9.overflow 样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-文档流"><span class="nav-text">10.文档流</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-盒子的浮动"><span class="nav-text">11.盒子的浮动</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍"><span class="nav-text">(1).介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-注意事项"><span class="nav-text">(2).注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-清除浮动对其他元素的影响"><span class="nav-text">(3)清除浮动对其他元素的影响</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-BFC属性"><span class="nav-text">12.BFC属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍-1"><span class="nav-text">(1).介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-开启后的特性"><span class="nav-text">(2).开启后的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-开启方法"><span class="nav-text">(3).开启方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-0-高度塌陷问题"><span class="nav-text">13-0.高度塌陷问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-1-clearfix的最终写法"><span class="nav-text">13-1.clearfix的最终写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-定位"><span class="nav-text">14.定位</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-相对定位"><span class="nav-text">(1).相对定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-绝对定位"><span class="nav-text">(2).绝对定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-固定定位"><span class="nav-text">(3).固定定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-层级"><span class="nav-text">(4).层级</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-元素透明"><span class="nav-text">(5).元素透明</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、表单"><span class="nav-text">四、表单</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基础知识-1"><span class="nav-text">1.基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-表单的设计"><span class="nav-text">2.表单的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-label-标签"><span class="nav-text">(0).label 标签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-文本框"><span class="nav-text">(1).文本框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-提交按钮"><span class="nav-text">(2).提交按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-重置按钮"><span class="nav-text">(3).重置按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-按钮"><span class="nav-text">(4).按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-密码框"><span class="nav-text">(5).密码框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-单选按钮"><span class="nav-text">(6).单选按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-多选按钮"><span class="nav-text">(7).多选按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-下拉列表"><span class="nav-text">(8).下拉列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-文本域——简介"><span class="nav-text">(9).文本域——简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-表单项的分组"><span class="nav-text">(10).表单项的分组</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、CSS-Hack"><span class="nav-text">五、CSS Hack</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、简单布局实践"><span class="nav-text">六、简单布局实践</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-导航条的设计"><span class="nav-text">1.导航条的设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-PS的设计"><span class="nav-text">2.PS的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#部分快捷键："><span class="nav-text">部分快捷键：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-简单页面的设计"><span class="nav-text">3.简单页面的设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-按钮的设计"><span class="nav-text">4.按钮的设计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法一："><span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法二："><span class="nav-text">方法二：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-雪碧图的制作与使用"><span class="nav-text">5.雪碧图的制作与使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-POLO-360-项目练习"><span class="nav-text">6.POLO 360 项目练习</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#附、问题集合"><span class="nav-text">附、问题集合</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-相对路径问题"><span class="nav-text">1.相对路径问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-无序列表默认横排显示问题"><span class="nav-text">2.无序列表默认横排显示问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-在IE6中浮动元素出现双倍边距bug"><span class="nav-text">3.在IE6中浮动元素出现双倍边距bug</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-在其他浏览器显示正常，在IE6中显示不正常"><span class="nav-text">4.在其他浏览器显示正常，在IE6中显示不正常</span></a></li></ol></li></ol></div>
             
 
           </div>
