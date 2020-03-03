@@ -117,7 +117,7 @@
 <meta property="og:image" content="https://i.loli.net/2020/03/01/H5olDmgei1YKqBP.png">
 <meta property="og:image" content="https://i.loli.net/2020/03/01/MQuFSW1l7kfaEvG.png">
 <meta property="og:image" content="https://i.loli.net/2020/03/01/UAgeB1LDF34nJ5f.png">
-<meta property="og:updated_time" content="2020-03-01T06:44:54.359Z">
+<meta property="og:updated_time" content="2020-03-02T12:22:00.638Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一加7刷机指南">
 <meta name="twitter:description" content="介绍 关于一加7 刷机的一些步骤和技巧 这里写下来是为了防止自己遗忘的，毕竟现在刷机也不经常刷了">
@@ -421,7 +421,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.8k 字
+                  3.2k 字
                 </span>
               
 
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  10 分钟
+                  11 分钟
                 </span>
               
             </div>
@@ -495,12 +495,25 @@
 <li>进入 bootloader 界面，在cmd窗口内输入adb命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot oem lock</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="二、第三方REC篇"><a href="#二、第三方REC篇" class="headerlink" title="二、第三方REC篇"></a>二、第三方REC篇</h1><h1 id="三、Root（即Magisk）篇"><a href="#三、Root（即Magisk）篇" class="headerlink" title="三、Root（即Magisk）篇"></a>三、Root（即Magisk）篇</h1><ul>
+<h1 id="二、第三方REC篇"><a href="#二、第三方REC篇" class="headerlink" title="二、第三方REC篇"></a>二、第三方REC篇</h1><h2 id="1-有-Magisk的方法"><a href="#1-有-Magisk的方法" class="headerlink" title="(1).有 Magisk的方法"></a>(1).有 Magisk的方法</h2><ul>
+<li>下载对应安卓版本的 TWRP卡刷包</li>
+<li>在 Magisk刷模块的界面刷入 TWRP即可</li>
+</ul>
+<h2 id="2-无-Magisk的方法"><a href="#2-无-Magisk的方法" class="headerlink" title="(2).无 Magisk的方法"></a>(2).无 Magisk的方法</h2><ul>
+<li>解锁以后，手机进 fastboot模式</li>
+<li>下载 <a href="https://yunpan.360.cn/surl_yubQxZ83BTQ" target="_blank" rel="noopener">这里</a> 的文件并且解压文件</li>
+<li>打开 <code>adb_cmd.exe</code> ，输入 <code>fastboot flash boot twrp-boot.img</code> 回车</li>
+<li>然后手机移动到 <code>recovery mode</code> 按电源按键</li>
+<li>等手机进 TWRP之后默认是英文，点击 settings，然后点击最右边的小按钮，选择 Chinese 并点击 Set language ，这样就变成中文了</li>
+<li>输入密码或者手势进 TWRP主界面，接着点击 高级-一加工具箱-Magisk，安装好后重启系统就可以了 </li>
+<li>原文看 <a href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;tid=5055277" target="_blank" rel="noopener">这里</a>，只看安卓Q的部分</li>
+</ul>
+<h1 id="三、Root（即Magisk）篇"><a href="#三、Root（即Magisk）篇" class="headerlink" title="三、Root（即Magisk）篇"></a>三、Root（即Magisk）篇</h1><ul>
 <li>先重启手机到新的TWRP，选择 高级→ADB Sideload，滑动按钮开始（这步很重要）</li>
 <li><p>在 cmd窗口输入以下命令刷入 Magisk的卡刷包</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb sideload (卡刷包的名字).zip</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>成功后直接点击重启系统，就能在手机抽屉里找到安装好的 Magisk管理器，ROOT即已完成</p>
+<li><p>成功后直接点击重启系   统，就能在手机抽屉里找到安装好的 Magisk管理器，ROOT即已完成</p>
 </li>
 <li><font color="#F00">注：最新官方版TWRP可以不用以下教程，直接将卡刷包拷贝到手机上刷入</font>
 
@@ -612,7 +625,14 @@
 <li>线刷仅仅用于救砖，救砖之后还是尽快刷回官方原版的固件系统包</li>
 <li>可以 OTA 亦可以直接刷全量包</li>
 </ul>
-<h1 id="十、安卓10优化篇"><a href="#十、安卓10优化篇" class="headerlink" title="十、安卓10优化篇"></a>十、安卓10优化篇</h1><h2 id="1-刷内核"><a href="#1-刷内核" class="headerlink" title="1.刷内核"></a>1.刷内核</h2>
+<h1 id="十、清理数据篇"><a href="#十、清理数据篇" class="headerlink" title="十、清理数据篇"></a>十、清理数据篇</h1><ul>
+<li><font color="#F00">双清会导致系统应用丢失，所以需要刷全量包来补救，但又会掉 Root ，所以需要按以下操作</font></li>
+<li>先进 REC进行双清操作，然后刷全量包，刷REC，刷Magisk，刷REC重启。</li>
+<li>进系统以后再重启到 REC，格式化 data分区（为了删除内置存储上的文件），此时所有文件被清理，系统应用丢失</li>
+<li>然后进系统，用电脑传进手机全量包、REC和Magisk</li>
+<li>最后进REC，刷全量包，刷REC，刷Magisk，刷REC重启 </li>
+</ul>
+<h1 id="十一、安卓10优化篇"><a href="#十一、安卓10优化篇" class="headerlink" title="十一、安卓10优化篇"></a>十一、安卓10优化篇</h1><h2 id="1-刷内核"><a href="#1-刷内核" class="headerlink" title="1.刷内核"></a>1.刷内核</h2>
       
     </div>
     
@@ -632,7 +652,7 @@
   <p><span>本文标题:</span><a href="/2020/02/29/一加7刷机指南/">一加7刷机指南</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2020年02月29日 - 16:02</p>
-  <p><span>最后更新:</span>2020年03月01日 - 14:03</p>
+  <p><span>最后更新:</span>2020年03月02日 - 20:03</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2020/02/29/一加7刷机指南/" title="一加7刷机指南">http://zhangyangeng.github.io/2020/02/29/一加7刷机指南/</a>
@@ -914,7 +934,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、解锁篇"><span class="nav-text">一、解锁篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-ADB命令法"><span class="nav-text">1.ADB命令法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-工具箱无脑法"><span class="nav-text">2.工具箱无脑法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-上锁方法"><span class="nav-text">3.上锁方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、第三方REC篇"><span class="nav-text">二、第三方REC篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、Root（即Magisk）篇"><span class="nav-text">三、Root（即Magisk）篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、系统更新篇"><span class="nav-text">四、系统更新篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-同一个安卓版本下的更新"><span class="nav-text">1.同一个安卓版本下的更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-保留-TWRP-的方法"><span class="nav-text">(1).保留 TWRP 的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-保留-root-的方法"><span class="nav-text">(2).保留 root 的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-不同安卓版本下的更新"><span class="nav-text">2.不同安卓版本下的更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-保留TWRP和Root-！！！推荐"><span class="nav-text">(0).保留TWRP和Root ！！！推荐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-保留-TWRP-的方法-1"><span class="nav-text">(1).保留 TWRP 的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-保留-root-的方法-1"><span class="nav-text">(2).保留 root 的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-有-TWRP-的刷入方法"><span class="nav-text">3.有 TWRP 的刷入方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-手贱重启手机丢失-root-的方法（更新中）"><span class="nav-text">4.手贱重启手机丢失 root 的方法（更新中）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、降级篇"><span class="nav-text">五、降级篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安卓10降安卓9"><span class="nav-text">安卓10降安卓9</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、稳定刷公测篇"><span class="nav-text">六、稳定刷公测篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、氢OS刷氧OS篇"><span class="nav-text">七、氢OS刷氧OS篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一："><span class="nav-text">方法一：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、氢OS刷第三方篇"><span class="nav-text">八、氢OS刷第三方篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#九、9008-救砖篇"><span class="nav-text">九、9008 救砖篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-准备工作"><span class="nav-text">0.准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装底层驱动"><span class="nav-text">1.安装底层驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-开始线刷"><span class="nav-text">2.开始线刷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-更新系统"><span class="nav-text">3.更新系统</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十、安卓10优化篇"><span class="nav-text">十、安卓10优化篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-刷内核"><span class="nav-text">1.刷内核</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、解锁篇"><span class="nav-text">一、解锁篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-ADB命令法"><span class="nav-text">1.ADB命令法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-工具箱无脑法"><span class="nav-text">2.工具箱无脑法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-上锁方法"><span class="nav-text">3.上锁方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、第三方REC篇"><span class="nav-text">二、第三方REC篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-有-Magisk的方法"><span class="nav-text">(1).有 Magisk的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-无-Magisk的方法"><span class="nav-text">(2).无 Magisk的方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、Root（即Magisk）篇"><span class="nav-text">三、Root（即Magisk）篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、系统更新篇"><span class="nav-text">四、系统更新篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-同一个安卓版本下的更新"><span class="nav-text">1.同一个安卓版本下的更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-保留-TWRP-的方法"><span class="nav-text">(1).保留 TWRP 的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-保留-root-的方法"><span class="nav-text">(2).保留 root 的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-不同安卓版本下的更新"><span class="nav-text">2.不同安卓版本下的更新</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-保留TWRP和Root-！！！推荐"><span class="nav-text">(0).保留TWRP和Root ！！！推荐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-保留-TWRP-的方法-1"><span class="nav-text">(1).保留 TWRP 的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-保留-root-的方法-1"><span class="nav-text">(2).保留 root 的方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-有-TWRP-的刷入方法"><span class="nav-text">3.有 TWRP 的刷入方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-手贱重启手机丢失-root-的方法（更新中）"><span class="nav-text">4.手贱重启手机丢失 root 的方法（更新中）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、降级篇"><span class="nav-text">五、降级篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安卓10降安卓9"><span class="nav-text">安卓10降安卓9</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、稳定刷公测篇"><span class="nav-text">六、稳定刷公测篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、氢OS刷氧OS篇"><span class="nav-text">七、氢OS刷氧OS篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一："><span class="nav-text">方法一：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、氢OS刷第三方篇"><span class="nav-text">八、氢OS刷第三方篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#九、9008-救砖篇"><span class="nav-text">九、9008 救砖篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-准备工作"><span class="nav-text">0.准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装底层驱动"><span class="nav-text">1.安装底层驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-开始线刷"><span class="nav-text">2.开始线刷</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-更新系统"><span class="nav-text">3.更新系统</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十、清理数据篇"><span class="nav-text">十、清理数据篇</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#十一、安卓10优化篇"><span class="nav-text">十一、安卓10优化篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-刷内核"><span class="nav-text">1.刷内核</span></a></li></ol></li></ol></div>
             
 
           </div>
