@@ -86,7 +86,7 @@
 
 
 
-  <meta name="keywords" content="干货,服务器,翻墙,">
+  <meta name="keywords" content="服务器,翻墙,干货,">
 
 
 
@@ -100,7 +100,7 @@
 
 
 <meta name="description" content="介绍 本文主要介绍了怎样免费薅一年谷歌云服务器 谷歌云更像是国内阿里云之类云服务平台，谷歌云本身也是VM实例，这与VPS有很大差别，比如谷歌云是有专有网络的，而VPS几乎是不会给你的 谷歌云可以直接给VM实例设置 防火墙，这非常重要，若防火墙未开放相关端口，是没有办法执行任何操作的">
-<meta name="keywords" content="干货,服务器,翻墙">
+<meta name="keywords" content="服务器,翻墙,干货">
 <meta property="og:type" content="article">
 <meta property="og:title" content="谷歌云服务器免费使用教程">
 <meta property="og:url" content="http://zhangyangeng.github.io/2020/03/16/谷歌云服务器免费使用教程/index.html">
@@ -124,7 +124,15 @@
 <meta property="og:image" content="https://i.loli.net/2020/03/17/4vuylHWDF6Mf2wU.jpg">
 <meta property="og:image" content="https://i.loli.net/2020/03/17/Di64kFW8rvaV2Su.png">
 <meta property="og:image" content="https://i.loli.net/2020/03/17/DN1lYhKARqaJGtg.png">
-<meta property="og:updated_time" content="2020-03-17T10:58:14.864Z">
+<meta property="og:image" content="https://i.loli.net/2020/03/17/pkwEnrZbFM8zjeB.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/17/Di64kFW8rvaV2Su.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/18/b7pjmwJ8sd39aYq.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/18/d9SErYnkBGNVl51.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/18/vLDH9txMTwdzbFo.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/18/QeRC4dYkg7H3vVw.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/18/iEY319L6gOof7pT.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/18/ORXcoCbDFhu2MUp.png">
+<meta property="og:updated_time" content="2020-03-18T02:19:25.166Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="谷歌云服务器免费使用教程">
 <meta name="twitter:description" content="介绍 本文主要介绍了怎样免费薅一年谷歌云服务器 谷歌云更像是国内阿里云之类云服务平台，谷歌云本身也是VM实例，这与VPS有很大差别，比如谷歌云是有专有网络的，而VPS几乎是不会给你的 谷歌云可以直接给VM实例设置 防火墙，这非常重要，若防火墙未开放相关端口，是没有办法执行任何操作的">
@@ -564,17 +572,25 @@
 </ul>
 <h2 id="2-不删除实例更换IP"><a href="#2-不删除实例更换IP" class="headerlink" title="2.不删除实例更换IP"></a>2.不删除实例更换IP</h2><ul>
 <li>有时会遇到外网IP不能用的情况，这时可以考虑不删除实例更换IP</li>
-<li>选择菜单——Compute Engine——VM实例</li>
-<li>看到在运行的实例状态</li>
-<li>开始更换外部IP，找到菜单——VPC网络——外部IP地址</li>
-<li>附加在实例的IP不能被释放，所以找到附加在运行这个实例的IP，点击“更改”</li>
-<li>在附加到的选项里选择“无”，确定完成</li>
-<li>这时会重新分配一个临时IP给运行的这个实例，并且弹出计费警告。不用在意，点击确定完成</li>
-<li>等待完成会出现一个未附加到实例的静态IP和一个临时IP，一个实例只能绑定一个IP，未绑定的IP将单独计费，所以把不再需要的IP释放掉。选中需要释放IP点击“释放静态地址”，这样这个IP就被释放掉了。</li>
-<li>使用静态IP类型重启系统后IP不会发生改变，所以新IP类型选择“静态”，点击“更改”，名称随便填，点击“保留”并附加到需要绑定的实例上</li>
-<li>保留实例更换外部IP完成</li>
-<li>最后看下新IP是否生效</li>
 </ul>
+<ol>
+<li><p>选择菜单——Compute Engine——VM实例，可以看到正在运行的实例状态<br><img src="https://i.loli.net/2020/03/17/pkwEnrZbFM8zjeB.png" alt="谷歌云7.png"></p>
+</li>
+<li><p>开始更换外部IP，找到菜单——VPC网络——外部IP地址<br><img src="https://i.loli.net/2020/03/17/Di64kFW8rvaV2Su.png" alt="谷歌云16.png"></p>
+</li>
+<li><p>附加在实例的IP不能被释放，所以找到附加在运行这个实例的IP，点击 <strong>更改</strong> ，在附加到的选项里选择 <strong>无</strong> ，确定完成<br><img src="https://i.loli.net/2020/03/18/b7pjmwJ8sd39aYq.png" alt="谷歌云18.png"></p>
+</li>
+<li><p>这时会重新分配一个临时IP给运行的这个实例，并且弹出计费警告。不用在意，点击确定完成<br><img src="https://i.loli.net/2020/03/18/d9SErYnkBGNVl51.png" alt="谷歌云19（需要替换）.png"></p>
+</li>
+<li><p>完成后会出现一个未附加到实例的静态IP和一个临时IP，一个实例只能绑定一个IP，未绑定的IP将单独计费，所以把不再需要的IP释放掉。选中需要释放IP点击“释放静态地址”，这样这个IP就被释放掉了<br><img src="https://i.loli.net/2020/03/18/vLDH9txMTwdzbFo.png" alt="谷歌云20（需要替换）.png"></p>
+</li>
+<li><p>使用静态IP类型重启系统后IP不会发生改变，所以新IP类型选择“静态”，点击“更改”，名称随便填，点击“保留”并附加到需要绑定的实例上<br><img src="https://i.loli.net/2020/03/18/QeRC4dYkg7H3vVw.png" alt="谷歌云21（需要替换）.png"></p>
+</li>
+<li><p>保留实例更换外部IP完成<br><img src="https://i.loli.net/2020/03/18/iEY319L6gOof7pT.png" alt="谷歌云22（需要替换）.png"></p>
+</li>
+<li><p>最后看下新IP是否生效<br><img src="https://i.loli.net/2020/03/18/ORXcoCbDFhu2MUp.png" alt="谷歌云23（需要替换）.png"></p>
+</li>
+</ol>
 
       
     </div>
@@ -595,7 +611,7 @@
   <p><span>本文标题:</span><a href="/2020/03/16/谷歌云服务器免费使用教程/">谷歌云服务器免费使用教程</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2020年03月16日 - 19:03</p>
-  <p><span>最后更新:</span>2020年03月17日 - 18:03</p>
+  <p><span>最后更新:</span>2020年03月18日 - 10:03</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2020/03/16/谷歌云服务器免费使用教程/" title="谷歌云服务器免费使用教程">http://zhangyangeng.github.io/2020/03/16/谷歌云服务器免费使用教程/</a>
@@ -658,11 +674,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/干货/" rel="tag"><i class="fa fa-tag"></i> 干货</a>
-          
             <a href="/tags/服务器/" rel="tag"><i class="fa fa-tag"></i> 服务器</a>
           
             <a href="/tags/翻墙/" rel="tag"><i class="fa fa-tag"></i> 翻墙</a>
+          
+            <a href="/tags/干货/" rel="tag"><i class="fa fa-tag"></i> 干货</a>
           
         </div>
       
@@ -700,8 +716,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/03/17/小白教程：V2ray搭建服务器拓展内容/" rel="prev" title="小白教程：V2ray搭建服务器拓展内容">
-                小白教程：V2ray搭建服务器拓展内容 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/03/17/小白教程：V2ray搭建服务器进阶教程/" rel="prev" title="小白教程：V2ray搭建服务器进阶教程">
+                小白教程：V2ray搭建服务器进阶教程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -786,7 +802,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
