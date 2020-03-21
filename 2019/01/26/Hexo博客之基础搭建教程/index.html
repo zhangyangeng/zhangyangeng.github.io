@@ -147,10 +147,16 @@
 <meta property="og:image" content="https://i.loli.net/2019/04/01/5ca21275b5736.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/01/5ca212a2b72a6.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/01/5ca212d9c794e.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/21/lBsL42PG58CXWi3.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/21/qZN1lJQM8YkExn5.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/21/dxIgOAFE3H9a5bD.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/21/LUlumibBJKZrVgy.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/21/eB4FXnmZksrSgiA.png">
+<meta property="og:image" content="https://i.loli.net/2020/03/21/wmSWkBCbQZnuTG1.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9b3520e4db.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9b3a974244.png">
 <meta property="og:image" content="https://i.loli.net/2019/04/07/5ca9b380a9578.png">
-<meta property="og:updated_time" content="2020-03-19T15:14:05.522Z">
+<meta property="og:updated_time" content="2020-03-21T03:09:52.154Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客之基础搭建教程">
 <meta name="twitter:description" content="介绍 本教程是采用 Gitee或GitHub 和 Hexo 框架来搭建个人博客的 本教程中的所有链接均指向为官方链接，望知悉 本教程中的部分内容是借鉴 酷安教程 所写，如需转载请注明 本教程中的所有软件的安装与调试都不赘述，望您多动手百度">
@@ -454,7 +460,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2.5k 字
+                  2.9k 字
                 </span>
               
 
@@ -470,7 +476,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  9 分钟
+                  10 分钟
                 </span>
               
             </div>
@@ -633,24 +639,40 @@
 </li>
 <li><p>安装 hexo-deployer-git 插件，命令为： <code>npm install hexo-deployer-git --save</code><br><img src="https://i.loli.net/2019/04/01/5ca21222a87c4.png" alt="安装deployer插件"></p>
 </li>
-<li><p>生成静态文件并上传至 GitHub 端，将博客部署到服务器，命令为： <code>hexo g &amp;&amp; hexo d</code>，中途会让你输入 GitHub 的账户密码（我这里的图是 Gitee 的，GitHub 类似）<br><img src="https://i.loli.net/2019/04/01/5ca21252b42ff.png" alt="登陆账户"></p>
-</li>
-<li><p>这就代表上传完毕了（我这里的图是 Gitee 的，GitHub 类似）<br><img src="https://i.loli.net/2019/04/01/5ca21275b5736.png" alt="部署"></p>
-</li>
-<li><p>进入仓库检查是否上传成功，这就代表已成功传入仓库中（我这里的图是 Gitee 的，GitHub 类似）<br><img src="https://i.loli.net/2019/04/01/5ca212a2b72a6.png" alt="对接成功"></p>
-</li>
-<li><p>浏览器登录博客地址（这里换成你 GitHub 的地址即可）查看博客<br><img src="https://i.loli.net/2019/04/01/5ca212d9c794e.png" alt="查看博客"></p>
-</li>
-<li><p>至此，博客搭建完毕</p>
-</li>
+<li>生成静态文件并上传至 GitHub 端，将博客部署到服务器，命令为： <code>hexo g &amp;&amp; hexo d</code>，中途会让你输入 GitHub 的账户密码（我这里的图是 Gitee 的，GitHub 类似）<br><img src="https://i.loli.net/2019/04/01/5ca21252b42ff.png" alt="登陆账户"></li>
+<li>这就代表上传完毕了（我这里的图是 Gitee 的，GitHub 类似）<br><img src="https://i.loli.net/2019/04/01/5ca21275b5736.png" alt="部署"></li>
+<li>进入仓库检查是否上传成功，这就代表已成功传入仓库中（我这里的图是 Gitee 的，GitHub 类似）<br><img src="https://i.loli.net/2019/04/01/5ca212a2b72a6.png" alt="对接成功"></li>
+<li>浏览器登录博客地址（这里换成你 GitHub 的地址即可）查看博客<br><img src="https://i.loli.net/2019/04/01/5ca212d9c794e.png" alt="查看博客"></li>
+<li>至此，博客搭建完毕</li>
 </ol>
-<h1 id="五、常用指令"><a href="#五、常用指令" class="headerlink" title="五、常用指令"></a>五、常用指令</h1><ul>
+<h1 id="五、绑定域名"><a href="#五、绑定域名" class="headerlink" title="五、绑定域名"></a>五、绑定域名</h1><ul>
+<li>在使用 Gitee 或者 GitHub 部署自己博客时，会发现链接很长，一方面别人并不好记，另一方面也并不太好看，所以可以自己买个心仪的域名，然后使用域名解析到你的博客的链接上去</li>
+<li>我这里买的是阿里云的域名，新用户首次购买有优惠，当然你们也可以使用其他的，原理类似</li>
+</ul>
+<h2 id="1-GitHub-Pages-域名"><a href="#1-GitHub-Pages-域名" class="headerlink" title="1.GitHub Pages + 域名"></a>1.GitHub Pages + 域名</h2><ul>
+<li>在上面第四大点中的 GitHub 上传服务搭建好后，自己购买一个域名</li>
+<li><p>在系统的 cmd 窗口 ping 一下你的 GitHub 的博客地址，记录下实际的ip地址<br><img src="https://i.loli.net/2020/03/21/lBsL42PG58CXWi3.png" alt="解析域名3.png"></p>
+</li>
+<li><p>在域名的管理台界面找到域名解析，点击添加第一条记录：<br><img src="https://i.loli.net/2020/03/21/qZN1lJQM8YkExn5.png" alt="解析域名1.png"></p>
+</li>
+<li><p>保存后点击添加第二条记录：<br><img src="https://i.loli.net/2020/03/21/dxIgOAFE3H9a5bD.png" alt="解析域名2.png"></p>
+</li>
+<li><p>进入 GitHub 的设置界面找到 GitHub Pages 处，在 Custom domain 处填入自己的域名地址<br><img src="https://i.loli.net/2020/03/21/LUlumibBJKZrVgy.png" alt="域名解析4.png"></p>
+</li>
+<li><p>访问你的博客在 GitHub上的项目仓库，点击 Create new file 新建文件，命名为 CNAME，内容写上你的域名，不要http等，如下图：<br><img src="https://i.loli.net/2020/03/21/eB4FXnmZksrSgiA.png" alt="域名解析5.png"></p>
+</li>
+<li><p>但是每次使用 Git 同步的时候，CNAME 文件都会从仓库中消失，这时候我们需要在本地博客的 /source 目录里新建个同样的 CNAME 文件，使用记事本打开，填写内容也与上边一致，如下图：<br><img src="https://i.loli.net/2020/03/21/wmSWkBCbQZnuTG1.png" alt="域名解析6.png"></p>
+</li>
+<li><p>重新使用 Hexo 命令上传到仓库，等待几分钟，即可使用域名访问自己的博客了</p>
+</li>
+</ul>
+<h1 id="六、常用指令"><a href="#六、常用指令" class="headerlink" title="六、常用指令"></a>六、常用指令</h1><ul>
 <li><code>hexo clean</code> 清理缓存文件——db.json和已生成的静态文件——public</li>
 <li><code>hexo g</code> 生成网站静态文件到默认设置的 public 文件夹。</li>
 <li><code>hexo s</code> 启动本地服务器，用于预览主题。默认地址：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></li>
 <li><code>hexo d</code> 自动生成网站静态文件，并部署到设定的仓库。</li>
 </ul>
-<h1 id="六、常见问题"><a href="#六、常见问题" class="headerlink" title="六、常见问题"></a>六、常见问题</h1><h2 id="1-初始化-Hexo-时卡条"><a href="#1-初始化-Hexo-时卡条" class="headerlink" title="1.初始化 Hexo 时卡条"></a>1.<span id="katiao">初始化 Hexo 时卡条</span></h2><ul>
+<h1 id="七、常见问题"><a href="#七、常见问题" class="headerlink" title="七、常见问题"></a>七、常见问题</h1><h2 id="1-初始化-Hexo-时卡条"><a href="#1-初始化-Hexo-时卡条" class="headerlink" title="1.初始化 Hexo 时卡条"></a>1.<span id="katiao">初始化 Hexo 时卡条</span></h2><ul>
 <li>很多人在初始化 Hexo 的过程中，总是在 init 这一步卡在 20%/30% 这里就不动了，博主也遇到了这个问题，最后发现是因为这里需要从 GitHub 端进行下载相关的配置。</li>
 <li>查阅网上资料，有以下两种方法，请自行选择。</li>
 </ul>
@@ -672,7 +694,7 @@
 <li>找到服务-Gitee Pages，点击更新</li>
 <li>此时会重新部署，完成后博客网站就更新了</li>
 </ul>
-<h1 id="七、该系列文章"><a href="#七、该系列文章" class="headerlink" title="七、该系列文章"></a>七、该系列文章</h1><ul>
+<h1 id="八、该系列文章"><a href="#八、该系列文章" class="headerlink" title="八、该系列文章"></a>八、该系列文章</h1><ul>
 <li>想要了解主题配置教程请移步这里：<a href="/2019/02/01/Hexo博客之NexT配置教程/" title="[Hexo博客之NexT配置教程]">[Hexo博客之NexT配置教程]</a></li>
 <li>想要了解高级优化教程请移步这里：</li>
 <li>想要了解Markdown教程请移步这里：<a href="/2019/01/27/Hexo博客之Markdown教程/" title="[Hexo博客之Markdown教程]">[Hexo博客之Markdown教程]</a></li>
@@ -697,7 +719,7 @@
   <p><span>本文标题:</span><a href="/2019/01/26/Hexo博客之基础搭建教程/">Hexo博客之基础搭建教程</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2019年01月26日 - 23:01</p>
-  <p><span>最后更新:</span>2020年03月19日 - 23:03</p>
+  <p><span>最后更新:</span>2020年03月21日 - 11:03</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/2019/01/26/Hexo博客之基础搭建教程/" title="Hexo博客之基础搭建教程">http://zhangyangeng.github.io/2019/01/26/Hexo博客之基础搭建教程/</a>
@@ -977,7 +999,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、引入"><span class="nav-text">一、引入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-为什么用-Gitee？"><span class="nav-text">1.为什么用 Gitee？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-为什么用-GitHub？"><span class="nav-text">2.为什么用 GitHub？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-为什么用-Hexo？"><span class="nav-text">3.为什么用 Hexo？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、准备工作"><span class="nav-text">二、准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-托管仓库"><span class="nav-text">1.托管仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-环境安装"><span class="nav-text">2.环境安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-软件安装"><span class="nav-text">3.软件安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、本地安装-Hexo-框架"><span class="nav-text">三、本地安装 Hexo 框架</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、配置仓库与上传服务"><span class="nav-text">四、配置仓库与上传服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Gitee"><span class="nav-text">1.Gitee</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-GitHub"><span class="nav-text">2.GitHub</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、常用指令"><span class="nav-text">五、常用指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、常见问题"><span class="nav-text">六、常见问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-初始化-Hexo-时卡条"><span class="nav-text">1.初始化 Hexo 时卡条</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法1：科学上网"><span class="nav-text">方法1：科学上网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法2：ping-github-com"><span class="nav-text">方法2：ping github.com</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-部署到-Gitee-后博客内容无变化"><span class="nav-text">2.部署到 Gitee 后博客内容无变化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、该系列文章"><span class="nav-text">七、该系列文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一、引入"><span class="nav-text">一、引入</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-为什么用-Gitee？"><span class="nav-text">1.为什么用 Gitee？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-为什么用-GitHub？"><span class="nav-text">2.为什么用 GitHub？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-为什么用-Hexo？"><span class="nav-text">3.为什么用 Hexo？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、准备工作"><span class="nav-text">二、准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-托管仓库"><span class="nav-text">1.托管仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-环境安装"><span class="nav-text">2.环境安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-软件安装"><span class="nav-text">3.软件安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、本地安装-Hexo-框架"><span class="nav-text">三、本地安装 Hexo 框架</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、配置仓库与上传服务"><span class="nav-text">四、配置仓库与上传服务</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Gitee"><span class="nav-text">1.Gitee</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-GitHub"><span class="nav-text">2.GitHub</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、绑定域名"><span class="nav-text">五、绑定域名</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-GitHub-Pages-域名"><span class="nav-text">1.GitHub Pages + 域名</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#六、常用指令"><span class="nav-text">六、常用指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#七、常见问题"><span class="nav-text">七、常见问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-初始化-Hexo-时卡条"><span class="nav-text">1.初始化 Hexo 时卡条</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#方法1：科学上网"><span class="nav-text">方法1：科学上网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方法2：ping-github-com"><span class="nav-text">方法2：ping github.com</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-部署到-Gitee-后博客内容无变化"><span class="nav-text">2.部署到 Gitee 后博客内容无变化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#八、该系列文章"><span class="nav-text">八、该系列文章</span></a></li></ol></div>
             
 
           </div>
