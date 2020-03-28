@@ -103,12 +103,12 @@
 <meta name="keywords" content="博客,Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客之高级优化教程">
-<meta property="og:url" content="http://www.wrysmile.cn/Hexo's_article_3.html">
+<meta property="og:url" content="http://www.wrysmile.cn/Hexo's-03.html">
 <meta property="og:site_name" content="Wrysmile 的博客">
 <meta property="og:description" content="介绍 在看本篇之前，请确保你已成功搭建好个人博客且进行了 NexT 主题的相应配置，如没有，请移步：[博客搭建教程] 与 [NexT 配置教程] 该教程为我前两篇教程的后续教程，事实上，使用过一段时间 Hexo 后就会发现，真正在打开博客时加载速度相对较慢；每一篇文章链接都显得过长；搜索引擎检索不到博客······这是因为没有对博客进行相关的优化 故该教程主要是针对我们博客的一些性能上的优化，当然">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2020/03/28/Yy9Vjcd5I1LSela.png">
-<meta property="og:updated_time" content="2020-03-28T07:08:59.706Z">
+<meta property="og:updated_time" content="2020-03-28T07:21:22.546Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客之高级优化教程">
 <meta name="twitter:description" content="介绍 在看本篇之前，请确保你已成功搭建好个人博客且进行了 NexT 主题的相应配置，如没有，请移步：[博客搭建教程] 与 [NexT 配置教程] 该教程为我前两篇教程的后续教程，事实上，使用过一段时间 Hexo 后就会发现，真正在打开博客时加载速度相对较慢；每一篇文章链接都显得过长；搜索引擎检索不到博客······这是因为没有对博客进行相关的优化 故该教程主要是针对我们博客的一些性能上的优化，当然">
@@ -142,7 +142,7 @@
 
 
 
-  <link rel="canonical" href="http://www.wrysmile.cn/Hexo's_article_3.html">
+  <link rel="canonical" href="http://www.wrysmile.cn/Hexo's-03.html">
 
 
 
@@ -317,7 +317,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.wrysmile.cn/Hexo's_article_3.html">
+    <link itemprop="mainEntityOfPage" href="http://www.wrysmile.cn/Hexo's-03.html">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zhang Yangeng">
@@ -387,7 +387,7 @@
 
           
           
-             <span id="/Hexo's_article_3.html" class="leancloud_visitors" data-flag-title="Hexo博客之高级优化教程">
+             <span id="/Hexo's-03.html" class="leancloud_visitors" data-flag-title="Hexo博客之高级优化教程">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -412,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.9k 字
+                  1.8k 字
                 </span>
               
 
@@ -450,7 +450,7 @@
 
       
         <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><ul>
-<li>在看本篇之前，请确保你已成功搭建好个人博客且进行了 NexT 主题的相应配置，如没有，请移步：<a href="/undefined.html" title="[博客搭建教程]">[博客搭建教程]</a> 与 <a href="/undefined.html" title="[NexT 配置教程]">[NexT 配置教程]</a></li>
+<li>在看本篇之前，请确保你已成功搭建好个人博客且进行了 NexT 主题的相应配置，如没有，请移步：<a href="/44713.html" title="[博客搭建教程]">[博客搭建教程]</a> 与 <a href="/21946.html" title="[NexT 配置教程]">[NexT 配置教程]</a></li>
 <li>该教程为我前两篇教程的后续教程，事实上，使用过一段时间 Hexo 后就会发现，真正在打开博客时加载速度相对较慢；每一篇文章链接都显得过长；搜索引擎检索不到博客······这是因为没有对博客进行相关的优化</li>
 <li>故该教程主要是针对我们博客的一些性能上的优化，当然，对于 SEO 优化我也只是处于入门级别而已<a id="more"></a>
 </li>
@@ -514,14 +514,12 @@
 <li><p>将 <code>abbrlink: xxx</code> 永久固定在 <code>Front-matter</code> 中，在 <code>hexo/scaffolds/</code> 路径中找到 <code>post.md</code> 文档，在其中添加如下一行即可：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">abbrlink: </span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">description:</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>如果需要在你的以前的文章中设置该值，打开你的那篇文章的 .md 文件，按我上方的格式插入并写入自己想要的值即可</p>
+<li><p>如果不在每篇文章的 <code>Front-matter</code> 中指定 <code>abbrlink: xxx</code> 的值，那么就会根据算法随机生成数字；如果你指定了值的话，就会以指定内容显示</p>
 </li>
-<li>如果是新发表的文章，只要你进行过刚刚的设置，那么在你新建一个文档时，自动会补充 abbrlink 属性，你只要在后面填写自己想要的值即可</li>
-<li>如果不在每篇文章的 <code>Front-matter</code> 中指定 <code>abbrlink: xxx</code> 的值，那么就会根据算法随机生成数字；如果你指定了值的话，就会以指定内容显示</li>
+<li>当重新执行 <code>hexo clean &amp;&amp; hexo g</code> 命令时，该插件就会自动为没有设置 abbrlink 值的文章生成相应的编号，这样编号不变，该文章的 url 就不变，可以随意修改文件名，文章标题</li>
 </ul>
 <h4 id="d-显示效果"><a href="#d-显示效果" class="headerlink" title="d.显示效果"></a>d.显示效果</h4><ul>
-<li>以下展示了三种状态：添加了 <code>abbrlink: xxx</code> 的值；只添加了 <code>abbrlink:</code> ；没有添加 <code>abbrlink:</code> </li>
-<li></li>
+<li>以下展示了两种状态：添加了 <code>abbrlink: Hexo&#39;s-03</code> 属性值；只添加了 <code>abbrlink:</code> 而没有添加属性值</li>
 </ul>
 <h2 id="2-网站页面优化"><a href="#2-网站页面优化" class="headerlink" title="2.网站页面优化"></a>2.网站页面优化</h2><h3 id="1-首页标题优化"><a href="#1-首页标题优化" class="headerlink" title="(1).首页标题优化"></a>(1).首页标题优化</h3><ul>
 <li>SEO 中最重要的就是标题，一般搜索都是搜索标题的</li>
@@ -540,9 +538,9 @@
 </li>
 </ul>
 <h1 id="六、该系列文章"><a href="#六、该系列文章" class="headerlink" title="六、该系列文章"></a>六、该系列文章</h1><ul>
-<li>想要了解基础搭建教程请移步这里：<a href="/undefined.html" title="[Hexo博客之基础搭建教程]">[Hexo博客之基础搭建教程]</a></li>
-<li>想要了解主题配置教程请移步这里：<a href="/undefined.html" title="[Hexo博客之NexT配置教程]">[Hexo博客之NexT配置教程]</a></li>
-<li>想要了解Markdown教程请移步这里：<a href="/undefined.html" title="[Hexo博客之Markdown教程]">[Hexo博客之Markdown教程]</a></li>
+<li>想要了解基础搭建教程请移步这里：<a href="/44713.html" title="[Hexo博客之基础搭建教程]">[Hexo博客之基础搭建教程]</a></li>
+<li>想要了解主题配置教程请移步这里：<a href="/21946.html" title="[Hexo博客之NexT配置教程]">[Hexo博客之NexT配置教程]</a></li>
+<li>想要了解Markdown教程请移步这里：<a href="/37927.html" title="[Hexo博客之Markdown教程]">[Hexo博客之Markdown教程]</a></li>
 </ul>
 
       
@@ -561,14 +559,14 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/Hexo's_article_3.html">Hexo博客之高级优化教程</a></p>
+  <p><span>本文标题:</span><a href="/Hexo's-03.html">Hexo博客之高级优化教程</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2020年03月22日 - 10:03</p>
   <p><span>最后更新:</span>2020年03月28日 - 15:03</p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
-  <p><span>原始链接:</span><a href="/Hexo's_article_3.html" title="Hexo博客之高级优化教程">http://www.wrysmile.cn/Hexo's_article_3.html</a>
-    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.wrysmile.cn/Hexo's_article_3.html" aria-label="复制成功！"></i></span>
+  <p><span>原始链接:</span><a href="/Hexo's-03.html" title="Hexo博客之高级优化教程">http://www.wrysmile.cn/Hexo's-03.html</a>
+    <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.wrysmile.cn/Hexo's-03.html" aria-label="复制成功！"></i></span>
   </p>
 </div>
 <script> 
