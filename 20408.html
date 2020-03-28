@@ -193,7 +193,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">欢迎来到我的个人小屋</p>
+        <h1 class="site-subtitle" itemprop="description">欢迎来到我的个人小屋</h1>
       
   </div>
 
@@ -344,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">一加7刷机指南</h1>
+          <h2 class="post-title" itemprop="name headline">一加7刷机指南</h2>
         
 
         <div class="post-meta">
@@ -469,7 +469,7 @@
 </ul>
 <h1 id="一、解锁篇"><a href="#一、解锁篇" class="headerlink" title="一、解锁篇"></a>一、解锁篇</h1><h2 id="1-ADB命令法"><a href="#1-ADB命令法" class="headerlink" title="1.ADB命令法"></a>1.ADB命令法</h2><ul>
 <li>手机打开开发者模式（设置→关于手机→快速连按5次版本号开启），然后在开发者模式中设置 OEM锁为允许，这个解锁以后就要一直开着，没事不要手欠去关了。并且打开 USB 调试开关。</li>
-<li>安装ADB工具包到电脑，ADB下载链接点 <a href="https://pan.baidu.com/s/1kSoo4rxnS-lZilbJrSA_NQ#list/path=%2F" target="_blank" rel="noopener">这里</a></li>
+<li>安装ADB工具包到电脑，ADB下载链接点 <a href="https://pan.baidu.com/s/1kSoo4rxnS-lZilbJrSA_NQ#list/path=%2F" rel="external nofollow noopener noreferrer" target="_blank">这里</a></li>
 <li><p>启动到 bootloader 模式（设置→开发者选项→打开高级重启），按电源键选择“引导加载器”重启，或者使用adb 命令让手机重启进入 bootloader 界面</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb reboot bootloader</span><br></pre></td></tr></table></figure>
 </li>
@@ -483,12 +483,12 @@
 <li><p>解锁完成后，通过命令退出bootloader并重启手机</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot reboot</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>重启手机，自带的应用程序有一部分会丢失，联网后静放一会看是否会恢复回来，如果不行的话手动刷一下当前版本的全量包即可。各版本全量包请点击 <a href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;tid=4733198" target="_blank" rel="noopener">这里</a></p>
+<li><p>重启手机，自带的应用程序有一部分会丢失，联网后静放一会看是否会恢复回来，如果不行的话手动刷一下当前版本的全量包即可。各版本全量包请点击 <a href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;tid=4733198" rel="external nofollow noopener noreferrer" target="_blank">这里</a></p>
 </li>
 <li>全量包刷取方法：下载全量包，放到手机存储的根目录，然后打开手机设置-系统-系统更新-右上角齿轮图标-本地升级</li>
 </ul>
 <h2 id="2-工具箱无脑法"><a href="#2-工具箱无脑法" class="headerlink" title="2.工具箱无脑法"></a>2.工具箱无脑法</h2><ul>
-<li>这里推荐 <code>@千古风流帝</code> 的工具箱，原文链接在 <a href="https://www.oneplusbbs.com/thread-4701007-1.html" target="_blank" rel="noopener">这里</a></li>
+<li>这里推荐 <code>@千古风流帝</code> 的工具箱，原文链接在 <a href="https://www.oneplusbbs.com/thread-4701007-1.html" rel="external nofollow noopener noreferrer" target="_blank">这里</a></li>
 <li>该工具箱里包含了解锁、TWRP、Root 等一系列无脑操作</li>
 </ul>
 <h2 id="3-上锁方法"><a href="#3-上锁方法" class="headerlink" title="3.上锁方法"></a>3.上锁方法</h2><ul>
@@ -501,7 +501,7 @@
 <li>在 Magisk刷模块的界面刷入 TWRP即可</li>
 </ul>
 <h2 id="2-无-Magisk的方法"><a href="#2-无-Magisk的方法" class="headerlink" title="(2).无 Magisk的方法"></a>(2).无 Magisk的方法</h2><ul>
-<li>下载 <a href="https://yunpan.360.cn/surl_yubQxZ83BTQ" target="_blank" rel="noopener">这里</a> 的与当前手机系统相对应的文件并且解压文件</li>
+<li>下载 <a href="https://yunpan.360.cn/surl_yubQxZ83BTQ" rel="external nofollow noopener noreferrer" target="_blank">这里</a> 的与当前手机系统相对应的文件并且解压文件</li>
 <li>手机解锁以后，手机进 fastboot模式，插入数据线</li>
 <li><p>打开以 <code>.bat</code> 结尾的文件 ，输入 <code>fastboot flash boot twrp-boot.img</code> 回车，等待出现两个OK以后就算成功刷入了<br><img src="https://i.loli.net/2020/03/03/AgHoBYdjWnS7RLa.png" alt="REC1.png"></p>
 </li>
@@ -509,7 +509,7 @@
 </li>
 <li>等手机进 TWRP之后默认是英文，点击 settings，然后点击最右边的小按钮，选择 Chinese 并点击 Set language ，这样就变成中文了</li>
 <li>输入密码或者手势进 TWRP主界面，接着点击 高级-一加工具箱-Magisk，安装好后重启系统就可以了 </li>
-<li>原文看 <a href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;tid=5055277" target="_blank" rel="noopener">这里</a>，只看安卓Q的部分</li>
+<li>原文看 <a href="https://www.oneplusbbs.com/forum.php?mod=viewthread&amp;tid=5055277" rel="external nofollow noopener noreferrer" target="_blank">这里</a>，只看安卓Q的部分</li>
 </ul>
 <h1 id="三、Root（即Magisk）篇"><a href="#三、Root（即Magisk）篇" class="headerlink" title="三、Root（即Magisk）篇"></a>三、Root（即Magisk）篇</h1><ul>
 <li>先重启手机到新的TWRP，选择 高级→ADB Sideload，滑动按钮开始（这步很重要）</li>
@@ -527,7 +527,7 @@
 </li>
 <li><p>打开 magisk 下载里面搜索 TWRP，选择第一个下载并安装<br><img src="https://i.loli.net/2020/02/29/qgSYG8IUlJ9dciZ.jpg" alt="系统更新3.jpg"></p>
 </li>
-<li><p>如果这里无法下载的话，你也可以下载 <a href="https://pan.baidu.com/s/1g3-USNsOBqTXzBqzwLiWkg" target="_blank" rel="noopener">这里</a> （提取码: r1b6），然后像刷入模块一样刷入即可</p>
+<li><p>如果这里无法下载的话，你也可以下载 <a href="https://pan.baidu.com/s/1g3-USNsOBqTXzBqzwLiWkg" rel="external nofollow noopener noreferrer" target="_blank">这里</a> （提取码: r1b6），然后像刷入模块一样刷入即可</p>
 </li>
 <li>刷入完成后如果想要保留 root 不要重启，返回 magisk 首页执行下面操作</li>
 </ul>
@@ -582,8 +582,8 @@
 <h1 id="五、降级篇"><a href="#五、降级篇" class="headerlink" title="五、降级篇"></a>五、降级篇</h1><h2 id="安卓10降安卓9"><a href="#安卓10降安卓9" class="headerlink" title="安卓10降安卓9"></a>安卓10降安卓9</h2><ul>
 <li>用一加搬家备份手机，备份后所有软件和资料都存在一个名称为 <code>opbackup</code> 的文件夹里</li>
 <li>将 <code>opbackup</code> 文件夹复制到电脑里，等以后恢复手机用</li>
-<li>在本地升级处刷入专用降级包（即双清全量包）进行降级，降级包下载地址点 <a href="http://download.h2os.com/OnePlus7/fulldowngrade_wipe_MSM_18857_190501_2342_user.zip" target="_blank" rel="noopener">这里</a></li>
-<li>开机重启后在本地升级处刷入一加7安卓9的 9.5.8全量包，全量包下载地址点 <a href="http://download.h2os.com/OnePlus7/MP/OnePlus7Hydrogen_14.H.14_OTA_014_all_1908301703_8e29ef5336fa4eea.zip" target="_blank" rel="noopener">这里</a></li>
+<li>在本地升级处刷入专用降级包（即双清全量包）进行降级，降级包下载地址点 <a href="http://download.h2os.com/OnePlus7/fulldowngrade_wipe_MSM_18857_190501_2342_user.zip" rel="external nofollow noopener noreferrer" target="_blank">这里</a></li>
+<li>开机重启后在本地升级处刷入一加7安卓9的 9.5.8全量包，全量包下载地址点 <a href="http://download.h2os.com/OnePlus7/MP/OnePlus7Hydrogen_14.H.14_OTA_014_all_1908301703_8e29ef5336fa4eea.zip" rel="external nofollow noopener noreferrer" target="_blank">这里</a></li>
 <li>成功刷回安卓9稳定版，打开一加搬家选择恢复数据</li>
 <li><font color="#F00">注意：降级并不会回锁，而且如果手机系统应用出现故障，可以通过降级然后直接OTA更新回最新系统</font>
 
@@ -603,10 +603,10 @@
 <li>刷 Magisk 和 Gapps，开机</li>
 </ul>
 <h1 id="九、9008-救砖篇"><a href="#九、9008-救砖篇" class="headerlink" title="九、9008 救砖篇"></a>九、9008 救砖篇</h1><h2 id="0-准备工作"><a href="#0-准备工作" class="headerlink" title="0.准备工作"></a>0.准备工作</h2><ul>
-<li>所需工具下载点 <a href="https://pan.baidu.com/s/1k3ygyun3uLgjUjGweDyUpw#list/path=%2F" target="_blank" rel="noopener">这里</a>，密码：eckd</li>
+<li>所需工具下载点 <a href="https://pan.baidu.com/s/1k3ygyun3uLgjUjGweDyUpw#list/path=%2F" rel="external nofollow noopener noreferrer" target="_blank">这里</a>，密码：eckd</li>
 <li>下载线刷格式的 Rom包，下载下来放到电脑上进行解压</li>
-<li>电脑下载安装 Qualcomm 驱动（记得先禁用驱动签名验证，禁用方法点 <a href="http://iknow.lenovo.com/detail/dc_132524.html?clickid=VQHXKY1N9xyOUDswUx0Mo3Q3UknX1lR2Ly-GQQ0&amp;Program=4037&amp;pid=357605&amp;acid=ww:affiliate:lx67i4&amp;cid=sg:affiliate:q97yci" target="_blank" rel="noopener">这里</a>）</li>
-<li>这里引用的论坛里的教程，原贴在 <a href="http://www.oneplusbbs.com/thread-4446250-1-1.html" target="_blank" rel="noopener">这里</a></li>
+<li>电脑下载安装 Qualcomm 驱动（记得先禁用驱动签名验证，禁用方法点 <a href="http://iknow.lenovo.com/detail/dc_132524.html?clickid=VQHXKY1N9xyOUDswUx0Mo3Q3UknX1lR2Ly-GQQ0&amp;Program=4037&amp;pid=357605&amp;acid=ww:affiliate:lx67i4&amp;cid=sg:affiliate:q97yci" rel="external nofollow noopener noreferrer" target="_blank">这里</a>）</li>
+<li>这里引用的论坛里的教程，原贴在 <a href="http://www.oneplusbbs.com/thread-4446250-1-1.html" rel="external nofollow noopener noreferrer" target="_blank">这里</a></li>
 <li><font color="#F00">注意：如果之前电脑如果有安装过9008驱动的，可能会出现连接手机后一旦把音量键放开，手机就会开机到 fastboot模式，如有出现此情况，你需要连接电脑后按住音量双键不放，并电脑点击桌面计算机右键→设备管理器，找到并卸载干净9008驱动，再重新下载安装「一加7专用的9008驱动」即可</font>
 
 </li>
@@ -658,7 +658,7 @@
   <p><span>文章作者:</span><a href="/" title="访问 Zhang Yangeng 的个人博客">Zhang Yangeng</a></p>
   <p><span>发布时间:</span>2020年02月29日 - 16:02</p>
   <p><span>最后更新:</span>2020年03月28日 - 15:03</p>
-  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> </p>  
   <p><span>注意事项：</span>转载请保留原文链接及作者,请尊重作者的劳动成果</p>
   <p><span>原始链接:</span><a href="/20408.html" title="一加7刷机指南">http://www.wrysmile.cn/20408.html</a>
     <span class="copy-path" title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://www.wrysmile.cn/20408.html" aria-label="复制成功！"></i></span>
@@ -838,7 +838,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Zhang Yangeng">
             
               <p class="site-author-name" itemprop="name">Zhang Yangeng</p>
-              <p class="site-description motion-element" itemprop="description">保持独立思考，不卑不亢不怂，长成自己想要的样子！</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -891,13 +891,13 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/zhangyangeng" target="_blank" title="GitHub">
+                    <a href="https://github.com/zhangyangeng" target="_blank" title="GitHub" rel="external nofollow noopener noreferrer">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://weibo.com/u/2294901673" target="_blank" title="weibo">
+                    <a href="https://weibo.com/u/2294901673" target="_blank" title="weibo" rel="external nofollow noopener noreferrer">
                       
                         <i class="fa fa-fw fa-weibo"></i>weibo</a>
                   </span>
@@ -920,7 +920,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://topbook.cc/" title="Topbook" target="_blank">Topbook</a>
+                    <a href="http://topbook.cc/" title="Topbook" target="_blank" rel="external nofollow noopener noreferrer">Topbook</a>
                   </li>
                 
               </ul>

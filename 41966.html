@@ -185,7 +185,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">欢迎来到我的个人小屋</p>
+        <h1 class="site-subtitle" itemprop="description">欢迎来到我的个人小屋</h1>
       
   </div>
 
@@ -336,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">百度云文件下载之手机端</h1>
+          <h2 class="post-title" itemprop="name headline">百度云文件下载之手机端</h2>
         
 
         <div class="post-meta">
@@ -458,10 +458,10 @@
 </li>
 </ul>
 <h1 id="利用命令行软件来进行下载"><a href="#利用命令行软件来进行下载" class="headerlink" title="利用命令行软件来进行下载"></a>利用命令行软件来进行下载</h1><blockquote>
-<p>该方法可以解决百度云账号被限速问题。亲测，被限速账号平均下载速度为1M/s，正常账号4M/s。该方法由酷安@谷花泰 提供。查看原文请点击<a href="https://www.coolapk.com/feed/9778859?shareKey=M2Y4YWYwMmFkOGM1NWM3Mzc4MWY~&amp;shareUid=1519576&amp;shareFrom=com.coolapk.market_9.0.2" target="_blank" rel="noopener">此处</a></p>
+<p>该方法可以解决百度云账号被限速问题。亲测，被限速账号平均下载速度为1M/s，正常账号4M/s。该方法由酷安@谷花泰 提供。查看原文请点击<a href="https://www.coolapk.com/feed/9778859?shareKey=M2Y4YWYwMmFkOGM1NWM3Mzc4MWY~&amp;shareUid=1519576&amp;shareFrom=com.coolapk.market_9.0.2" rel="external nofollow noopener noreferrer" target="_blank">此处</a></p>
 </blockquote>
 <ol>
-<li>下载termux软件。直通车：<a href="https://www.coolapk.com/apk/com.termux" target="_blank" rel="noopener">查看链接</a><br>软件刚打开时需要自动下载安装，如果无法安装可能需要翻墙，方法自寻，随便找一个临时免费VPN即可</li>
+<li>下载termux软件。直通车：<a href="https://www.coolapk.com/apk/com.termux" rel="external nofollow noopener noreferrer" target="_blank">查看链接</a><br>软件刚打开时需要自动下载安装，如果无法安装可能需要翻墙，方法自寻，随便找一个临时免费VPN即可</li>
 <li>授权存储权限，执行完后请允许授权<br>执行命令为：<code>termux-setup-storage</code></li>
 <li><p>添加软件源<br>执行命令为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;deb [trusted=yes] http://termux.iikira.com stable main&quot; &gt;&gt; /data/data/com.termux/files/usr/etc/apt/sources.list</span><br></pre></td></tr></table></figure>
@@ -481,14 +481,14 @@
 <li>配置下载位置，若保存在 <code>/sdcard/百度云</code> 文件下（这里的sdcard指的是手机内存默认目录。请确保你的/sdcard下有这个文件夹，若没有，请自行创建）<br>执行命令为：<code>config set --savedir &#39;/sdcard/百度云&#39;</code></li>
 <li>配置下载线程，官方默认100，可以设置50~500，这里设置为300（理论上线程越大下载速度越快）<br>执行命令为：<code>config set --max_parallel 300</code></li>
 <li>配置并行下载数量，可以设置1~5，这里设置为3<br>执行命令为：<code>config set --max_download_load 3</code></li>
-<li>配置完成后，将termux强行关闭，即清理掉后台。<br>打开浏览器，进入百度云<a href="http://pan.baidu.com" target="_blank" rel="noopener">官网</a>并登陆账号。<br>复制下面网址，在登陆过账号的浏览器中粘贴并访问。<br><code>http://pcs.baidu.com/rest/2.0/pcs/file?app_id=265486&amp;method=list&amp;path=%2F</code></li>
+<li>配置完成后，将termux强行关闭，即清理掉后台。<br>打开浏览器，进入百度云<a href="http://pan.baidu.com" rel="external nofollow noopener noreferrer" target="_blank">官网</a>并登陆账号。<br>复制下面网址，在登陆过账号的浏览器中粘贴并访问。<br><code>http://pcs.baidu.com/rest/2.0/pcs/file?app_id=265486&amp;method=list&amp;path=%2F</code></li>
 <li>访问完后，不管页面显示什么，打开手机版百度云<br>在 <code>/我的应用数据</code> 文件夹下会多出一个名为 <code>baidu_shurufa</code> 的文件夹，如果没有，请自建。<br><img src="https://i.loli.net/2019/04/07/5ca9b21f58ea8.jpg" width="360" height="640"></li>
 <li>将需要下载的文件复制或移动到 <code>/我的应用数据/baidu_shurufa/</code> 目录下，比如我这里要下载 <code>动图抓取工具.rar</code> 文件<br><img src="https://i.loli.net/2019/04/07/5ca9b28f00939.jpg" width="360" height="640"></li>
 <li>打开termux，进入BaiduPCS-Go<br>执行命令为：<code>BaiduPCS-Go</code></li>
 <li>进入 <code>baidu_shurufa</code> 文件夹（若下载多级文件夹下的文件，按此方法递归进入最后一个文件夹即可）<br>执行命令为：<code>cd /apps/baidu_shurufa</code></li>
 <li>下载所需文件即可<br>执行命令为：<code>d &#39;动图抓取工具.rar&#39;</code><br><img src="https://i.loli.net/2019/04/07/5ca9b2aeb856a.jpg" width="360" height="640"></li>
 <li>注意，这里下载速度会有浮动，但平均下来也就4M多左右，还是可以接受的。以后下载文件，从第15点开始即可</li>
-<li>如果有什么问题，可以参考作者的文档。直通车：<a href="https://shimo.im/docs/DkiAbUs9etAFqR3T/read" target="_blank" rel="noopener">查看链接</a></li>
+<li>如果有什么问题，可以参考作者的文档。直通车：<a href="https://shimo.im/docs/DkiAbUs9etAFqR3T/read" rel="external nofollow noopener noreferrer" target="_blank">查看链接</a></li>
 </ol>
 
       
@@ -659,7 +659,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Zhang Yangeng">
             
               <p class="site-author-name" itemprop="name">Zhang Yangeng</p>
-              <p class="site-description motion-element" itemprop="description">保持独立思考，不卑不亢不怂，长成自己想要的样子！</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -712,13 +712,13 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/zhangyangeng" target="_blank" title="GitHub">
+                    <a href="https://github.com/zhangyangeng" target="_blank" title="GitHub" rel="external nofollow noopener noreferrer">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://weibo.com/u/2294901673" target="_blank" title="weibo">
+                    <a href="https://weibo.com/u/2294901673" target="_blank" title="weibo" rel="external nofollow noopener noreferrer">
                       
                         <i class="fa fa-fw fa-weibo"></i>weibo</a>
                   </span>
@@ -741,7 +741,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://topbook.cc/" title="Topbook" target="_blank">Topbook</a>
+                    <a href="http://topbook.cc/" title="Topbook" target="_blank" rel="external nofollow noopener noreferrer">Topbook</a>
                   </li>
                 
               </ul>
