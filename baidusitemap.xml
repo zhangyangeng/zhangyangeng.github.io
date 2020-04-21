@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.wrysmile.cn/Learn-Linux.html</loc>
+    <lastmod>2020-04-21</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Oneplus7.html</loc>
+    <lastmod>2020-04-18</lastmod>
+  </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-CSS.html</loc>
+    <lastmod>2020-04-18</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Hexo-02.html</loc>
+    <lastmod>2020-04-18</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Learn-Wechat.html</loc>
     <lastmod>2020-04-18</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/V2Ray-02.html</loc>
     <lastmod>2020-04-03</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Cloud.html</loc>
-    <lastmod>2020-04-02</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/Hexo-02.html</loc>
     <lastmod>2020-04-02</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Hexo-03.html</loc>
@@ -46,16 +55,10 @@
     <loc>https://www.wrysmile.cn/Learn-Date.html</loc>
     <lastmod>2020-03-30</lastmod>
   </url>  <url>
-    <loc>https://www.wrysmile.cn/Oneplus7.html</loc>
-    <lastmod>2020-03-30</lastmod>
-  </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Docker.html</loc>
     <lastmod>2020-03-30</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Nginx.html</loc>
-    <lastmod>2020-03-30</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/Learn-Linux.html</loc>
     <lastmod>2020-03-30</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Java.html</loc>
