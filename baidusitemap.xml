@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.wrysmile.cn/47171.html</loc>
+    <lastmod>2020-04-27</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Learn-HTML.html</loc>
+    <lastmod>2020-04-27</lastmod>
+  </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-CSS.html</loc>
-    <lastmod>2020-04-23</lastmod>
+    <lastmod>2020-04-27</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Linux.html</loc>
     <lastmod>2020-04-21</lastmod>
@@ -62,9 +68,6 @@
     <lastmod>2020-03-30</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Java.html</loc>
-    <lastmod>2020-03-30</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/Learn-HTML.html</loc>
     <lastmod>2020-03-30</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Hexo-04.html</loc>
