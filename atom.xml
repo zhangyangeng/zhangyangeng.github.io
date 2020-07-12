@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.wrysmile.cn/"/>
-  <updated>2020-06-08T11:19:18.659Z</updated>
+  <updated>2020-07-12T15:02:44.894Z</updated>
   <id>https://www.wrysmile.cn/</id>
   
   <author>
@@ -17,22 +17,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>浏览器：破解网页复制与粘贴限制</title>
+    <link href="https://www.wrysmile.cn/copy-paste.html"/>
+    <id>https://www.wrysmile.cn/copy-paste.html</id>
+    <published>2020-07-12T10:28:46.000Z</published>
+    <updated>2020-07-12T15:02:44.894Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;平时上网一定遇到过网站禁止复制文字或者粘贴文字的情况&lt;/li&gt;&lt;li&gt;本篇主要总结了一些比较实用的小技巧来解决这些情况
+    
+    </summary>
+    
+      <category term="实用教程" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="技巧" scheme="https://www.wrysmile.cn/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="干货" scheme="https://www.wrysmile.cn/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="浏览器" scheme="https://www.wrysmile.cn/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>浏览器：解决无法进入Github网站</title>
     <link href="https://www.wrysmile.cn/enter-github.html"/>
     <id>https://www.wrysmile.cn/enter-github.html</id>
     <published>2020-06-08T09:03:12.000Z</published>
-    <updated>2020-06-08T11:19:18.659Z</updated>
+    <updated>2020-07-12T15:02:19.516Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本篇文章中的方法可以有效的解决电脑无法进入 Github 网站&lt;/li&gt;&lt;/ul&gt;
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本篇文章中的方法可以有效的解决电脑无法进入 Github 网站&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
-      <category term="实用技巧" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+      <category term="实用教程" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     
     
       <category term="干货" scheme="https://www.wrysmile.cn/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="浏览器" scheme="https://www.wrysmile.cn/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
   </entry>
   
@@ -41,11 +67,11 @@
     <link href="https://www.wrysmile.cn/Learn-JS.html"/>
     <id>https://www.wrysmile.cn/Learn-JS.html</id>
     <published>2020-04-27T10:21:29.000Z</published>
-    <updated>2020-06-07T12:17:28.977Z</updated>
+    <updated>2020-07-06T13:39:11.717Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习尚硅谷的 JavaScript 课程时的一些笔记
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习尚硅谷的 JavaScript 课程时的一些笔记
     
     </summary>
     
@@ -67,7 +93,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;记录在开发微信小程序时的一些知识点
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;记录在开发微信小程序时的一些知识点
     
     </summary>
     
@@ -109,7 +135,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;如果你想要自己动手搭建一个梯子来使用，那么你可以跟着本系列的教程进行搭建&lt;/li&gt;&lt;li&gt;本文主要讲解服务器的选择和购买，推荐使用谷歌云，如果你搞不到外币借记卡，那么还是选择Vultr吧&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;如果你想要自己动手搭建一个梯子来使用，那么你可以跟着本系列的教程进行搭建&lt;/li&gt;&lt;li&gt;本文主要讲解服务器的选择和购买，推荐使用谷歌云，如果你搞不到外币借记卡，那么还是选择Vultr吧&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
     
     </summary>
     
@@ -133,7 +159,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文介绍一些搭建 V2ray 服务器时的一些拓展内容&lt;/li&gt;&lt;li&gt;主要是针对于搭建服务器的进阶教程的讲解&lt;/li&gt;&lt;li&gt;原文大部分内容搬运自 &lt;a href=&quot;https://www.idleleo.com/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;无主界&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文介绍一些搭建 V2ray 服务器时的一些拓展内容&lt;/li&gt;&lt;li&gt;主要是针对于搭建服务器的进阶教程的讲解&lt;/li&gt;&lt;li&gt;原文大部分内容搬运自 &lt;a href=&quot;https://www.idleleo.com/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;无主界&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
     
     </summary>
     
@@ -157,7 +183,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本教程是 V2ray 搭建服务器的进阶教程，该教程与基础教程不同，所以需要重新配置服务端&lt;/li&gt;&lt;li&gt;本教程中的部分内容引用了 &lt;a href=&quot;https://www.hijk.pw/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;网络跳越&lt;/a&gt; 与 &lt;a href=&quot;https://tlanyan.me/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;tlanyan&lt;/a&gt; 的部分内容，如侵权，请联系我进行删除&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本教程是 V2ray 搭建服务器的进阶教程，该教程与基础教程不同，所以需要重新配置服务端&lt;/li&gt;&lt;li&gt;本教程中的部分内容引用了 &lt;a href=&quot;https://www.hijk.pw/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;网络跳越&lt;/a&gt; 与 &lt;a href=&quot;https://tlanyan.me/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;tlanyan&lt;/a&gt; 的部分内容，如侵权，请联系我进行删除&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
     
     </summary>
     
@@ -173,26 +199,24 @@
   </entry>
   
   <entry>
-    <title>一加刷机指南</title>
+    <title>玩机：一加刷机一站式教程</title>
     <link href="https://www.wrysmile.cn/Oneplus.html"/>
     <id>https://www.wrysmile.cn/Oneplus.html</id>
     <published>2020-02-29T08:03:21.000Z</published>
-    <updated>2020-06-15T10:19:44.541Z</updated>
+    <updated>2020-07-12T15:06:08.660Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;关于一加刷机的一些步骤和技巧&lt;/li&gt;&lt;li&gt;这里写下来是为了防止自己遗忘的，毕竟现在刷机也不经常刷了
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;关于一加刷机的一些步骤和技巧&lt;/li&gt;&lt;li&gt;这里写下来是为了防止自己遗忘的，毕竟现在刷机也不经常刷了
     
     </summary>
     
-      <category term="玩机技巧" scheme="https://www.wrysmile.cn/categories/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/"/>
+      <category term="实用教程" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="技巧" scheme="https://www.wrysmile.cn/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="玩机技巧" scheme="https://www.wrysmile.cn/tags/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="搞机" scheme="https://www.wrysmile.cn/tags/%E6%90%9E%E6%9C%BA/"/>
-    
-      <category term="干货" scheme="https://www.wrysmile.cn/tags/%E5%B9%B2%E8%B4%A7/"/>
+      <category term="一加" scheme="https://www.wrysmile.cn/tags/%E4%B8%80%E5%8A%A0/"/>
     
   </entry>
   
@@ -205,7 +229,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习 Nginx 时的一些笔记
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习 Nginx 时的一些笔记
     
     </summary>
     
@@ -221,52 +245,48 @@
   </entry>
   
   <entry>
-    <title>玩转微信小技巧</title>
+    <title>玩机：安卓微信小技巧</title>
     <link href="https://www.wrysmile.cn/Wechat.html"/>
     <id>https://www.wrysmile.cn/Wechat.html</id>
     <published>2020-02-05T09:24:29.000Z</published>
-    <updated>2020-03-30T06:40:19.921Z</updated>
+    <updated>2020-07-12T15:03:52.952Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;一、个性设置篇&quot;&gt;&lt;a href=&quot;#一、个性设置篇&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本篇主要介绍一些安卓微信客户端的一些小技巧
     
     </summary>
     
-      <category term="玩机技巧" scheme="https://www.wrysmile.cn/categories/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/"/>
+      <category term="实用教程" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="技巧" scheme="https://www.wrysmile.cn/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="玩机技巧" scheme="https://www.wrysmile.cn/tags/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="搞机" scheme="https://www.wrysmile.cn/tags/%E6%90%9E%E6%9C%BA/"/>
+      <category term="微信" scheme="https://www.wrysmile.cn/tags/%E5%BE%AE%E4%BF%A1/"/>
     
   </entry>
   
   <entry>
-    <title>巧妙恢复U盘内的损坏文件</title>
+    <title>U盘向：恢复U盘内的损坏文件</title>
     <link href="https://www.wrysmile.cn/14953.html"/>
     <id>https://www.wrysmile.cn/14953.html</id>
     <published>2019-10-14T12:47:27.000Z</published>
-    <updated>2020-03-28T07:09:40.458Z</updated>
+    <updated>2020-07-12T15:00:05.247Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;有时我们的U盘或者内存卡会因为某些不知名原因导致损坏一部分文件，就会生成 &lt;code&gt;LOST.DIR&lt;/code&gt; 文件夹，这里面放的便是损坏的文件&lt;/li&gt;&lt;li&gt;该教程用TrlDNET软件识别这些损坏文件&lt;/li&gt;&lt;li&gt;当然，如果你不想下载软件，它也有在线端，请点 &lt;a href=&quot;http://mark0.net/onlinetrid.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;&lt;li&gt;本教程并不能让你完全恢复，望知悉
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;有时我们的U盘或者内存卡会因为某些不知名原因导致损坏一部分文件，就会生成 &lt;code&gt;LOST.DIR&lt;/code&gt; 文件夹，这里面放的便是损坏的文件&lt;/li&gt;&lt;li&gt;该教程用TrlDNET软件识别这些损坏文件&lt;/li&gt;&lt;li&gt;当然，如果你不想下载软件，它也有在线端，请点 &lt;a href=&quot;http://mark0.net/onlinetrid.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;&lt;li&gt;本教程并不能让你完全恢复，望知悉
     
     </summary>
     
-      <category term="实用技巧" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+      <category term="实用教程" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     
     
       <category term="技巧" scheme="https://www.wrysmile.cn/tags/%E6%8A%80%E5%B7%A7/"/>
     
-      <category term="干货收藏" scheme="https://www.wrysmile.cn/tags/%E5%B9%B2%E8%B4%A7%E6%94%B6%E8%97%8F/"/>
+      <category term="干货" scheme="https://www.wrysmile.cn/tags/%E5%B9%B2%E8%B4%A7/"/>
+    
+      <category term="U盘" scheme="https://www.wrysmile.cn/tags/U%E7%9B%98/"/>
     
   </entry>
   
@@ -279,7 +299,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;记录在Docker学习中的一些笔记
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;记录在Docker学习中的一些笔记
     
     </summary>
     
@@ -301,7 +321,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;如果你想要自己动手搭建一个梯子来使用，那么你可以试着按本系列的教程进行搭建&lt;/li&gt;&lt;li&gt;本文从服务器的购买、配置，V2Ray 服务器端的配置，V2Ray 软件端的下载等方面详细展开&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;如果你想要自己动手搭建一个梯子来使用，那么你可以试着按本系列的教程进行搭建&lt;/li&gt;&lt;li&gt;本文从服务器的购买、配置，V2Ray 服务器端的配置，V2Ray 软件端的下载等方面详细展开&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#FF0000&quot;&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;
     
     </summary>
     
@@ -325,7 +345,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习Java课程时的一些笔记&lt;/li&gt;&lt;li&gt;关于java中的一些基础知识点，尚学堂的笔记中有提到，可直接点击 &lt;a href=&quot;https://www.sxt.cn/Java_jQuery_in_action/thirteen-animation-effects.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt; 查看
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习Java课程时的一些笔记&lt;/li&gt;&lt;li&gt;关于java中的一些基础知识点，尚学堂的笔记中有提到，可直接点击 &lt;a href=&quot;https://www.sxt.cn/Java_jQuery_in_action/thirteen-animation-effects.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;这里&lt;/a&gt; 查看
     
     </summary>
     
@@ -347,7 +367,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习数据库课程时的一些笔记
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习数据库课程时的一些笔记
     
     </summary>
     
@@ -367,7 +387,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;该篇记录了关于云计算方向的某些重要知识点
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;该篇记录了关于云计算方向的某些重要知识点
     
     </summary>
     
@@ -387,7 +407,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习尚硅谷的 CSS 课程时的一些笔记
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习尚硅谷的 CSS 课程时的一些笔记
     
     </summary>
     
@@ -401,64 +421,44 @@
   </entry>
   
   <entry>
-    <title>压缩照片大小的方法</title>
+    <title>新生常见问题解答</title>
+    <link href="https://www.wrysmile.cn/Freshman-question.html"/>
+    <id>https://www.wrysmile.cn/Freshman-question.html</id>
+    <published>2019-08-21T05:07:23.000Z</published>
+    <updated>2020-07-12T10:53:20.156Z</updated>
+    
+    <summary type="html">
+    
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;总结一些2019级新生的一些问题&lt;/li&gt;&lt;li&gt;有任何一切问题，欢迎加入我们唯一官方新生群进行了解：799436445
+    
+    </summary>
+    
+      <category term="新生攻略" scheme="https://www.wrysmile.cn/categories/%E6%96%B0%E7%94%9F%E6%94%BB%E7%95%A5/"/>
+    
+    
+      <category term="新生" scheme="https://www.wrysmile.cn/tags/%E6%96%B0%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>玩机：巧妙压缩照片大小</title>
     <link href="https://www.wrysmile.cn/52621.html"/>
     <id>https://www.wrysmile.cn/52621.html</id>
     <published>2019-08-19T12:15:15.000Z</published>
-    <updated>2020-03-28T07:09:40.452Z</updated>
+    <updated>2020-07-12T15:05:20.736Z</updated>
     
     <summary type="html">
     
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;网上报到时需要上传学籍照片（即一寸蓝底白衣照片）&lt;/li&gt;&lt;li&gt;系统都限制文件大小不超过1.5M，接下来就列举几个方法来教大家压缩照片
+      &lt;!-- build time:Sun Jul 12 2020 23:09:53 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;网上报到时需要上传学籍照片（即一寸蓝底白衣照片）&lt;/li&gt;&lt;li&gt;系统都限制文件大小不超过1.5M，接下来就列举几个方法来教大家压缩照片
     
     </summary>
     
-      <category term="实用技巧" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+      <category term="实用教程" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     
     
-      <category term="技巧" scheme="https://www.wrysmile.cn/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="玩机技巧" scheme="https://www.wrysmile.cn/tags/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/"/>
     
-  </entry>
-  
-  <entry>
-    <title>学习笔记：HTML5（尚硅谷）</title>
-    <link href="https://www.wrysmile.cn/Learn-HTML.html"/>
-    <id>https://www.wrysmile.cn/Learn-HTML.html</id>
-    <published>2019-08-18T07:29:45.000Z</published>
-    <updated>2020-06-02T01:54:57.353Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;本文主要记录在学习尚硅谷的 HTML 课程时的一些笔记
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="https://www.wrysmile.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-      <category term="前端" scheme="https://www.wrysmile.cn/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>各大浏览器的兼容模式修改</title>
-    <link href="https://www.wrysmile.cn/2286.html"/>
-    <id>https://www.wrysmile.cn/2286.html</id>
-    <published>2019-07-11T08:21:31.000Z</published>
-    <updated>2020-03-28T07:09:40.454Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Thu Jun 18 2020 11:23:07 GMT+0800 (GMT+08:00) --&gt;&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;由于兼容性原因，可能会导致进入某些网站时显示内容不全或者无法进行点击，这时就需要进行浏览器的兼容模式的修改了。&lt;/li&gt;&lt;li&gt;本篇主要介绍了主流浏览器的修改方法，其余浏览器大同小异，如有需要，请进行百度。&lt;/li&gt;&lt;li&gt;这里就以学校教务处网站为例，进行修改了。
-    
-    </summary>
-    
-      <category term="实用技巧" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
-    
-    
-      <category term="技巧" scheme="https://www.wrysmile.cn/tags/%E6%8A%80%E5%B7%A7/"/>
+      <category term="照片" scheme="https://www.wrysmile.cn/tags/%E7%85%A7%E7%89%87/"/>
     
   </entry>
   
