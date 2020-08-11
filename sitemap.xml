@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.wrysmile.cn/Learn-Linux.html</loc>
+    
+    <lastmod>2020-08-11T11:33:50.298Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wrysmile.cn/Oneplus.html</loc>
     
-    <lastmod>2020-07-22T05:28:43.635Z</lastmod>
+    <lastmod>2020-08-06T12:56:43.439Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wrysmile.cn/web-nav.html</loc>
+    
+    <lastmod>2020-08-06T08:16:42.961Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>https://www.wrysmile.cn/Input.html</loc>
     
     <lastmod>2020-07-14T08:36:02.387Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wrysmile.cn/web-nav.html</loc>
-    
-    <lastmod>2020-07-12T15:09:01.922Z</lastmod>
     
   </url>
   
@@ -110,13 +117,6 @@
     <loc>https://www.wrysmile.cn/Learn-JS.html</loc>
     
     <lastmod>2020-07-06T13:39:11.717Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wrysmile.cn/Learn-Linux.html</loc>
-    
-    <lastmod>2020-07-06T09:04:16.799Z</lastmod>
     
   </url>
   
