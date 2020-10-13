@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>简易盒子上下左右移动</title>
+		<style type="text/css">
+			#box1{
+				width: 100px;
+				height: 100px;
+				background-color: #bfa;
+				position: absolute;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var box1 = document.getElementById("box1");
+				//设置初始按键编码为0
+				var dir = 0;
+				//设置移动速度，在全局中定义才可以在定时器中使用
+				var speed = 10;
+				var timer = setInterval(function(){
+					switch(dir){
+						//左上右下分别为：37/38/39/40
+						case 37:
+							box1.style.left = box1.offsetLeft - speed + "px";
+							break;
+						case 39:
+							box1.style.left = box1.offsetLeft + speed + "px";
+							break;
+						case 38:
+							box1.style.top = box1.offsetTop - speed + "px";
+							break;
+						case 40:
+							box1.style.top = box1.offsetTop + speed + "px";
+							break;
+					}
+				},30);
+				document.onkeydown = function(event){
+					event = event || window.event;
+					//当按下ctrl时加速，否则就还原为原来的速度
+					if(event.ctrlKey){
+						speed = 50;
+					}else{
+						speed = 10;
+					}
+					dir = event.keyCode;
+				};
+				document.onkeyup= function(){
+					//这里不能使用停止定时器来终止移动，因为第二次按下时就无法触发了
+					//clearInterval(timer);
+					dir = 0;
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<div id="box1"></div>
+	</body>
+</html>
