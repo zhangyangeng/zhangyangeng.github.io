@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>自动切换图片</title>
+		<style type="text/css">
+			#box1{
+				width: 640px;
+				margin: 100px auto;
+				text-align: center;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var btn01 = document.getElementById("btn01");
+				var btn02 = document.getElementById("btn02");
+				var img01 = document.getElementById("img01");
+				var timer;
+				var arrList = ["./img/asd1.jpg","./img/asd2.jpg","./img/asd3.jpg"]
+				var index = 0;
+				btn01.onclick = function(){
+					//关闭之前的定时器
+					clearInterval(timer);
+					//开启定时器
+					timer = setInterval(function(){
+						index++;
+						//判断是否到达数组末尾
+						if(index == arrList.length){
+							index = 0;
+						}
+						img01.src = arrList[index];
+					},1000);
+				};
+				btn02.onclick = function(){
+					clearInterval(timer);
+				};
+			};
+		</script>
+	</head>
+	<body>
+		<div id="box1">
+			<img src="./img/asd1.jpg" id="img01"/>
+			<br /><br />
+			<button type="button" id="btn01">开始</button>
+			<button type="button" id="btn02">停止</button>
+		</div>
+	</body>
+</html>

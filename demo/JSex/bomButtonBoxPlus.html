@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>定时器的应用之点击按钮左右移动</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box01{
+				width: 100px;
+				height: 100px;
+				background-color: #bfa;
+				position: absolute;
+				left: 0;
+			}
+			#box02{
+				height: 500px;
+				width: 0;
+				border-left: solid 1px #000;
+				position: absolute;
+				top: 0;
+				left: 800px;
+				z-index: 1;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function(){
+				var btn01 = document.getElementById("btn01");
+				var btn02 = document.getElementById("btn02");
+				var box01 = document.getElementById("box01");
+				btn01.onclick = function(){
+					move(box01,800,20)
+				};
+				btn02.onclick = function(){
+					move(box01,0,10);
+				};
+			};
+			//创建一个函数用来控制盒子移动动画
+			/*
+			 * 参数：
+			 *   1.元素名obj
+			 *   2.目标位置target
+			 *   3.速度speed
+			 */
+			var timer;
+			function move(obj,target,speed){
+				clearInterval(timer);
+				//自动判断speed正负值，减少用户计算过程。这里获取当前位置
+				var current = parseInt(getStyle(obj,"left"));
+				if(current > target){
+					speed = -speed;
+				}
+				timer = setInterval(function(){
+					var oldValue = parseInt(getStyle(obj,"left"));
+					var newValue = oldValue + speed;
+					//当speed为负值时向左移，界限为小于target；当speed为正值时向右移，界限为大于target
+					if((speed > 0 && newValue > target) || (speed < 0 && newValue < target)){
+						newValue = target;
+					}
+					obj.style.left = newValue + "px";
+					if(newValue == target){
+						clearInterval(timer);
+					}
+				},50);
+			}
+			//创建一个函数用来获取元素的样式
+			function getStyle(obj,name){
+				if(window.getComputedStyle){
+					return getComputedStyle(obj,null)[name];
+				}else{
+					return obj.currentStyle[name];
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<button type="button" id="btn01">点我向右移</button>
+		<button type="button" id="btn02">点我向左移</button>
+		<br /><br />
+		<div id="box02"></div>
+		<div id="box01"></div>
+	</body>
+</html>
