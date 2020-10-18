@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.wrysmile.cn/Learn-JS.html</loc>
+    
+    <lastmod>2020-10-18T14:17:16.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wrysmile.cn/Learn-CSS.html</loc>
+    
+    <lastmod>2020-10-15T10:05:28.536Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wrysmile.cn/Oneplus.html</loc>
     
     <lastmod>2020-10-15T03:29:16.947Z</lastmod>
@@ -16,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://www.wrysmile.cn/Learn-JS.html</loc>
-    
-    <lastmod>2020-10-13T08:53:48.603Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.wrysmile.cn/26695.html</loc>
     
     <lastmod>2020-10-10T08:43:50.394Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://www.wrysmile.cn/Learn-HTML.html</loc>
     
     <lastmod>2020-09-27T07:45:03.935Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wrysmile.cn/Learn-CSS.html</loc>
-    
-    <lastmod>2020-09-26T07:44:51.150Z</lastmod>
     
   </url>
   
