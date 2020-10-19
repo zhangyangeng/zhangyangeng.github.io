@@ -1,0 +1,2 @@
+// build time:Mon Oct 19 2020 16:10:06 GMT+0800 (GMT+08:00)
+function move(e,t,r,n,l){clearInterval(e.timer);var i=parseInt(getStyle(e,t));if(i>r){n=-n}e.timer=setInterval(function(){var i=parseInt(getStyle(e,t));var a=i+n;if(n>0&&a>r||n

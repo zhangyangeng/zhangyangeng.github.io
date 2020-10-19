@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>综合案例之轮播图</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#outer{
+				/* 这里的宽度为图片宽度加外边距 */
+				width: 652px;
+				height: 340px;
+				padding: 10px 0;
+				/* background-color: skyblue; */
+				margin: 50px auto;
+				/* 子元素开启绝对定位，父元素开启相对定位 */
+				position: relative;
+				/* 隐藏溢出的ul部分 */
+				overflow: hidden;
+			}
+			#imgList{
+				/* 去除项目符号 */
+				list-style: none;
+				/* 开启绝对定位，使其可以左右变换位置 */
+				position: absolute;
+				/* 想要使其滑动，需要设置为0、-652、-1304 */
+				left: 0px;
+			}
+			#imgList li{
+				/* 开启向左浮动，使图片横着排列 */
+				float: left;
+				margin: 0 10px;
+			}
+			#navDiv{
+				position: absolute;
+				/* 设置离底边距离多少 */
+				bottom: 15px;
+				/* 若元素大小由内容撑开时，想要使该元素居中，则需要使用left使其左边缘在父元素的中线处，再使用平移来使其自身向左移动一半，达到居中效果 */
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			#navDiv a{
+				float: left;
+				width: 15px;
+				height: 15px;
+				margin: 0 5px;
+				background-color: #f00;
+				/* 修改透明度 */
+				opacity: 0.6;
+				/* 兼容IE8及以下修改透明度 */
+				filter: alpha(opacity=60);
+			}
+			#navDiv a:hover{
+				background-color: #000000;
+			}
+		</style>
+		<!-- 引入之前做好的js移动效果 -->
+		<script src="./js/bomButtonBoxPlusPlus.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				var imgList = document.getElementById("imgList");
+				var imgArr = document.getElementsByTagName("img");
+				// 使用js来使ul整体的宽度等于（图片+外边距）* 图片的数量
+				imgList.style.width = imgArr.length * 652 + "px";
+				// 设置超链接的索引
+				var index = 0;
+				var allA = document.getElementsByTagName("a");
+				//设置默认选中效果
+				allA[index].style.backgroundColor = "black";
+				/*
+				 * 点击超链接切换到指定的图片
+				 */
+				//为所有的超链接绑定单击响应函数
+				for(var i=0;i<allA.length;i++){
+					//为每一个超链接都添加一个num属性，即将索引当做对象的属性进行保存即可
+					allA[i].num = i;
+					allA[i].onclick = function(){
+						//关闭定时器
+						clearInterval(timer);
+						//获取点击超链接的索引，并将其设置为index
+						index = this.num;
+						//切换图片
+						/*
+						 * 第一张：索引0 位置0
+						 * 第二张：索引1 位置-652px
+						 * 第三张：索引2 位置-1304px
+						 * 若使用下面的move函数，则无需这行
+						 */
+						//imgList.style.left = -652 * index + "px";
+						//修改选中a的颜色
+						setA();
+						//使用move函数来切换图片
+						move(imgList,"left",-652*index,20,function(){
+							//当所有动画执行完毕时，开启定时器执行自动切换
+							autoChange();
+						});
+					};
+				}
+				//开启自动切换
+				autoChange();
+				//创建一个方法用来设置选中的a
+				function setA(){
+					//判断当前索引是否是最后一张图片，如果是将选中的小点回到第一张
+					if(index >= imgArr.length - 1){
+						index = 0;
+						imgList.style.left = 0;
+					}
+					for(var i=0;i<allA.length;i++){
+						//这里设置的样式相当于内联样式，优先级高，会覆盖hover效果，所以将其设置为空串，则会直接使用上面设置好的样式
+						allA[i].style.backgroundColor = "";
+					}
+					allA[index].style.backgroundColor = "black";
+				}
+				//定义一个定时器
+				var timer;
+				//创建一个函数，用来开启自动切换图片的动画
+				function autoChange(){
+					//开启定时器，用来定时切换图片
+					timer = setInterval(function(){
+						index++;
+						//判断index的值
+						index %= imgArr.length;
+						move(imgList,"left",-652*index,20,function(){
+							//修改导航按钮
+							setA();
+						})
+						
+					},3000);
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div id="outer">
+			<ul id="imgList">
+				<li><img src="img/asd1.jpg" alt="图1" /></li>
+				<li><img src="img/asd2.jpg" alt="图2" /></li>
+				<li><img src="img/asd3.jpg" alt="图3" /></li>
+				<li><img src="img/asd1.jpg" alt="图1" /></li>
+			</ul>
+			<div id="navDiv">
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</body>
+</html>
