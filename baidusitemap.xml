@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.wrysmile.cn/Learn-JS.html</loc>
-    <lastmod>2020-10-19</lastmod>
+    <lastmod>2020-10-22</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/26695.html</loc>
+    <lastmod>2020-10-22</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-CSS.html</loc>
-    <lastmod>2020-10-15</lastmod>
+    <lastmod>2020-10-21</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Down-baiduyun.html</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/enter-github.html</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/42761.html</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/2286.html</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Learn-Nginx.html</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Learn-HTML.html</loc>
+    <lastmod>2020-10-20</lastmod>
+  </url>  <url>
+    <loc>https://www.wrysmile.cn/Learn-Linux.html</loc>
+    <lastmod>2020-10-20</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Oneplus.html</loc>
     <lastmod>2020-10-15</lastmod>
@@ -13,25 +37,13 @@
     <loc>https://www.wrysmile.cn/Hexo-02.html</loc>
     <lastmod>2020-10-15</lastmod>
   </url>  <url>
-    <loc>https://www.wrysmile.cn/26695.html</loc>
-    <lastmod>2020-10-10</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/Learn-HTML.html</loc>
-    <lastmod>2020-09-27</lastmod>
-  </url>  <url>
     <loc>https://www.wrysmile.cn/web-nav.html</loc>
     <lastmod>2020-09-20</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/Learn-Linux.html</loc>
-    <lastmod>2020-08-23</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Input.html</loc>
     <lastmod>2020-07-14</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/12726.html</loc>
-    <lastmod>2020-07-12</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/Down-baiduyun.html</loc>
     <lastmod>2020-07-12</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/52621.html</loc>
@@ -41,15 +53,6 @@
     <lastmod>2020-07-12</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/copy-paste.html</loc>
-    <lastmod>2020-07-12</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/enter-github.html</loc>
-    <lastmod>2020-07-12</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/42761.html</loc>
-    <lastmod>2020-07-12</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/2286.html</loc>
     <lastmod>2020-07-12</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/53581.html</loc>
@@ -74,9 +77,6 @@
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Date.html</loc>
-    <lastmod>2020-06-02</lastmod>
-  </url>  <url>
-    <loc>https://www.wrysmile.cn/Learn-Nginx.html</loc>
     <lastmod>2020-06-02</lastmod>
   </url>  <url>
     <loc>https://www.wrysmile.cn/Learn-Java.html</loc>
