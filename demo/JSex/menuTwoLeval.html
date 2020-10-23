@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>综合案例之二级菜单</title>
+		<link rel="stylesheet" type="text/css" href="./css/menuTwoLeval.css"/>
+		<link rel="stylesheet" type="text/css" href="fa/css/all.css"/>
+		<script type="text/javascript" src="./js/tools.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				// 因为我们是通过点span来实现功能，那么我们需要获取到所有符合要求的span，这里为了兼容IE8及以下
+				var menuSpan = document.querySelectorAll(".menuSpan");
+				// 创建一个变量用来存放当前打开的菜单
+				var openDiv = menuSpan[0].parentNode;
+				for(var i=0;i<menuSpan.length;i++){
+					//给每个span都绑定一个单击响应函数
+					menuSpan[i].onclick = function(){
+						//这里的this就是指当前正在点击的按钮，这里是指获取当前span的父元素
+						var parentDiv = this.parentNode;
+						// 切换菜单的显示状态
+						toggleMenu(parentDiv);
+						
+						//如果打开的div和当前的div不一样，且当前打开的div中不含有 collapsed 属性时进入循环
+						if(openDiv != parentDiv && !hasClass(openDiv,"collapsed")){
+							//打开菜单之后，关闭之前打开的菜单
+							//addClass(openDiv,"collapsed");
+							//toggleClass(openDiv,"collapsed")
+							// 切换菜单的显示状态
+							toggleMenu(openDiv);
+						}
+						//修改openDiv为当前打开的菜单
+						openDiv = parentDiv;
+					};
+				}
+				// 用来切换菜单的折叠显示状态
+				function toggleMenu(obj){
+					//切换类之前获取元素的高度
+					var begin = obj.offsetHeight;
+					toggleClass(obj,"collapsed");
+					/*
+					 * 这里用来获取当前元素的第一个子节点的第一个子节点
+					 * 如果有该class属性则删除，无则添加
+					 */
+					toggleClass(obj.children[0].children[0],"fa-angle-right");
+					//切换类之后获取元素的高度
+					var end = obj.offsetHeight;
+					//将元素的高度重置为begin，这样才能设置动画
+					obj.style.height = begin + "px";
+					//设置动画
+					move(obj,"height",end,10,function(){
+						//清除内联样式
+						obj.style.height = "";
+					});
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div class="sdmenu" id="my_menu">
+			<div>
+				<span class="menuSpan">
+					<!-- 菜单折叠时箭头向右，打开时箭头向下 -->
+					<li class="fas fa-angle-down"></li>
+					<!-- 向右箭头为<li class="fas fa-angle-right"></li> -->
+					 博客导航
+				</span>
+				<a href="javascript:;">个人博客</a>
+				<a href="javascript:;">csdn博客</a>
+				<a href="javascript:;">Github博客</a>
+			</div>
+			<div class="collapsed">
+				<span class="menuSpan">
+					<li class="fas fa-angle-down fa-angle-right"></li>
+					 网站导航
+				</span>
+				<a href="javascript:;">图像类</a>
+				<a href="javascript:;">影音类</a>
+				<a href="javascript:;">工具类</a>
+				<a href="javascript:;">学习类</a>
+			</div>
+			<div class="collapsed">
+				<span class="menuSpan">
+					<li class="fas fa-angle-down fa-angle-right"></li>
+					 支持我们
+				</span>
+				<a href="javascript:;">支付宝</a>
+				<a href="javascript:;">微信</a>
+				<a href="javascript:;">QQ钱包</a>
+				<a href="javascript:;">Visa借记卡</a>
+			</div>
+			<div class="collapsed">
+				<span class="menuSpan">
+					<li class="fas fa-angle-down fa-angle-right"></li>
+					 贡献榜单
+				</span>
+				<a href="javascript:;">Wrysmile</a>
+				<a href="javascript:;">Lginte</a>
+				<a href="javascript:;">Dirge</a>
+				<a href="javascript:;">陌生人</a>
+			</div>
+		</div>
+	</body>
+</html>

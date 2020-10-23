@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.sdmenu{
+	width: 150px;
+	overflow: hidden;
+	background-color: #636361;
+	border-radius: 10px;
+}
+.sdmenu::before{
+	/* 使用伪元素来给菜单顶部加个显示块 */
+	content: "";
+	display: block;
+	height: 8px;
+}
+.sdmenu::after{
+	/* 使用伪元素来给菜单底部加个显示块 */
+	content: "";
+	/* 将其转为块元素时可以独占一行 */
+	display: block;
+	height: 8px;
+}
+.sdmenu div{
+	overflow: hidden;
+}
+
+/* 该class属性可以使div叠起来 */
+.collapsed{
+	height: 30px;
+}
+
+/* 设置每个菜单的span样式 */
+.menuSpan{
+	display: block;
+	height: 30px;
+	/* 使字体在元素中垂直居中 */
+	line-height: 30px;
+	padding-left: 10px;
+	/* 设置字体颜色 */
+	color: white;
+	border-bottom: #dde0dd solid 1px;
+	/* 这个属性可将鼠标移入span时，鼠标变为小手 */
+	cursor: pointer;
+	position: relative;
+}
+/* .fa-angle-down{
+	visibility: hidden;
+}
+.fa-angle-right{
+	position: absolute;
+	visibility: initial;
+	top: 7px;
+	left: 11px;
+} */
+
+/* 设置菜单中a的样式 */
+.sdmenu a{
+	text-decoration: none;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	background-color: #eceeeb;
+	border-bottom: #dde0dd solid 1px;
+	padding-left: 10px;
+}
+.sdmenu a:link,
+.sdmenu a:visited{
+	color: #6e9697;
+}
