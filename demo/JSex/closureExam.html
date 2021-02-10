@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>闭包面试题</title>
+		<script type="text/javascript">
+			// 面试题1：
+			var name = "The Window";
+			var object = {
+				name : "My Object",
+				getNameFun : function(){
+					return function(){
+						return this.name;
+					};
+				}
+			};
+			alert(object.getNameFun()());	// 输出 The Window。因为此时的this为window
+			
+			// 面试题2：
+			var name2 = "The Window";
+			var object2 = {
+				name2 : "My Object",
+				getNameFun : function(){
+					var that = this;
+					return function(){
+						return that.name2;
+					};
+				}
+			};
+			alert(object2.getNameFun()());
+			
+			// 面试题3：
+			function fun(n,o){
+				console.log(o);
+				return {
+					fun:function(m){
+						return fun(m,n);
+					}
+				}
+			}
+			var a = fun(0); a.fun(1); a.fun(2); a.fun(3);	// 输出undefined,0,0,0
+			console.log('------');
+			var b = fun(0).fun(1).fun(2).fun(3);	// 输出undefined,0,1,2
+			console.log('------');
+			var c = fun(0).fun(1);	c.fun(2);	c.fun(3);	// 输出undefined,0,1,1
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
