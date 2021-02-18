@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>斐波那契数列之进阶法</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var input = document.getElementById("numeber");
+				var btn = document.getElementById("btn");
+				btn.onclick = function(){
+					var number = input.value;
+					// 创建一个Worker对象并向它传递将在新线程中执行的脚本的URL
+					var worker = new Worker("js/worker.js");
+					// 向Worker发送数据
+					worker.postMessage(number);
+					console.log("主线程向分线程发送数据："+number);
+					// 接收Worker传过来的数据函数
+					worker.onmessage = function(event){
+						// 传过来的数据存放在event.data里面
+						var result = event.data;
+						console.log("主线程从分线程接收数据："+result);
+						alert(result);
+					};
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" name="number" id="numeber"/>
+		<button type="button" id="btn">计算</button>
+	</body>
+</html>

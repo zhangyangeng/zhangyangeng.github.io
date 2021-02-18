@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>斐波那契数列之普通法</title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var input = document.getElementById("numeber");
+				var btn = document.getElementById("btn");
+				// 斐波那契数列求法
+				function fibonacci(n){
+					if(n>1){
+						return n<=3 ? 1 : fibonacci(n-1) + fibonacci(n-2);
+					}else{
+						return 0;
+					}
+				}
+				btn.onclick = function(){
+					var number = input.value;
+					var result = fibonacci(number);
+					alert(result);
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" name="number" id="numeber"/>
+		<button type="button" id="btn">计算</button>
+	</body>
+</html>
