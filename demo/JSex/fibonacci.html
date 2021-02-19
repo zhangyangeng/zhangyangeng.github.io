@@ -3,6 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<title>斐波那契数列之普通法</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				width: 400px;
+				height: 200px;
+				margin: 100px auto;
+				padding-top: 50px;
+				text-align: center;
+				border-radius: 15px;
+				box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+			}
+			.box2{
+				margin-top: 50px;
+			}
+			#btn{
+				width: 50px;
+			}
+		</style>
 		<script type="text/javascript">
 			window.onload = function(){
 				var input = document.getElementById("numeber");
@@ -18,13 +39,19 @@
 				btn.onclick = function(){
 					var number = input.value;
 					var result = fibonacci(number);
-					alert(result);
+					alert("第"+number+"位的值为"+result);
 				};
 			}
 		</script>
 	</head>
 	<body>
-		<input type="text" name="number" id="numeber"/>
-		<button type="button" id="btn">计算</button>
+		<div class="box1">
+			<h2>求解斐波那契数列</h2>
+			<div class="box2">
+				<input type="text" name="number" id="numeber" placeholder="请问要计算第几位的值?"/>
+				<br /><br />
+				<button type="button" id="btn">计算</button>
+			</div>
+		</div>
 	</body>
 </html>
