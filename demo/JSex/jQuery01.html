@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery01</title>
+  <script type="text/javascript">
+  	window.onload = function(){
+		let btn1 = document.getElementById('btn1');
+		btn1.onclick = function(){
+			let username = document.getElementById('username');
+			alert(username.value);
+		}
+	}
+  </script>
+  <script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  	$(function(){
+		$('#btn2').click(function(){
+			let username = $('#username').val();
+			alert(username);
+		})
+	})
+  </script>
+</head>
+<body>
+<!--
+需求: 点击"确定"按钮, 提示输入的值
+-->
+
+用户名: <input type="text" id="username">
+<button id="btn1">确定(原生版)</button>
+<button id="btn2">确定(jQuery版)</button>
+
+</body>
+
+</html>
