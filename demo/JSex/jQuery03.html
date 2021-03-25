@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>回到顶部功能</title>
+		<style>
+			#to_top {
+				width: 30px;
+				height: 40px;
+				font: 14px/20px arial;
+				text-align: center;
+				background: red;
+				position: fixed;
+				cursor: pointer;
+				color: #fff;
+				left: 1250px;
+				top: 500px;
+			}
+		</style>
+	</head>
+	<body style="height: 2000px;">
+		<div class="content">
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+			<p>我是这行的文字</p>
+		</div>
+		
+		<div id="to_top">返回顶部</div>
+
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('#to_top').click(function(){
+				// 瞬间滚动到顶部
+				// $('html,body').scrollTop(0);
+				// 平滑滚动到顶部
+				let distance = $('html,body').scrollTop();
+				let time = 500;
+				let intervalTime = 20;
+				let itemDistance = distance/(time/intervalTime);
+				let intervalId = setInterval(function(){
+					distance -= itemDistance;
+					if(distance <= 0){
+						distance = 0;
+						clearInterval(intervalId);
+					}
+					$('html,body').scrollTop(distance);
+				}, intervalTime);
+			})
+		</script>
+	</body>
+
+</html>
