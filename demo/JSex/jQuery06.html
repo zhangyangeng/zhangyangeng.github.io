@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>添加删除记录练习</title>
+		<link rel="stylesheet" type="text/css" href="css/jQuery05.css" />
+	</head>
+	<body>
+		<table id="employeeTable">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Salary</th>
+				<th>&nbsp;</th>
+			</tr>
+			<tr>
+				<td>Tom</td>
+				<td>tom@tom.com</td>
+				<td>5000</td>
+				<td><a href="deleteEmp?id=001">Delete</a></td>
+			</tr>
+			<tr>
+				<td>Jerry</td>
+				<td>jerry@sohu.com</td>
+				<td>8000</td>
+				<td><a href="deleteEmp?id=002">Delete</a></td>
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td>bob@tom.com</td>
+				<td>10000</td>
+				<td><a href="deleteEmp?id=003">Delete</a></td>
+			</tr>
+		</table>
+		<div id="formDiv">
+			<h4>添加新员工</h4>
+			<table>
+				<tr>
+					<td class="word">name:</td>
+					<td class="inp">
+						<input type="text" name="empName" id="empName" />
+					</td>
+				</tr>
+				<tr>
+					<td class="word">email:</td>
+					<td class="inp">
+						<input type="text" name="email" id="email" />
+					</td>
+				</tr>
+				<tr>
+					<td class="word">salary:</td>
+					<td class="inp">
+						<input type="text" name="salary" id="salary" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<button id="addEmpButton" value="abc">
+							Submit
+						</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			let $addEmpButton = $('#addEmpButton');
+			// 添加功能
+			$addEmpButton.click(function(){
+				// 1.收集数据
+				let $empName = $('#empName');
+				let $email = $('#email');
+				let $salary = $('#salary');
+				let empName = $empName.val();
+				let email = $email.val();
+				let salary = $salary.val();
+				// 2.生成对应的<tr>标签结构，并插入到$employeeTable的tbody中
+				let xxx = $('<tr></tr>')
+					.append('<td>'+empName+'</td>')
+					.append('<td>'+email+'</td>')
+					.append('<td>'+salary+'</td>')
+					.append('<td><a href="deleteEmp?id='+Date.now()+'">Delete</a></td>')
+					.appendTo('#employeeTable>tbody');
+					
+				// // 给新添加的tr标签中的超链接设置点击事件
+				// 这里使用了事件委派，所以不需要给a标签绑定点击事件了
+				// xxx.find('a').click(clickDelete)
+				
+				// 3.清除输入
+				empName = $empName.val('');
+				email = $email.val('');
+				salary = $salary.val('');
+			})
+			
+			// // 删除功能
+			// $('#employeeTable a').click(clickDelete);
+			// 使用事件委派，减少事件绑定次数
+			$('#employeeTable').delegate('a', 'click', clickDelete);
+			
+			// 删除的回调函数
+			function clickDelete(){
+				let $tr = $(this).parent().parent();
+				let name = $tr.children(':first').html();
+				if(confirm('确定删除'+name+'的信息吗？')){
+					$tr.remove();
+				}
+				return false;
+			}
+		</script>
+	</body>
+</html>
