@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.wrysmile.cn/Learn-Wechat.html</loc>
+    
+    <lastmod>2021-04-05T12:21:50.402Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wrysmile.cn/ShortcutKey.html</loc>
+    
+    <lastmod>2021-04-05T10:51:44.678Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wrysmile.cn/Learn-jQuery.html</loc>
     
-    <lastmod>2021-04-01T14:21:49.253Z</lastmod>
+    <lastmod>2021-04-05T07:02:42.132Z</lastmod>
     
   </url>
   
@@ -19,20 +33,6 @@
     <loc>https://www.wrysmile.cn/Hexo-02.html</loc>
     
     <lastmod>2021-03-31T15:01:40.718Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wrysmile.cn/Learn-Wechat.html</loc>
-    
-    <lastmod>2021-03-31T13:41:46.892Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wrysmile.cn/ShortcutKey.html</loc>
-    
-    <lastmod>2021-03-29T07:57:46.889Z</lastmod>
     
   </url>
   
