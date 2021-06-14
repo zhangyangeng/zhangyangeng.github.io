@@ -6,7 +6,7 @@
   <link href="https://www.wrysmile.cn/atom.xml" rel="self"/>
   
   <link href="https://www.wrysmile.cn/"/>
-  <updated>2021-04-13T02:58:08.702Z</updated>
+  <updated>2021-06-10T11:14:44.502Z</updated>
   <id>https://www.wrysmile.cn/</id>
   
   <author>
@@ -17,11 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>前端：面试与笔试经验总结</title>
+    <link href="https://www.wrysmile.cn/55679.html"/>
+    <id>https://www.wrysmile.cn/55679.html</id>
+    <published>2021-06-10T10:38:39.000Z</published>
+    <updated>2021-06-10T11:14:44.502Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;主要总结了各个公司的面试与笔试时的一些内容</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>学习笔记：NodeJS（尚硅谷）</title>
     <link href="https://www.wrysmile.cn/Learn-NodeJS.html"/>
     <id>https://www.wrysmile.cn/Learn-NodeJS.html</id>
     <published>2021-04-11T02:30:09.000Z</published>
-    <updated>2021-04-13T02:58:08.702Z</updated>
+    <updated>2021-06-14T15:42:27.966Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
@@ -67,7 +83,7 @@
     <link href="https://www.wrysmile.cn/ShortcutKey.html"/>
     <id>https://www.wrysmile.cn/ShortcutKey.html</id>
     <published>2021-03-18T00:38:10.000Z</published>
-    <updated>2021-04-17T12:53:03.057Z</updated>
+    <updated>2021-06-13T15:42:42.030Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
@@ -179,7 +195,7 @@
     <link href="https://www.wrysmile.cn/Learn-JS.html"/>
     <id>https://www.wrysmile.cn/Learn-JS.html</id>
     <published>2020-04-27T10:21:29.000Z</published>
-    <updated>2021-04-11T08:45:01.578Z</updated>
+    <updated>2021-06-13T15:46:54.122Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
@@ -460,26 +476,6 @@
     <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="编程" scheme="https://www.wrysmile.cn/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习笔记：数据库</title>
-    <link href="https://www.wrysmile.cn/Learn-Date.html"/>
-    <id>https://www.wrysmile.cn/Learn-Date.html</id>
-    <published>2019-09-01T13:34:29.000Z</published>
-    <updated>2020-06-02T02:05:16.469Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;本文主要记录在学习数据库课程时的一些笔记</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://www.wrysmile.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
