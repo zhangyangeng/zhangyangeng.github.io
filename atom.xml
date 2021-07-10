@@ -40,6 +40,31 @@
   </entry>
   
   <entry>
+    <title>学习笔记：MongoDB（尚硅谷）</title>
+    <link href="https://www.wrysmile.cn/Learn-MongoDB.html"/>
+    <id>https://www.wrysmile.cn/Learn-MongoDB.html</id>
+    <published>2021-06-27T02:16:52.000Z</published>
+    <updated>2021-07-10T14:54:27.815Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本文主要记录在学习尚硅谷的 MongoDB 课程时的一些笔记&lt;/li&gt;
+&lt;li&gt;尚硅谷前端学科全套课程请点击&lt;a href=&quot;https://pan.baidu.com/s/1BM_OKMXXAGxMNqaBN_7tRg&quot;&gt;这里&lt;/a&gt;进行下载，提取码：afyt</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://www.wrysmile.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="前端" scheme="https://www.wrysmile.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="数据库" scheme="https://www.wrysmile.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端：面试与笔试经验总结</title>
     <link href="https://www.wrysmile.cn/Web-Interview.html"/>
     <id>https://www.wrysmile.cn/Web-Interview.html</id>
@@ -460,29 +485,6 @@
     <category term="翻墙" scheme="https://www.wrysmile.cn/tags/%E7%BF%BB%E5%A2%99/"/>
     
     <category term="V2Ray" scheme="https://www.wrysmile.cn/tags/V2Ray/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习笔记：Java</title>
-    <link href="https://www.wrysmile.cn/Learn-Java.html"/>
-    <id>https://www.wrysmile.cn/Learn-Java.html</id>
-    <published>2019-09-02T13:31:10.000Z</published>
-    <updated>2020-06-02T01:33:40.255Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;本文主要记录在学习Java课程时的一些笔记&lt;/li&gt;
-&lt;li&gt;关于java中的一些基础知识点，尚学堂的笔记中有提到，可直接点击 &lt;a href=&quot;https://www.sxt.cn/Java_jQuery_in_action/thirteen-animation-effects.html&quot;&gt;这里&lt;/a&gt; 查看</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://www.wrysmile.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="编程" scheme="https://www.wrysmile.cn/tags/%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
