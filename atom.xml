@@ -6,7 +6,7 @@
   <link href="https://www.wrysmile.cn/atom.xml" rel="self"/>
   
   <link href="https://www.wrysmile.cn/"/>
-  <updated>2021-07-14T15:31:45.862Z</updated>
+  <updated>2021-07-15T14:53:51.981Z</updated>
   <id>https://www.wrysmile.cn/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习笔记：ES6教程（尚硅谷）</title>
+    <link href="https://www.wrysmile.cn/Learn-ES6.html"/>
+    <id>https://www.wrysmile.cn/Learn-ES6.html</id>
+    <published>2021-07-15T14:09:34.000Z</published>
+    <updated>2021-07-15T14:53:51.981Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本文主要记录在学习尚硅谷的 Promise 课程时的一些笔记&lt;/li&gt;
+&lt;li&gt;尚硅谷前端学科全套课程请点击&lt;a href=&quot;https://pan.baidu.com/s/1BM_OKMXXAGxMNqaBN_7tRg&quot;&gt;这里&lt;/a&gt;进行下载，提取码：afyt</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://www.wrysmile.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="前端" scheme="https://www.wrysmile.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习笔记：Promise（尚硅谷）</title>
+    <link href="https://www.wrysmile.cn/Learn-Promise.html"/>
+    <id>https://www.wrysmile.cn/Learn-Promise.html</id>
+    <published>2021-07-15T07:16:34.000Z</published>
+    <updated>2021-07-15T14:03:50.651Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;本文主要记录在学习尚硅谷的 Promise 课程时的一些笔记&lt;/li&gt;
+&lt;li&gt;尚硅谷前端学科全套课程请点击&lt;a href=&quot;https://pan.baidu.com/s/1BM_OKMXXAGxMNqaBN_7tRg&quot;&gt;这里&lt;/a&gt;进行下载，提取码：afyt</summary>
+    
+    
+    
+    <category term="学习笔记" scheme="https://www.wrysmile.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="前端" scheme="https://www.wrysmile.cn/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>学习笔记：AJAX（尚硅谷）</title>
@@ -432,59 +478,6 @@
     <category term="学习" scheme="https://www.wrysmile.cn/tags/%E5%AD%A6%E4%B9%A0/"/>
     
     <category term="服务器" scheme="https://www.wrysmile.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>U盘向：恢复U盘内的损坏文件</title>
-    <link href="https://www.wrysmile.cn/14953.html"/>
-    <id>https://www.wrysmile.cn/14953.html</id>
-    <published>2019-10-14T12:47:27.000Z</published>
-    <updated>2020-07-12T15:00:05.247Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;有时我们的U盘或者内存卡会因为某些不知名原因导致损坏一部分文件，就会生成 &lt;code&gt;LOST.DIR&lt;/code&gt; 文件夹，这里面放的便是损坏的文件&lt;/li&gt;
-&lt;li&gt;该教程用TrlDNET软件识别这些损坏文件&lt;/li&gt;
-&lt;li&gt;当然，如果你不想下载软件，它也有在线端，请点 &lt;a href=&quot;http://mark0.net/onlinetrid.html&quot;&gt;这里&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;本教程并不能让你完全恢复，望知悉</summary>
-    
-    
-    
-    <category term="实用教程" scheme="https://www.wrysmile.cn/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="技巧" scheme="https://www.wrysmile.cn/tags/%E6%8A%80%E5%B7%A7/"/>
-    
-    <category term="干货" scheme="https://www.wrysmile.cn/tags/%E5%B9%B2%E8%B4%A7/"/>
-    
-    <category term="U盘" scheme="https://www.wrysmile.cn/tags/U%E7%9B%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小白教程：V2Ray搭建服务器之基础搭建教程</title>
-    <link href="https://www.wrysmile.cn/V2Ray-02.html"/>
-    <id>https://www.wrysmile.cn/V2Ray-02.html</id>
-    <published>2019-09-20T09:18:43.000Z</published>
-    <updated>2020-05-31T10:21:03.228Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;如果你想要自己动手搭建一个梯子来使用，那么你可以试着按本系列的教程进行搭建&lt;/li&gt;
-&lt;li&gt;本文从服务器的购买、配置，V2Ray 服务器端的配置，V2Ray 软件端的下载等方面详细展开&lt;/li&gt;
-&lt;li&gt;&lt;font color=#FF0000&gt;注意：请不要进行任何商业行为，产生任何后果都与本人无关&lt;/font&gt;</summary>
-    
-    
-    
-    <category term="科学上网" scheme="https://www.wrysmile.cn/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
-    
-    
-    <category term="服务器" scheme="https://www.wrysmile.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-    <category term="翻墙" scheme="https://www.wrysmile.cn/tags/%E7%BF%BB%E5%A2%99/"/>
-    
-    <category term="V2Ray" scheme="https://www.wrysmile.cn/tags/V2Ray/"/>
     
   </entry>
   
