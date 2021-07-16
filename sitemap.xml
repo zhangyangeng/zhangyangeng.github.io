@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.wrysmile.cn/Web-Interview.html</loc>
+    
+    <lastmod>2021-07-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wrysmile.cn/Hexo-02.html</loc>
     
     <lastmod>2021-07-16</lastmod>
@@ -38,13 +45,6 @@
   
   <url>
     <loc>https://www.wrysmile.cn/Learn-JS.html</loc>
-    
-    <lastmod>2021-07-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wrysmile.cn/Web-Interview.html</loc>
     
     <lastmod>2021-07-14</lastmod>
     
@@ -403,14 +403,14 @@
   </url>
   
   <url>
-    <loc>https://www.wrysmile.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://www.wrysmile.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2021-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.wrysmile.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://www.wrysmile.cn/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2021-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -466,20 +466,6 @@
   </url>
   
   <url>
-    <loc>https://www.wrysmile.cn/tags/%E8%BE%93%E5%85%A5%E6%B3%95/</loc>
-    <lastmod>2021-07-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wrysmile.cn/tags/%E8%AF%8D%E5%BA%93/</loc>
-    <lastmod>2021-07-16</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wrysmile.cn/tags/office/</loc>
     <lastmod>2021-07-16</lastmod>
     <changefreq>daily</changefreq>
@@ -494,14 +480,14 @@
   </url>
   
   <url>
-    <loc>https://www.wrysmile.cn/tags/%E7%BD%91%E8%AF%BE/</loc>
+    <loc>https://www.wrysmile.cn/tags/%E8%BE%93%E5%85%A5%E6%B3%95/</loc>
     <lastmod>2021-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.wrysmile.cn/tags/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://www.wrysmile.cn/tags/%E8%AF%8D%E5%BA%93/</loc>
     <lastmod>2021-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -516,6 +502,20 @@
   
   <url>
     <loc>https://www.wrysmile.cn/tags/%E7%A0%B4%E8%A7%A3/</loc>
+    <lastmod>2021-07-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wrysmile.cn/tags/%E7%BD%91%E8%AF%BE/</loc>
+    <lastmod>2021-07-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wrysmile.cn/tags/%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2021-07-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
