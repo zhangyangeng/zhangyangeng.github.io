@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.wrysmile.cn/Hexo-02.html</loc>
+    <lastmod>2021-07-16</lastmod>
+  </url>
+  <url>
     <loc>https://www.wrysmile.cn/Learn-ES6.html</loc>
-    <lastmod>2021-07-15</lastmod>
+    <lastmod>2021-07-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wrysmile.cn/ShortcutKey.html</loc>
+    <lastmod>2021-07-16</lastmod>
   </url>
   <url>
     <loc>https://www.wrysmile.cn/Learn-Promise.html</loc>
@@ -21,10 +29,6 @@
     <lastmod>2021-07-14</lastmod>
   </url>
   <url>
-    <loc>https://www.wrysmile.cn/ShortcutKey.html</loc>
-    <lastmod>2021-07-11</lastmod>
-  </url>
-  <url>
     <loc>https://www.wrysmile.cn/Learn-MongoDB.html</loc>
     <lastmod>2021-07-10</lastmod>
   </url>
@@ -39,10 +43,6 @@
   <url>
     <loc>https://www.wrysmile.cn/Learn-NodeJS.html</loc>
     <lastmod>2021-06-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wrysmile.cn/Hexo-02.html</loc>
-    <lastmod>2021-06-09</lastmod>
   </url>
   <url>
     <loc>https://www.wrysmile.cn/Oneplus.html</loc>
