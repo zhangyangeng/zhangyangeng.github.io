@@ -6,7 +6,7 @@
   <link href="https://www.wrysmile.cn/atom.xml" rel="self"/>
   
   <link href="https://www.wrysmile.cn/"/>
-  <updated>2021-07-16T17:52:22.747Z</updated>
+  <updated>2021-07-17T15:24:33.181Z</updated>
   <id>https://www.wrysmile.cn/</id>
   
   <author>
@@ -17,15 +17,15 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>学习笔记：ES6教程（尚硅谷）</title>
-    <link href="https://www.wrysmile.cn/Learn-ES6.html"/>
-    <id>https://www.wrysmile.cn/Learn-ES6.html</id>
+    <title>学习笔记：ECMAScript教程（尚硅谷）</title>
+    <link href="https://www.wrysmile.cn/Learn-ECMA.html"/>
+    <id>https://www.wrysmile.cn/Learn-ECMA.html</id>
     <published>2021-07-15T14:09:34.000Z</published>
-    <updated>2021-07-16T17:52:22.747Z</updated>
+    <updated>2021-07-17T15:24:33.181Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;本文主要记录在学习尚硅谷的 Promise 课程时的一些笔记&lt;/li&gt;
+&lt;li&gt;本文主要记录在学习尚硅谷的 ECMAScript 课程时的一些笔记&lt;/li&gt;
 &lt;li&gt;尚硅谷前端学科全套课程请点击&lt;a href=&quot;https://pan.baidu.com/s/1BM_OKMXXAGxMNqaBN_7tRg&quot;&gt;这里&lt;/a&gt;进行下载，提取码：afyt</summary>
     
     
